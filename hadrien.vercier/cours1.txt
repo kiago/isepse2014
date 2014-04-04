@@ -1,7 +1,7 @@
-j'ai appris que :
+What I learnt :
 
-1) Le flag -m dans la commande mkdir (création de répertoires), permettait de mettre directement les permissions du dossier
+1) The flag -m in the command mkdir (which create directories), set the file mode as in chmod.
 
-2) Le flag -R dans la commande chmod (gestion des permissions), permettait récursivement de définir les permissions, cad que les permissions seront appliquées à des sous dossiers/fichiers ...
+2) The flag -R in the command chmod (which manage the permissions), applies recursively the permissions to files and directories
 
-3) La commande man, affiche le manuel d'une commande 
+3) The command man, print the manual of a commmand
