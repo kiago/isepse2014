@@ -1,0 +1,18 @@
+(Ce fichier en .org peut être lu avec Emacs.  Une version .txt
+est disponible dans le même répertoire.)
+
+* Outil interactif pour apprendre le shell
+
+http://explainshell.com
+
+* Commandes présentées en cours
+
+cd
+less
+head
+tail
+chmod
+...
+
+
+
