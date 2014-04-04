@@ -1,9 +1,9 @@
-"approfondissement de la commande tar" 
+"about the command line tar" 
 source:http://www.libordux.org/doc/cmdline/archives.php#tar
 
-pour voir le contenu d'une archive tar, faire:
+if we want to see the content of the file tar:
  tar tf fichier.tar
-pour afficher à l'écran le contenu de l'archive tar et décompresser le fichier tar
+if we want to uncompress the file and to display the content on our screen:
  tar xfv fichier.tar
-pour décompresser le contenu sans l'afficher
+if we want only to uncompressed the file without displaying it:
  tar xf fichier.tar
