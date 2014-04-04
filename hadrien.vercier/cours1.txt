@@ -1,0 +1,7 @@
+j'ai appris que :
+
+1) Le flag -m dans la commande mkdir (création de répertoires), permettait de mettre directement les permissions du dossier
+
+2) Le flag -R dans la commande chmod (gestion des permissions), permettait récursivement de définir les permissions, cad que les permissions seront appliquées à des sous dossiers/fichiers ...
+
+3) La commande man, affiche le manuel d'une commande 
