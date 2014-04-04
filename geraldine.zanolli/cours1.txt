@@ -1,0 +1,2 @@
+Today, I learned to use the command less. This command allows to reduce a document like a file text. So, I learned also some command on vim like yy for copy a line or p for paste it. I used o for a new line.
+For create this folder, I used a new command also mkdir.
