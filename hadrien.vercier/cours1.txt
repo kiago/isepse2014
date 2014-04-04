@@ -1,0 +1,7 @@
+What I learnt :
+
+1) The flag -m in the command mkdir (which create directories), set the file mode as in chmod.
+
+2) The flag -R in the command chmod (which manage the permissions), applies recursively the permissions to files and directories
+
+3) The command man, print the manual of a commmand

@@ -1,0 +1,1 @@
+La commande echo ' Hello ' permet d'afficher Hello
