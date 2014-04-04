@@ -1,0 +1,24 @@
+I helped geraldine (a lot)
+I read about outputs when using Bourne Shell Family:
+
+
+>
+Redirect standard output
+
+2>
+Redirect standard error
+
+2>&1
+Redirect standard error to standard output
+
+<
+Redirect standard input
+
+|
+Pipe standard output to another command
+
+>>
+Append to standard output
+
+2>&1|
+Pipe standard output and standard error to another command

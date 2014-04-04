@@ -1,0 +1,8 @@
+echo: echo "write something" in file that you define with > file.txt
+
+less: less file, allows to see the file in the console
+
+man: man cmd, allows to see how the command works
+
+mkdir: mkdir name_directory, create a directory
+
