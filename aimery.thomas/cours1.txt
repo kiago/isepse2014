@@ -1,3 +1,7 @@
-What did I learnt today
+What did I learnt today?
+
 To delete a folder, write: rm -rf name_of_your_folder
 To create a file, write: touch name_of_your_file
+To rename a file, write: mv name1 name2 :rename file name1 into name2
+To move a file, wrtie: mv name1 url_path
+
