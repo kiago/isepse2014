@@ -1,1 +1,1 @@
-mkdir
+mkdir: permet de créer des répertoires. On peut créer plusieurs répertoires et sous-répertoires en même temps
