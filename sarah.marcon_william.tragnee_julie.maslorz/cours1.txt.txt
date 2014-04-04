@@ -1,0 +1,15 @@
+mkdir
+	Create repository : mkdir Test
+	If repository empty : delete : rmdir Test
+	Else : rmdir -rf Test
+
+head/tail
+	print the beginning/end of the file
+	tail -n 20 "test.txt" : print the last 20 lines of the file
+	tail -f : real time print
+
+chmod 
+	chmod 777 test.txt
+	to modify all the files in a repository : chmod -r 777 test
+	
+	
