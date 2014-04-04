@@ -1,3 +1,7 @@
 COUCOU NICOLAS
 Salut Jean
+<<<<<<< HEAD
 test Aimery
+=======
+Ca va les mecs ?
+>>>>>>> upstream/master
