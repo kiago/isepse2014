@@ -1,1 +1,9 @@
-Salut
+Local :
+- git clone
+- git add *
+- git commit
+
+Pas local :
+- git push
+- git pull
+
