@@ -1,0 +1,27 @@
+Local :
+- git clone
+- git add *
+- git commit
+- git status
+- git log
+
+
+Autre :
+- git push
+- git pull
+
+
+grep : look for a string in some path
+—> grep « toto » path
+
+find : find where what (recursive)
+—> find .[here] -name « .git »
+
+~ : home
+
+less: less file, allows to see the file in the console
+
+man: man cmd, allows to see how the command works
+
+mkdir: mkdir name_directory, create a directory
+
