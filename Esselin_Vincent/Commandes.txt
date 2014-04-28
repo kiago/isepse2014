@@ -1,0 +1,18 @@
+ls  : liste des fichiers et dossiers présents (marqueurs -a pour tout afficher et -l pour plus de détail)
+
+man : affiche la documentation d’une commande
+
+cd : pour aller dans un répertoire
+
+rm : supprime un fichier
+
+rmdir : supprime un dossier vide
+
+mkdri : crée un dossier
+
+touch : crée un ficher
+
+find : trouve un fichier
+
+grep : cherche une ligne de caractères dans un fichier
+
