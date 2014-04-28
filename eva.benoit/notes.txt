@@ -1,0 +1,35 @@
+Commands in Linux
+------------------
+chmod : changes the permissions for a file 
+chmod 600 file.txt
+chmod -R 600 dir/
+chmod u+x test.sh (add the execute option for the user of the text.sh file)
+r(4) - w(2) - x(1) [read, write, execute]
+	user	group	others
+       -rwx	r-x	--x	: 751
+       -rw	r--	r--	: 644
+
+------------------
+
+find : find something in the path
+find 	   .	-name ".git"
+find 	[here]	[filename]
+By default, find is recursive
+
+grep : search a string in a specific file
+grep "toto" file.txt
+
+------------------
+
+"globbing" : finding something globally by using a shortcut
+"*.jpg" - "file*"
+
+------------------
+
+Create a program : put this line at the beginning of the script 
+#!/bin/bash
+
+------------------
+
+Renaming a file
+mv file1.txt to file2.txt
