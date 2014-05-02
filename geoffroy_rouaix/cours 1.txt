@@ -1,0 +1,10 @@
+Ce que j'ai appris:
+
+la commande find . -name
+
+mkdir permet de créer un répertoire
+
+cp copie
+mv move
+rm remove
+
