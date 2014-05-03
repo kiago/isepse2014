@@ -33,3 +33,42 @@ Create a program : put this line at the beginning of the script
 
 Renaming a file
 mv file1.txt to file2.txt
+
+
+----------------------
+----------------------
+Cours du 28 avril 2014
+----------------------
+----------------------
+Bash : interpréteur
+DSL (Domain Specific Language) : langage permettant de réaliser des tâches spécifiques
+Bash est un langage qui permet d'interagir avec les systèmes d'exploitation, les fichiers et les programmes.
+On utilise des lettres majuscules pour les variables d'environnement et des lettres minuscules pour les autres.
+$PATH : exécute le contenu de la variable d'environnement PATH
+echo : affiche le contenu d'une variable
+SHELL : variable d'environnement qui contient le shell utilisé
+
+Éditeur de texte utilisé en console : VIM
+vim /etc/passwd : explorer le fichier correspondant
+":q" : quitter VIM quand on est dans le mode insertion
+Tutoriel SDZ sur l'utilisation de VIM : http://fr.openclassrooms.com/informatique/cours/reprenez-le-controle-a-l-aide-de-linux/operations-basiques-deplacement-ecriture-enregistrement
+Commande "man" : permet d'afficher le manuel d'une fonction spécifique
+----------------------
+cut -d : -f 7 /etc/passwd : permet de récupérer le champ n°7 dans le fichier etc/passwd avec les champs délimités par ":"
+Redirection : on redirige la sortie texte d'une commande avec ">" vers un fichier texte.
+pwd : print working directory (variable d'environnement %PWD)
+----------------------
+Programme écrit :
+cut -d : -f 7 /etc/passwd > allshells.txt
+sort allshells.txt > allshells_sorted.txt
+uniq allshells_sorted.txt allshells_uniq.txt -c
+----------------------
+Traitement d'un long texte
+tr -cs [:alpha:] '\n' < gutenberg.txt > gutenberg_words.txt
+tr [:upper:] [:lower:] < gutenberg_word.txt > gutenberg_lower.txt
+sort gutenberg_lower.txt > gutenberg_sorted.txt
+uniq gutenberg_sorted.txt > gutenberg_uniq.txt
+sort gutenber_uniq > gutenberg_sorted.txt
+----------------------
+history > cmds.txt (enregistrer l'historique des commandes écrites)
+http://www.shellunix.com/sed.html (utilisation de la commande sed)
