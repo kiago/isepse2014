@@ -1,0 +1,16 @@
+utilisation d’un programme en pipe line
+cut -f 7 -d : /etc/passwd | sort | uniq -c | sort -nr (-n -r → -n = numeric croissant, -r = reverse)
+
+exercice http://algs4.cs.princeton.edu/63suffix/mobydick.txt
+
+passer d’un texte à un ensemble de mot (en supprimant tous séparateurs, apostrophes …)
+trier le texte pour qu’il n’y ait plus qu’un mot par ligne
+trouver l'occurrence de chaque mot
+
+tr -s -c [:alpha:] ‘\n’ (tr = replace, -s = squeeze / replace smth (SET1) by smth (SET2), -c = complément, [:alpha:] = caractères alphabetiques)
+tr -s “A-Z” “a-z”
+
+cat mobydick.txt | tr -s -c [:alpha:] '\n' | tr -s "A-Z" "a-z" | sort | uniq -c | sort -nr | head
+(cat == prendre un fichier en entré, “ | “ concaténation, head == les dix premier)
+
+history > cmd.txt → créer un fichier texte (cmd) contenant l’ensemble des commandes effectués 
