@@ -1,9 +1,22 @@
-Projet 3: Linux dictionary (a user is looking for the definition of a word and the dictionary finds it for him)
-Ex:
+Projet 3: Linux dictionary
+
+a user is looking for the definition of a word:
+- the dictionary finds it for him
+- gives difrent meanings (from difrent dictionaries)
+- if the word doesn't exist (misspelt) offer other words
+
+Ex of off line dictionaries:
 -gnome-dictionary
 -stardict
 -Goldendict
-we will use an online english dictionary
+
+If we use an online english dictionary
+online = cURL
+Ex of online dictionaries:
+- http://dictionary.cambridge.org/
+- http://www.oxforddictionaries.com/
+- http://dictionary.reference.com/
+- http://www.collinsdictionary.com/dictionary/english
 
 Members:
 - Eva BENOIT
