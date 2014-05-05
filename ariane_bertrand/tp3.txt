@@ -1,0 +1,18 @@
+Projet 3: Linux dictionary (a user is looking for the definition of a word and the dictionary finds it for him)
+Ex:
+-gnome-dictionary
+-stardict
+-Goldendict
+we will use an online english dictionary
+
+Members:
+- Eva BENOIT
+- Ariane BERTRAND
+- Guillaume FORMEY DE SAINT LOUVENT
+- Ang LI
+--------------------------------------------------------------------------------------------------------------------------
+diapo:
+1 page
+qui je suis, ce que je veux faire
+2 page
+comment je vais le faire
