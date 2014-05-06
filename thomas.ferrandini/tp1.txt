@@ -25,3 +25,11 @@ man: man cmd, allows to see how the command works
 
 mkdir: mkdir name_directory, create a directory
 
+
+28/04/2014
+
+- Langage compilé (JAVA)- Langages interprétés → Environnement REPL (Read Eval Print Loop) (Lecture de ce qui est saisi, évaluation, impression et boucle)
+
+Nom absolu : chemin pour ouvrir un fichier à partir de la racineAttention : Majuscules & minuscules sont importantesConvention : variables en majusculeAccéder au contenu d’une variable : $variableAfficher variable : echo $variableBASH interprète principalement des chaînes de caractèresCommandes de base :-	man : manuel-	cut : cut out selected portions of each line of a file-	nano : editeur de texte-	cd ~ : revenir à la maison (home)-	ctrl+d : cmd de finExercice : Trouver la liste des shells utilisés sur la machine→ Commande : Cut –d : -f 7 /etc/passwdla même chose + classement par nombre d’occurrence et suppression des doublons : → cut -d : -f 7  /etc/passwd | sort | uniq -c | sort -n>> append<> overwrite Exercice : on récupère tous les mots du site et on les classe par nombre d’occurrence et on affiche les 10 premiers résultats (head)→ curl www.gutenberg.org/cache/epub/45495/pg45495.txt | tr -s -c [:alpha:] '\n' | tr "A-Z" "a-z" | sort | uniq -c | sort -n -r | head
+
+
