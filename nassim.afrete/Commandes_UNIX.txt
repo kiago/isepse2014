@@ -1,0 +1,121 @@
+﻿*************************************************************************
+			 Commandes UNIX
+*************************************************************************
+
+En mode console : 
+
+nassim@nassim-VirtualBox:~$
+	•	nassim : Le premier élément est votre pseudonyme.
+	•	@ : C'est le symbole « at » qui signifie « chez » : « nassim chez
+	        … ».
+	•	nassim-VirtualBox : le nom de l'ordinateur sur lequel vous êtes en
+	                        train de travailler.
+	•	: : Séparateur
+	•	~ : Répertoire /home
+	•	$ : Indique votre niveau d'autorisation sur la machine :
+				o	$ =  utilisateur « normal »
+				o	# = mode superutilisateur
+
+*************************************************************************
+			     COMMANDES
+*************************************************************************
+
+	•	pwd 	: afficher le dossier actuel (« Print Working Directory »).
+	•	which 	: connaître l'emplacement d'une commande.
+	•	date 	: affiche la date.
+	•	ls 		: lister les fichiers et dossiers du répertoire actuel
+	•	ls –a 	: affiche tout le contenu du dossier, même les fichiers
+	              cachés.
+	•	history  : historique des commandes.
+	•	Ctrl + L : efface le contenu de la console.
+	•	Ctrl + A : ramène le curseur au début de la commande.
+	•	Ctrl + E : ramène le curseur à la fin de la ligne de commandes.
+	•	Ctrl + U : supprime tout ce qui se trouve à gauche du curseur.
+	•	Ctrl + K : supprime tout ce qui se trouve à droite du curseur.
+	•	Ctrl + W : supprime le premier mot situé à gauche du curseur. Un «
+	               mot » est séparé par des espaces.
+	•	Ctrl + Y : raccourci Ctrl + Y « collera » le texte que vous venez
+	               de supprimer.
+
+*************************************************************************
+		        ORGANISATION DES DOSSIERS
+*************************************************************************
+
+Pour LINUX TOUT EST UN FICHIER !!!
+
+Il n'y a pas de dossier de plus haut niveau que /
+
+Les dossiers à la racine :
+
+	•	bin 	: contient des programmes (exécutables).
+	•	boot 	: fichiers permettant le démarrage de Linux.
+	•	dev 	: fichiers contenant les périphériques.
+	•	etc 	: fichiers de configuration.
+	•	home 	: répertoires personnels des utilisateurs.
+	•	lib 	: dossier contenant les bibliothèques partagées (
+	              généralement des fichiers .so) utilisées par les
+	              programmes.
+	•	media 	: lorsqu'un périphérique amovible (comme une carte mémoire
+	              SD ou une clé USB) est inséré dans votre ordinateur,
+	              Linux permet d'y accéder à partir d'un sous-dossier de
+	              media. On parle de "montage".
+	•	opt 	: répertoire utilisé pour les add-ons de programmes.
+	•	root 	: c'est le dossier personnel de l'utilisateur « root ».
+	•	sbin 	: contient des programmes système importants.
+	•	tmp 	: dossier temporaire utilisé par les programmes pour
+	              stocker des fichiers.
+	•	usr 	: c'est un des plus gros dossiers, dans lequel vont
+	              s'installer la plupart des programmes demandés par l'utilisateur.
+	•	var 	: ce dossier contient des données « variables », souvent
+				  des logs (traces écrites de ce qui s'est passé récemment
+				  sur l'ordinateur).
+
+*************************************************************************
+		    Lister les fichiers avec « ls »
+*************************************************************************
+
+	•	ls 	: lister les fichiers et dossiers du répertoire actuel.
+	•	ls –a : Cela affiche tout le contenu du dossier, même les fichiers
+				cachés.
+	•	-F 	: indique le type d'élément
+	•	-l 	: liste détaillée
+				o	droits sur le fichier
+				o	nombre de liens physiques
+				o	nom de la personne propriétaire du fichier.
+				o	groupe auquel appartient le fichier. Il se peut que le
+				    nom du groupe soit le même que celui du propriétaire
+				o	taille du fichier, en octets
+				o	date de dernière modification
+				o	nom du fichier (ou dossier).
+	•	-h 	: afficher la taille en Ko, Mo, Go…
+	•	-t 	: trier par date de dernière modification
+	•	-r 	: inverser l’ordre d’affichage
+
+*************************************************************************
+			 Changer de dossier
+*************************************************************************
+
+	•	cd : changer de dossier
+	•	du : donne des informations sur la taille qu'occupent les
+	         dossiers sur votre disque.
+
+*************************************************************************
+			 Afficher un fichier
+*************************************************************************
+Pour voir un fichier :
+
+	•	cat 	: cat –n nomFichier
+	•	less 	:
+			o Espace : affiche la suite du fichier. La touche Espace fait
+			           défiler le fichier vers le bas de la console.
+			o Entrée : affiche la ligne suivante. Cela permet donc de
+			           faire défiler le fichier vers le bas ligne par
+			           ligne.
+			o y : retourne d'une ligne en arrière ( ou Flèche du haut).
+			o q : arrête la lecture du fichier. Cela met fin à la 
+			      commande less.
+	•	head : afficher le début du fichier (Ex : head -n 3 nameFile)
+	•	tail : afficher la fin du fichier (Ex : tail -n 3 nameFile ou
+	           tail –f pour suivre la fin d’un fichier)
+	•	touch : créer un fichier
+	•	mkdir : créer un dossier
