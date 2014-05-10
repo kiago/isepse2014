@@ -119,3 +119,124 @@ Pour voir un fichier :
 	           tail –f pour suivre la fin d’un fichier)
 	•	touch : créer un fichier
 	•	mkdir : créer un dossier
+	•	cp : copier un fichier 
+			 Ex: cp fichier1 nouveauFichier
+			 	 cp -R dossier1 nouveauDossier (pour copier un dossier)
+			 	 cp *.jpg mondossier/ (pour copier toutes les images dans
+			 	 mondossier/ )
+	•	mv : déplacer un fichier
+			 Ex : mv fichier mondossier/
+			 Ex : mv fichier1 fichier2 (pour renommer un fichier)
+	• 	rm : supprimer un fichier
+			 -i pour demander confirmation
+			 -f pour forcer la suppression
+			 -v pour savoir ce que le programme fait
+			 -r pour supprimer dossier et son contenu
+			 NE JAMAIS FAIRE  rm -rf /* !!!!!!!!!!!!!!!!!!!!!
+	•	ln : créer des liens entre fichiers
+		Remarque : la liste des noms de fichiers est stockée à un autre
+		endroit que leur contenu (ou inode). Cette séparation aide Linux à
+		s'organiser.
+
+		Liens physiques : seulement pour les fichiers
+		Liens symboliques : = raccourcis
+
+*************************************************************************
+				 Les utilisateurs et les droits
+*************************************************************************
+
+Linux est un système multi-utilisateurs. Cela signifie que plusieurs
+personnes peuvent travailler simultanément sur le même OS, en s'y
+connectant à distance notamment.
+Il existe un ensemble de règles qui disent qui a le droit de faire quoi.
+
+•	sudo : devenir root un instant
+•	sudo su - : devenir root
+•	exit ou Ctrl + D : quitter le mode root
+•	adduser : ajouter un utilisateur
+•	passwd : changer le mot de passe
+•	addgroup : créer un groupe
+•	usermod : modifier un utilisateur
+			    -l pour changer son nom
+			    -g pour changer de groupe (Ex: usermod -g friends nassim)
+			    -G pour changer dans plusieurs groupes
+			    -ag pour le mettre aussi dans d'autres groupes
+•	delgroup : supprimer un groupe
+
+*************************************************************************
+				Gestion des propriétaires d'un fichier
+*************************************************************************
+
+Seu l'utilisateur root peut changer le propriétaire d'un fichier
+
+- chown : changer le propriétaire d'un fichier
+			- le nom du nouveau propriétaire.
+			- le nom du fichier à modifier.
+
+- chgrp : changer le groupe propriétaire d'un fichier (mêmes paramètres)
+
+- chown peut combiner les deux commandes précédentes :
+	EX : chown nassim:friends fichier.txt
+
+Avec -R : pour affecter récursivement les sous-dossiers
+			EX : chown nassim:nassim /home/wolverine/
+
+*************************************************************************
+				chmod : modifier les droits d'accès
+*************************************************************************
+
+Pour indiquer qui a le droit de voir le fichier, de le modifier et de l'exécuter.
+
+Voir les droits sur un fichier avec : ls -l
+
+5 lettres différentes :
+ - d (Directory) : indique si l'élément est un dossier.
+ - l (Link) : indique si l'élément est un lien (raccourci).
+ - r (Read) : indique si on peut lire l'élément.
+ - w (Write) : indique si on peut modifier l'élément.
+ - x (eXecute) : si c'est un fichier, « x » indique qu'on peut l'exécuter.
+ 				 Si c'est un dossier, « x » indique qu'on peut voir les
+ 				 sous-dossiers qu'il contient si on a le droit de lecture
+ 				 dessus.
+
+   d        rwx       rwx   rwx 
+dossier utilisateur groupe autres
+
+chmod : modifier les droits d'accès
+			-R pour affecter récursivement
+-> pas besoin d'être root pour utiliser chmod, juste être propriétaires
+du fichier dont on veut modifier les droits d'accès.
+
+Attribuer des droits avec des chiffres (chmod absolu)
+_____________________________________________________
+
+r : 4
+w : 2
+x : 1
+
+Exemples :
+--- : 0
+r-- : 4
+-w- : 2
+--x : 1       =>  Droit Max : 777
+rw- : 6
+r-x : 5
+-wx : 3
+rwx : 7
+
+Attribuer des droits avec des lettres (chmod relatif)
+_____________________________________________________
+
+u = user
+g = group
+o = other
+						
++ : ajouter droit
+- : supprimer droit
+= : affecter droit
+
+EX : chmod g+w rapport.txt 			chmod g+w,o-w rapport.txt
+	 chmod o-r rapport.txt 			chmod go-r rapport.txt
+	 chmod u+rx rapport.txt 		chmod +x rapport.txt
+
+	 chmod u=rwx,g=r,o=- rapport.txt
