@@ -1,0 +1,4 @@
+Questions sur BASH:
+
+- Comment peut-on gérer en bash la saisie d'un utilisateur ( comme la classe Scanner en Java ) ?
+- Peut-on créer des tableaux ou des listes ?
