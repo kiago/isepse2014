@@ -72,3 +72,60 @@ sort gutenber_uniq > gutenberg_sorted.txt
 ----------------------
 history > cmds.txt (enregistrer l'historique des commandes écrites)
 http://www.shellunix.com/sed.html (utilisation de la commande sed)
+
+
+----------------------
+----------------------
+Cours du 5 mai 2014
+----------------------
+----------------------
+Liste des sites (projet)
+Récupérer les données de sites actualisés régulièrement
+----------------------
+Dans Ton Chat - Texte
+9Gag - Image + Gif + texte
+Secouchermoinsbete - Texte
+Sites d'actualités - Texte
+Twitter - Texte
+----------------------
+Requête de l'utilisateur et renvoi d'une réponse obtenue par le biais d'un site
+----------------------
++++ Dictionnaire en ligne - Texte +++
+Mots croisés - Texte (http://www.capeutservir.com/mots/)
+Traducteur - Texte (http://www.reverso.net/text_translation.aspx?lang=FR)
+----------------------
+Groupe de projet :	Eva BENOIT
+			Ariane BERTRAND
+			Guillaume FORMEY DE SAINT LOUVENT
+			Ang LI
+Création d'une application permettant d'accéder à un dictionnaire en 
+ligne de commande. L'utilisateur rentre le mot dont il souhaite avoir
+la définition et une réponse lui est envoyée : plusieurs définitions, 
+une récupérée en ligne, l'autre via un dictionnaire hors-ligne sur Linux OS.
+Le dictionnaire sera en anglais.
+Exemples de dictionnaires en ligne : 	Oxford Dictionary
+					Cambridge Dictionary
+Exemples de dictionnaires hors-ligne : 	Gnome-dictionary
+					Stardict
+					Goldendict
+Commandes utilisées : cURL - regex
+----------------------
+Notions du fichier .bashrc
+
+
+----------------------
+----------------------
+Cours du 12 mai 2014
+----------------------
+----------------------
+Questions - Programmation Bash
+1. Comment concaténer des chaînes de caractères ?
+2. Comment créer et initialiser une variable ?
+3. Comment faire des boucles FOR et WHILE
+4. Comment incrémenter une variable ?
+5. Comment gérer les entrées claviers des utilisateurs ?
+6. Peut-on créer des fonctions avec des arguments ?
+7. Comment appliquer la fonction egrep sur plusieurs lignes dans un fichier texte ?
+8. Comment utiliser la commande awt ?
+9. Comment parcourir les lignes d'un fichier texte ?
+10. Règles d'indentation pour un programme Bash ?
