@@ -39,12 +39,13 @@
   echo "Bonjour $nom !"
 
   Et read -p 'Message' message 
-  => pour afficher un message de prompt
+  => avec -p pour afficher un message de prompt et mettre la valeur dans
+     la variable "message"
 
 
 - Comment définir un tableau ?
 
   Ex : tableau=('valeur0' 'valeur1' 'valeur2')
-  
+
   Et on peut accéder à une valeur de ce tableau de la façon suivante :
   Ex : ${tableau[2]}
