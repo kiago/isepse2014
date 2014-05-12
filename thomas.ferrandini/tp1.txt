@@ -28,8 +28,35 @@ mkdir: mkdir name_directory, create a directory
 
 28/04/2014
 
-- Langage compilé (JAVA)- Langages interprétés → Environnement REPL (Read Eval Print Loop) (Lecture de ce qui est saisi, évaluation, impression et boucle)
+- Compiled Language (JAVA)- Interpretated language → REPL environnement (Read Eval Print Loop) (Reading which is entered, evaluation , printing and loop)
 
-Nom absolu : chemin pour ouvrir un fichier à partir de la racineAttention : Majuscules & minuscules sont importantesConvention : variables en majusculeAccéder au contenu d’une variable : $variableAfficher variable : echo $variableBASH interprète principalement des chaînes de caractèresCommandes de base :-	man : manuel-	cut : cut out selected portions of each line of a file-	nano : editeur de texte-	cd ~ : revenir à la maison (home)-	ctrl+d : cmd de finExercice : Trouver la liste des shells utilisés sur la machine→ Commande : Cut –d : -f 7 /etc/passwdla même chose + classement par nombre d’occurrence et suppression des doublons : → cut -d : -f 7  /etc/passwd | sort | uniq -c | sort -n>> append<> overwrite Exercice : on récupère tous les mots du site et on les classe par nombre d’occurrence et on affiche les 10 premiers résultats (head)→ curl www.gutenberg.org/cache/epub/45495/pg45495.txt | tr -s -c [:alpha:] '\n' | tr "A-Z" "a-z" | sort | uniq -c | sort -n -r | head
+Absolute name: path to open a file from the root
 
-
+Attention: Upper & lower case are important
+Convention: uppercase variables
+
+Access the contents of a variable: $ variable
+Show variable : echo $ variable
+
+BASH interpreter mainly strings
+
+Basic commands :
+- Man: manual
+- Cut : cut out selected portions of Each line of a file
+- Nano: text editor
+- Cd ~ : go home
+- Ctrl + d : end command
+
+
+Exercise: Find the list of shells used on the machine
+→ Order: Cut -d :-f 7 / etc / passwd
+the same rank + number of occurrences and removing duplicates :
+→ cut-d :-f 7 / etc / passwd | sort | uniq- c | sort- n
+
+
+append >>
+<
+> overwrite
+ 
+Exercise: on retrieves all the words of the site and they are classified by the number of occurrences and the first 10 results are displayed ( head)
+→ curl www.gutenberg.org/cache/epub/45495/pg45495.txt | tr- s -c [: alpha:] '\ n' | tr "AZ" "az" | sort | uniq- c | sort- n -r | head
