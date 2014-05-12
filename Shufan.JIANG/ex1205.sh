@@ -24,7 +24,8 @@ for i in $(seq 1 10); do
 done;
 #is there a limit to the number of arguments?
 show_args $(seq 1 20); 
-#the answer is
+#the answer is?
 getconf ARG_MAX
-# XD
+# XD # well, sadly it works :/
 show_args $(seq 1 2097253); 
+
