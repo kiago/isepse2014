@@ -1,0 +1,22 @@
+Ici vous trouverez les différents scripts de notre projet, au fur et à mesure de leur création.
+
+Pour rappel, le projet consiste à mettre en place une sauvegarde automatique d'un site internet, 
+c'est à dire de son répertoire FTP et de la base SQL.
+
+1-- Configuration de la connexion SSH
+
+En premier lieu, il s'agit de mettre en place la connexion SSH au serveur afin de ne pas avoir à rentrer
+l'identifiant et le mot de passe à chaque éxecution du script. La connexion se fait sur un serveur mutualisé OVH.
+Pour celà, il faut enregistrer la clé SSH publique de son ordinateur dans un fichier spécifique du serveur, se trouvant ici :
+/.ssh/authorized_keys
+Il est possible d'enregistrer plusieurs clés publiques.
+
+Une fois cela réalisé, le script suivant établie la connexion au serveur :
+
+MacBook-Pro-de-Alain:~ juniorisep$ ssh orthoeur@ftp.ortho-europe78.fr
+Welcome to Ovh //confirmation du serveur
+
+Il s'agit ensuite de se placer dans le dossier où l'on souhaite travailler, en l'occurrence :
+
+orthoeur@ssh1.240.ha.ovh.net:~$ cd www/isep/projetbash
+orthoeur@ssh1.240.ha.ovh.net:~/www/isep/projetbash$ //confirmation du serveur
