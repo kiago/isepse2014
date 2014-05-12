@@ -30,4 +30,4 @@ uniq : filtre les lignes en fonction de leur unicité
 
 cut : sélectionne une chaîne de caractère dans une ligne
 
-
+echo : affiche un message (peut être écrit dans un fichier par exemple
