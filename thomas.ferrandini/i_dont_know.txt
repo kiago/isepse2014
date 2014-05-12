@@ -1,8 +1,28 @@
 Quest ce que je ne sais pas faire ?
 
 - Browse a folder and extract the name without extension of each file in it.
-- Do we need to put semicolon at the end of lines within a function? 
+
+- Do we need to put semicolon at the end of lines within a function?
+--> No 
+
 - How to ask something to the user, such as java scanner
+-->
+
 - why !/bin/bash ?
+--> shebang. it tells the shell what program to interpret the script with, when executed. interpretated in bash
+
 - How to create an array ?
+--> Many ways apparently
+--> name[index]=value
+--> [OR] declare -a Unix=('Debian' 'Red hat' 'Red hat' 'Suse' 'Fedora');
+
 - can we declare functions ?
+--> function function_name { 
+		command... 
+	}
+
+	[OR]
+
+	function_name () { 
+		command... 
+	}
