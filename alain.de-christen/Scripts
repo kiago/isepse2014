@@ -36,4 +36,9 @@ Ensuite, j'ai créé un fichier file5.pdf dans le dossier backup et ai reéffect
 Le fichier n'a donc pas été copié dans le dossierSource, la synchronisation a bien lieu uniquement
 dans le sens indiqué lors de la requête.
 
-3-- Synchroniser le dossier projetbash du serveur avec le dossier projetbash local
+3-- Synchroniser un  dossier du serveur avec un autre dossier du serveur
+
+
+4-- Synchroniser un dossier du serveur avec un fichier en local
+
+
