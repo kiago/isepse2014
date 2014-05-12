@@ -6,3 +6,8 @@ tr -s -c [:alpha:] '\n' < textt.txt | sort | uniq -c | sort -rn | head
 RECHERCHE auteur et message d'un tweet d'un fichier JSON (TP2)
 
 grep "text\|from_user\>" tweetTest.txt
+
+
+QUESTIONNAIRE BASH :
+
+1) shell et bash 
