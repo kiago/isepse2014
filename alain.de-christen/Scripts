@@ -21,8 +21,19 @@ Il s'agit ensuite de se placer dans le dossier où l'on souhaite travailler, en 
 orthoeur@ssh1.240.ha.ovh.net:~$ cd www/isep/projetbash
 orthoeur@ssh1.240.ha.ovh.net:~/www/isep/projetbash$ //confirmation du serveur
 
-2-- Copier un fichier du serveur vers un dossier local
+2-- Synchroniser un dossier local avec un dossier local
 
+Pour effectuer cela, j'ai créé deux dossiers : files et backup
+J'ai ensuite créé 4 fichiers dans le dossier files : file1.pdf,file2.pdf,...
+Pour effectuer une synchronisation entre les deux dossiers :
+> rsync -arv dossierSource/ dossierCible
 
+La synchronisation a eu lieu et les fichiers ont été copiés.
+Lorsque l'on fait une deuxième synchronisation sans changer les fichiers du dossier source,
+il indique bien que rien n'a été synchronisé !
+
+Ensuite, j'ai créé un fichier file5.pdf dans le dossier backup et ai reéffectué la synchronisation.
+Le fichier n'a donc pas été copié dans le dossierSource, la synchronisation a bien lieu uniquement
+dans le sens indiqué lors de la requête.
 
 3-- Synchroniser le dossier projetbash du serveur avec le dossier projetbash local
