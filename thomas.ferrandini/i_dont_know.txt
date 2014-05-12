@@ -1,4 +1,6 @@
 Quest ce que je ne sais pas faire ?
 
-- browse a folder and extract the name without extension of each file in it.
+- Browse a folder and extract the name without extension of each file in it.
+- Do we need to put semicolon at the end of lines within a function? 
+- How to ask something to the user, such as java scanner
 - 
