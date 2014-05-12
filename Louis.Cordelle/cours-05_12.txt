@@ -19,3 +19,12 @@ Question sur le Bash Script{
 	}
 
 }
+
+
+Useful commands {
+	- ctrl-A : go at the beginning of the line 
+	- ctrl-E : go at the end of the line
+	- ctrl-L : clean terminal
+	- ctrl-C : terminate the command
+	- 
+}
