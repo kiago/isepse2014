@@ -1,0 +1,4 @@
+Quest ce que je ne sais pas faire ?
+
+- browse a folder and extract the name without extension of each file in it.
+- 
