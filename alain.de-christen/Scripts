@@ -21,3 +21,8 @@ Il s'agit ensuite de se placer dans le dossier où l'on souhaite travailler, en 
 orthoeur@ssh1.240.ha.ovh.net:~$ cd www/isep/projetbash
 orthoeur@ssh1.240.ha.ovh.net:~/www/isep/projetbash$ //confirmation du serveur
 
+2-- Copier un fichier du serveur vers un dossier local
+
+
+
+3-- Synchroniser le dossier projetbash du serveur avec le dossier projetbash local
