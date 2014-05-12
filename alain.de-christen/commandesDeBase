@@ -1,0 +1,36 @@
+1) Comment travailler dans son répertoire Git
+
+Une fois la configuration SSH et la synchronisation effective en local avec son
+dossier sur son compte Git, il suffit de se rendre dans le dossier local pour
+commencer à travailler. Dans mon cas :
+
+> cd Documents/gitrepository/isepse2014
+
+2) Comment créer un fichier vide
+
+> touch nomDuFichier
+
+3) Comment éditer un fichier
+
+> nano nomDuFichier
+
+Pour sauvegarder le fichier, utiliser la commande ^X (Exit) dans l'interface. Attention,
+il faut remplacer le ^ par la touche ctrl.
+
+4) Synchronisation serveur vers local
+
+> git pull
+
+5) Synchronisation local vers serveur : comment faire un commit ?
+
+Astuce : pour voir les modifications qui n'ont pas été mises dans la file
+d'attente des commit, saisir : git status. 
+Pour passer les lignes rouges en vert afin de pouvoir les commiter :
+> git add *
+
+Pour faire un commit après avoir modifié un fichier :
+> git commit -m "textCommit"
+
+Enfin, pour envoyer le tout sur le serveur,
+> git push
+
