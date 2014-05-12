@@ -1,4 +1,4 @@
-comment définir une variable?
+comment definir une variable?
 
 definir la variable message:
 message='Bonjour'
@@ -12,7 +12,7 @@ comment definir le type d'une variable?
 
 les variables n'ont pas de type
 -------------------------------------------------------
-comment eviter problèmes liés aux caractères speciaux?
+comment eviter problemes lies aux caracteres speciaux?
 
 -------------------------------------------------------
 comment faire une boucle?
@@ -57,7 +57,7 @@ conditions possibles sur nombres:
 -ge premier nombre inferieur ou egal au second
 conditions possibles sur fichiers:
 -e $fichier si fichier existe
--d $fichier si fichier est un répertoire
+-d $fichier si fichier est un repertoire
 -f $fichier si le fichier existe
 -L si le fichier est un raccourci
 -r $fichier si le fichier est lisible

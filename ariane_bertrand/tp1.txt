@@ -4,7 +4,7 @@ Ls-l on obtient des informations (dont les permissions)
 
 Chmod change les permissions d'un document
 
-Grep recherche une chaîne de caractères
+Grep recherche une chaine de caracteres
 Ex grep « toto » filetxt
 Grep « toto » *
 
