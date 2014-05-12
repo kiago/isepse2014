@@ -1,0 +1,30 @@
+*************************************************************************
+			 Utilisation de NANO
+*************************************************************************
+
+Nano (ou « GNU nano ») est un éditeur de texte, pas un traitement de texte!
+
+- Un éditeur de texte est un programme qui permet de modifier des fichiers
+  de texte brut, sans mise en forme !
+
+- Un traitement de texte est fait pour rédiger des documents mis en forme.
+
+Sous Linux il n'y a pas forcément d'extension pour les fichiers texte brut.
+
+- Ctrl + G : afficher l'aide
+- Ctrl + K : couper la ligne de texte (et la mettre dans le presse-papier)
+- Ctrl + U : coller la ligne de texte que vous venez de couper
+- Ctrl + C : afficher à quel endroit du fichier votre curseur est
+			 positionné
+- Ctrl + W : rechercher dans le fichier 
+- Ctrl + O : enregistrer le fichier (écrire)
+- Ctrl + X : quitter Nano.
+
+Masquer l'aide : Echap + X
+
+nano nomFichier : ouvre le fichier ou le crée si il n'existe pas.
+
+Paramètres sympas :
+	-m : pour autoriser la souris !
+	-i : indentation automatique
+	-A : retour intelligent au début de la ligne.
