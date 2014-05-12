@@ -1,0 +1,6 @@
+Nom : Afrete
+login : nafrete
+
+clé public :
+
+ssh-rsa AAAAB3NzaC1yc2EAAAABIwAAAQEArv4RlalMyOvf9I4KwWtEunG6rzlKWnmwGaf92gXadhVAq0Y8Nc2scQ0GleVXtDG4HjXlyqE/gxubcpoTj6mcceJjNPl7UVnKq2LB+tIKq5Q48F9b44f5VnCPdjA3E+5n6kGhNcQquCrXstlbv+koaomZzuFeQB7FeQ0B8haCWoPlhA36/yo9V6GDepZHGYqOvNwwBq59nj+jHZ10LTiqpaxM/FsqMgHTvnKBqIMNM4Unjn+r7rndH2Gc7W0gspGSSxjG5L6T5VhRVMufgqMCGOzAEuenPA5ySP7+6SxUl7TyiVYgak/0AjqCNqhh63f0sSQMz2O2p7jUXaYw3tyO8w== nass_5902@hotmail.fr
