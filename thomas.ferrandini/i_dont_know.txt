@@ -6,7 +6,16 @@ Quest ce que je ne sais pas faire ?
 --> No 
 
 - How to ask something to the user, such as java scanner
--->
+--> Example :
+	
+	while true; do
+	    read -p "Do you wish to install this program?" yn
+	    case $yn in
+	        [Yy]* ) make install; break;;
+	        [Nn]* ) exit;;
+	        * ) echo "Please answer yes or no.";;
+	    esac
+	done
 
 - why !/bin/bash ?
 --> shebang. it tells the shell what program to interpret the script with, when executed. interpretated in bash
