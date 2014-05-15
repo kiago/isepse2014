@@ -28,14 +28,16 @@ do
    	ep=$(echo "$episode" | cut -c5-6);
    	echo $ep;
 
-
    	#episode=${fichier}
    	#echo “filename: ${fichier%.*}”
 	#echo “extension: ${fichier##*.}”
 
-	#curl -s "http://www.opensubtitles.org/fr/search/sublanguageid-fre/season-${season}/episode-${ep}/moviename-${fichier}" | sed -n '/<a href=\"\/fr\/subtitleserve\/sub\/.*/,/<\/a>/p' > ${fichier}.txt
+	page=$(curl -s "http://www.opensubtitles.org/fr/search/sublanguageid-fre/season-${season}/episode-${ep}/moviename-${fichier}");
 
-	curl -s "http://www.opensubtitles.org/fr/search/sublanguageid-fre/season-${season}/episode-${ep}/moviename-${fichier}" | grep -o '<a href="/fr/subtitleserve/sub/[^"]*"' | sed 's/<a href="//;s/"$//' > ${fichier}.txt
+	sub_link=$(echo "$page" | grep -o '<a href="/fr/subtitleserve/sub/[^"]*"' | sed 's/<a href="\/fr\/subtitleserve\///;s/"$//');
+
+	echo $sub_link; 
+	curl -o ~/Movies/test/${fichier}.zip "http://dl.opensubtitles.org/fr/download/${sub_link}"
 
 done
 
