@@ -33,7 +33,9 @@ do
    	#echo “filename: ${fichier%.*}”
 	#echo “extension: ${fichier##*.}”
 
-	curl -s "http://www.opensubtitles.org/fr/search/sublanguageid-fre/season-${season}/episode-${ep}/moviename-${fichier}" > test.txt
+	#curl -s "http://www.opensubtitles.org/fr/search/sublanguageid-fre/season-${season}/episode-${ep}/moviename-${fichier}" | sed -n '/<a href=\"\/fr\/subtitleserve\/sub\/.*/,/<\/a>/p' > ${fichier}.txt
+
+	curl -s "http://www.opensubtitles.org/fr/search/sublanguageid-fre/season-${season}/episode-${ep}/moviename-${fichier}" | grep -o '<a href="/fr/subtitleserve/sub/[^"]*"' > ${fichier}.txt
 
 done
 
