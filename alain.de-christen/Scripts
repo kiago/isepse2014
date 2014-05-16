@@ -18,8 +18,8 @@ Welcome to Ovh //confirmation du serveur
 
 Il s'agit ensuite de se placer dans le dossier où l'on souhaite travailler, en l'occurrence :
 
-orthoeur@ssh1.240.ha.ovh.net:~$ cd www/isep/projetbash
-orthoeur@ssh1.240.ha.ovh.net:~/www/isep/projetbash$ //confirmation du serveur
+orthoeur@ssh1.240.ha.ovh.net:~$ cd www/isep/FTP-bashproject
+orthoeur@ssh1.240.ha.ovh.net:~/www/isep/FTP-bashproject$ //confirmation du serveur
 
 2-- Synchroniser un dossier local avec un dossier local
 

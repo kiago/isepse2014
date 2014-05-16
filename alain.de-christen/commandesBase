@@ -1,0 +1,8 @@
+Pour naviguer :
+- afficher le contenu d'un dossier : ls
+- aller dans un dossier : cd nomDuDossier
+- aller dans le fichier parent : cd ..
+- aller dans un sous-dossier : cd nomDuDossier/sousDossier
+
+Console :
+- effacer toutes les écritures : cmd+K
