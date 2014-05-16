@@ -30,7 +30,7 @@
 
 function help_function {
 	echo -e "This application download all subtitles for the videos in a folder \n"
-	echo -e "Utilisation : ./subtitle.sh [-OPTS] [language] \n"
+	echo -e "Utilisation : ./subtitle.sh [language] \n"
 }
 
 function ask_path {
@@ -41,7 +41,7 @@ function ask_path {
 }
 
 function download_subtitles {
-	echo $lang
+	echo "Subtitle language is --> $lang"
 
 	ask_path
 
@@ -66,14 +66,14 @@ function download_subtitles {
 			echo $sub_link; 
 			curl -o $PWD/${fichier}.zip "http://dl.opensubtitles.org/fr/download/${sub_link}";
 
-			#Extract .srt from zip and delete .zip
-		   	unzip $PWD/${fichier}.zip "*.srt" -d $PWD/${fichier} && rm $PWD/${fichier}.zip;
+			#Extract .srt from zip and delete .zip (move in trash)
+		   	unzip $PWD/${fichier}.zip "*.srt" -d $PWD/${fichier} && mv $PWD/${fichier}.zip ~/.Trash/${fichier}.zip;
 
 		   	#move the srt file next to the videos
 		   	mv $PWD/${fichier}/*.srt $PWD/${fichier}.srt;
 
-		   	#delete the old folder containing the subtitles
-		   	rm -r $PWD/${fichier};
+		   	#delete (move in trash) the old folder containing the subtitles
+		   	mv $PWD/${fichier} ~/.Trash/${fichier};
 	   	fi;
 
 
