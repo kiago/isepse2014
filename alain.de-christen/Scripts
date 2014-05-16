@@ -38,7 +38,13 @@ dans le sens indiqué lors de la requête.
 
 3-- Synchroniser un  dossier du serveur avec un autre dossier du serveur
 
+La commande rsync fonctionne parfaitement pour synchroniser deux dossiers présents sur le serveur. Elle s'écrit de la même façon que pour deux dossiers en local.
 
-4-- Synchroniser un dossier du serveur avec un fichier en local
+4-- Copier  un dossier du serveur vers l'ordinateur
 
+Pour cela, j'ai utilisé la commande scp, qui permet de copier des fichiers entre 2 serveurs :
+scp -r orthoeur@ftp.ortho-europe78.fr:~/www/isep/TestCopie/source  /Users/juniorisep/Documents/gitrepository/
+isepse2014/alain.de-christen/testcopie/copieServeur
+
+Le dossier a correctement été copié vers mon dossier local source.
 
