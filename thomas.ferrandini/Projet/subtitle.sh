@@ -39,7 +39,11 @@ do
 	echo $sub_link; 
 	curl -o ~/Movies/test/${fichier}.zip "http://dl.opensubtitles.org/fr/download/${sub_link}";
 
-   unzip ~/Movies/test/${fichier}.zip -d ~/Movies/test/ && rm ~/Movies/test/${fichier}.zip;
+   unzip ~/Movies/test/${fichier}.zip "*.srt" -d ~/Movies/test/${fichier} && rm ~/Movies/test/${fichier}.zip && cp ~/Movies/test/${fichier}/*.srt ~/Movies/test/ && rm ~/Movies/test/${fichier};
+
+   
+   #mv "$subtitle" "${fichier}"
+
 
 done
 
