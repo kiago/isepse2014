@@ -39,11 +39,14 @@ do
 	echo $sub_link; 
 	curl -o ~/Movies/test/${fichier}.zip "http://dl.opensubtitles.org/fr/download/${sub_link}";
 
-   unzip ~/Movies/test/${fichier}.zip "*.srt" -d ~/Movies/test/${fichier} && rm ~/Movies/test/${fichier}.zip && cp ~/Movies/test/${fichier}/*.srt ~/Movies/test/ && rm ~/Movies/test/${fichier};
+	#Extract .srt from zip and delete .zip
+   	unzip ~/Movies/test/${fichier}.zip "*.srt" -d ~/Movies/test/${fichier} && rm ~/Movies/test/${fichier}.zip;
 
-   
-   #mv "$subtitle" "${fichier}"
+   	#move the srt file next to the videos
+   	mv ~/Movies/test/${fichier}/*.srt ~/Movies/test/${fichier}.srt;
 
+   	#delete the old folder containing the subtitles
+   	rm -r ~/Movies/test/${fichier};
 
 done
 
