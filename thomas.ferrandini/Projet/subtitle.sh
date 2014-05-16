@@ -30,7 +30,7 @@
 
 function help_function {
 	echo -e "This application download all subtitles for the videos in a folder \n"
-	echo -e "Utilisation : ./subtitle.sh [-OPTS] [MOTS CLEFS...] \n"
+	echo -e "Utilisation : ./subtitle.sh [-OPTS] [language] \n"
 }
 
 function ask_path {
@@ -52,23 +52,30 @@ function download_subtitles {
 		fichier=${fichier%.*};
 		echo $fichier
 
+		#Check if subtitle file (srt) for this video already exists
+		if [ -e ${fichier}.srt ]; then
 
-		#This link doesn't need to extract episode number and season
-		page=$(curl -s "http://www.opensubtitles.org/fr/search/sublanguageid-${lang}/moviename-${fichier}");
+			echo -e "srt for ${fichier} already exists"
+	   	
+	   	else
+	   		#This link doesn't need to extract episode number and season
+			page=$(curl -s "http://www.opensubtitles.org/fr/search/sublanguageid-${lang}/moviename-${fichier}");
 
-		sub_link=$(echo "$page" | grep -o '<a href="/fr/subtitleserve/sub/[^"]*"' | sed 's/<a href="\/fr\/subtitleserve\///;s/"$//');
+			sub_link=$(echo "$page" | grep -o '<a href="/fr/subtitleserve/sub/[^"]*"' | sed 's/<a href="\/fr\/subtitleserve\///;s/"$//');
 
-		echo $sub_link; 
-		curl -o $PWD/${fichier}.zip "http://dl.opensubtitles.org/fr/download/${sub_link}";
+			echo $sub_link; 
+			curl -o $PWD/${fichier}.zip "http://dl.opensubtitles.org/fr/download/${sub_link}";
 
-		#Extract .srt from zip and delete .zip
-	   	unzip $PWD/${fichier}.zip "*.srt" -d $PWD/${fichier} && rm $PWD/${fichier}.zip;
+			#Extract .srt from zip and delete .zip
+		   	unzip $PWD/${fichier}.zip "*.srt" -d $PWD/${fichier} && rm $PWD/${fichier}.zip;
 
-	   	#move the srt file next to the videos
-	   	mv $PWD/${fichier}/*.srt $PWD/${fichier}.srt;
+		   	#move the srt file next to the videos
+		   	mv $PWD/${fichier}/*.srt $PWD/${fichier}.srt;
 
-	   	#delete the old folder containing the subtitles
-	   	rm -r $PWD/${fichier};
+		   	#delete the old folder containing the subtitles
+		   	rm -r $PWD/${fichier};
+	   	fi;
+
 
 	done
 }
