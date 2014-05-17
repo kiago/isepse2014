@@ -50,4 +50,15 @@ Le dossier a correctement été copié vers mon dossier local source.
 5-- Synchronnisation d'un dossier entre l'ordinateur et le serveur
 
 Je vais essailler de faire la synchronisation dans un premier temps avec la méthode rsync -arv.
+Cela semble marcher, la réponse du serveur :
+receiving file list ... done
+source/
+source/fichier1.png
+source/fichier2.png
+source/fichier3.png
+source/fichier4.png
 
+sent 114 bytes  received 330 bytes  296.00 bytes/sec
+total size is 0  speedup is 0.00
+
+Je vais faire des tests plus approfondis en modifiant quelques fichiers à plusieurs reprises à la source (serveur) et dans le dossier cible (local) et inversement.
