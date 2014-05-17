@@ -42,3 +42,10 @@ Pour naviguer :
 
 Console :
 - effacer toutes les écritures : cmd+K
+
+6) Déplacer ou renommer un fichier :
+Pour cela, on utilise la commande 'mv' :
+> mv nomFichier nouveauNomFichier
+ou pour déplacer :
+> mv fichier autreRepertoire/
+
