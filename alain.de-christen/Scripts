@@ -62,3 +62,11 @@ sent 114 bytes  received 330 bytes  296.00 bytes/sec
 total size is 0  speedup is 0.00
 
 Je vais faire des tests plus approfondis en modifiant quelques fichiers à plusieurs reprises à la source (serveur) et dans le dossier cible (local) et inversement.
+La synchronisation marche parfaitement, voici la commande à utiliser :
+> rsync -arv orthoeur@ftp.ortho-europe78.fr:~/www/isep/FTP-bashproject  /Users/juniorisep/Documents/gitrepository/isepse2014/alain.de-christen/"03 - Local sync folder"/
+
+Attention ! La synchronisation va copier ou synchroniser le dossier depuis le serveur; il ne faut pas mettre comme dossier de destination le dossier en synchronisation
+mais le dissier parent.
+
+6-- DUMP d'une base de données
+
