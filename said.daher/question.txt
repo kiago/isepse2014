@@ -49,3 +49,9 @@ Reponse : À l'inverse de nombreux langages de programmation, Bash ne regroupe p
 
 5) difference entre bash et dash ?
 
+6) comment importer des donnes d’un url ?
+
+7) a quoi sert la commande sort ?
+
+
+
