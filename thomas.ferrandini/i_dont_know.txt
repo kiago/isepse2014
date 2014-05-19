@@ -1,4 +1,4 @@
-Quest ce que je ne sais pas faire ?
+What I don't know ?
 
 - Browse a folder and extract the name without extension of each file in it.
 
@@ -35,3 +35,8 @@ Quest ce que je ne sais pas faire ?
 	function_name () { 
 		command... 
 	}
+
+
+- How can we get the path ?
+
+- How can we know if a certain file is already in a folder ?
