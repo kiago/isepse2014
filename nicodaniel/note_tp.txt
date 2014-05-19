@@ -20,3 +20,16 @@ BASH est un type de shell. sur ubuntu BASH est l'interpreteur par defaut.
 3) creation de tableau en shell
 
 4) utilisation de boucles en shell
+
+
+---------------------------------------
+
+twitter library : https://github.com/sixohsix/twitter/tree/master
+
+->recuperation des 20 derniers tweets d'un compte tweeter
+
+->parse : grep cmd line
+
+-> send by mail with mail cmd 
+
+-> need to config to use smtp GMAIL and not localhost 
