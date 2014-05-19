@@ -5,7 +5,6 @@
  password="waJPtbG2"
  host="mysql51-31.bdb"
  db_name="orthoeurscinfo"
- mysqldump="/Applications/MAMP/Library/bin/mysqldump"
 
 # Options
  backup_path="/Users/juniorisep/Documents/gitrepository/isepse2014/alain.de-christen/03-LocalSyncFolder/SQL-bashproject/"
@@ -15,7 +14,7 @@
  umask 177
 
 # Dump de la base en un fichier SQL
- $mysqldump --user=$user --password=$password --host=$host $db_name > $backup_path/$db_name-$date.sql
+ mysqldump --user=$user --password=$password --host=$host $db_name > $backup_path/$db_name-$date.sql
 
 # Supprimer les sauvegardes de plus de 30 jours
 # find $backup_path/* -mtime +30 -exec rm {} \;
