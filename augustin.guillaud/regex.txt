@@ -1,0 +1,19 @@
+grep “^.+$” recipe.txt → differentiate every ligne of our text file 
+^ == matches the beginning of a line or string
+. == matches any character except a newline
++ == matches the preceding pattern element one or more times
+* == matches the preceding pattern element zero or more times
+$ == matches the end of a line or string
+
+scénario avec grep → quel type d’output (option pour afficher le n° de ligne)
+
+un autre avec awk
+
+regex + group matching
+
+grep “^(.*)([0-9]+)(.*)$” toto.txt → regex. find 0 to multiple number anywhere in mu doc toto.txt
+
+grep “\[“ → find especially a “ [ “
+
+
+
