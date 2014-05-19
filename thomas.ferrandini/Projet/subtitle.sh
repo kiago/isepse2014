@@ -29,7 +29,7 @@
 # #page=$(curl -s "http://www.opensubtitles.org/fr/search/sublanguageid-${lang}/season-${season}/episode-${ep}/moviename-${fichier}");
 
 function help_function {
-	echo -e "This application download all subtitles for the videos in a folder \n"
+	echo -e "This application download all subtitles for the videos in a folder"
 	echo -e "Utilisation : ./subtitle.sh [language] \n"
 }
 
