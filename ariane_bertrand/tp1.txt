@@ -1,0 +1,21 @@
+Commandes Linux
+
+Ls-l on obtient des informations (dont les permissions)
+
+Chmod change les permissions d'un document
+
+Grep recherche une chaine de caracteres
+Ex grep « toto » filetxt
+Grep « toto » *
+
+Find
+Chercher quelque part pour quelque chose
+ex:
+~/test_isep% find . name « texte »
+
+Sleep (make the machine wait for 3s)
+
+globbing trouver quelquechose avec un raccourci
+Ex "*.jpg" cherche toutes les images
+
+mv renomme un document

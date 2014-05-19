@@ -1,0 +1,51 @@
+*************************************************************************
+			 Questions sur l'utilisation de Bash
+*************************************************************************
+
+- Comment executer un programme bash en utilisant des paramètres ?
+  
+  Ex : ./monProgramme.sh param1 param2 param3
+       Et on récupère ces paramètres avec : $1, $2 et $3
+
+
+- Comment faire la différence entre une variable numérique et une chaîne
+  de caractères ?
+
+  En bash toutes les variables sont considérées comme des chaînes de
+  caractères.
+  On peut comparer les nommbres avec "eq", "ne", "lt", "le", "gt", "ge".
+
+  Ex : 
+
+  	#!/bin/bash
+
+	if [ $1 -ge 5 ]
+	then
+        ...
+	else
+        ...
+	fi
+
+
+- Comment demander à l'utilisateur de rentrer une valeur une fois que le
+  programme Bash s'est executé ? Et comment utiliser la valeur entrée ?
+
+  Il faut utiliser "read"
+  Ex : 
+
+  #!/bin/bash
+
+  read nom
+  echo "Bonjour $nom !"
+
+  Et read -p 'Message' message 
+  => avec -p pour afficher un message de prompt et mettre la valeur dans
+     la variable "message"
+
+
+- Comment définir un tableau ?
+
+  Ex : tableau=('valeur0' 'valeur1' 'valeur2')
+
+  Et on peut accéder à une valeur de ce tableau de la façon suivante :
+  Ex : ${tableau[2]}
