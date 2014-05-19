@@ -1,0 +1,15 @@
+Comment marchent les boucles (for, if, else?, etc.)?
+
+Comment transférer un fichier d'un dossier à un autre? Avec ">"?
+
+Comment parser des données pour récupérer les éléments que l'on souhaite?
+
+Comment créer une variable? 
+
+Comment déclarer une variable sans lui associer de valeurs? 
+
+Comment l'utiliser? 
+
+Comment garder certaines données d'un fichier liées? ou comment les lier (associer a et b)?
+
+Comment récupérer d'internet un ensemble de données sur plusieurs pages et les mettre automatiquement dans un fichier? 

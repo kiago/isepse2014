@@ -1,0 +1,89 @@
+#+TITLE: Bash examples
+
+* .bashrc configuration
+
+#+BEGIN_SRC sh
+alias lsa='ls -la'
+export PATH=$PATH:/home/guerry/bin/
+export EDITOR="emacsclient"
+#+END_SRC
+
+* bash command line arguments
+
+#+BEGIN_SRC sh
+#!/bin/bash
+echo $1
+echo $2
+echo $3
+#+END_SRC
+
+#+BEGIN_SRC sh
+#!/bin/bash
+echo $1
+echo $2
+if [ "$1" -eq "$2" ]
+then echo "yes"
+else echo "no"
+fi
+
+if [ "$1" = "$2" ]; then echo "yes";fi
+#+END_SRC
+
+* Setting and echoing variables
+
+#+BEGIN_SRC sh
+DATE=`date +%m/%d/20%y@%I:%M:%S%p`
+echo $DATE
+#+END_SRC
+
+#+RESULTS:
+: 05/09/2014@09:30:11
+
+* =find=
+
+#+BEGIN_SRC sh
+find . -size 0 -print0 | xargs -0 -i rm -f {}
+#+END_SRC
+
+#+BEGIN_SRC sh
+find ~/Mail/ -type f -perm -777 -print0 | xargs -0 /bin/chmod 0644
+#+END_SRC
+
+#+BEGIN_SRC sh
+# Find *.jpg in ~/Pictures and move them in ~/Pictures/jpg/
+find ~/Pictures/ -name '*.jpg' -type f -print0 | xargs -0 -i mv -f {} ~/Pictures/jpg/
+#+END_SRC
+
+#+BEGIN_SRC sh
+# Look for "toto" in all .txt files
+find ./directory -name '*.txt' -print0 | xargs -0 grep toto
+#+END_SRC
+
+* =for= loop
+  
+#+BEGIN_SRC sh
+#!/bin/bash
+# Use unoconv to convert .doc files to pdf
+for i in `ls *.doc`;
+do unoconv -f pdf $i
+done
+#+END_SRC
+
+#+BEGIN_SRC sh
+#!/bin/bash
+# Use convert to resize .jpg images and put them in small/
+for i in `ls *.jpg`; do convert -resize 15% -quality 50 $i small/sml_$i; done
+#+END_SRC
+
+#+BEGIN_SRC sh
+#!/bin/bash
+cd ~/directory/
+for i in `ls *.doc`
+do
+    basefilename=$(basename $i)
+    filename="${basefilename%%.*}"
+    filesend_odt="${filename}_lignage.odt"
+    filesend_doc="${filename}_lignage.doc"
+    unoconv -f txt $file
+done
+#+END_SRC

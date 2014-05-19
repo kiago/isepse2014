@@ -1,0 +1,47 @@
+basis for command lines
+command     -flag
+ex:
+ls        -la
+
+ssh-keygen == command line to create a public key
+/home/.../you/.ssh/id_rsa == directory of the public key
+.pub == is the file containing the public key
+
+
+ls -l == see the listing of your directory
+-la == all the files
+cd == change directory
+
+mkdir == 
+mkdir isep_tmp == create reposetory name of the reposetory
+
+-m” “ == add message
+
+cd .. == got up one level 
+
+echo “bla” > aguillau.txt == put something into aguillau.txt
+echo “bla2” >> aguillau.txt == add new content to aguillau.txt
+
+git clone git@github.com:aguillaud/isepse2014.git == clone 
+git add
+git commit 
+
+
+touch == create smth (touch bla.txt)
+git add bla.txt == add bla.txt for the next commit
+
+git status == status of our comand lines
+
+git commit -m “”new commit” == message for the commit
+
+git config --global user.name "your name"
+git config --global user.email "your email"
+
+git log == historic of the commits
+
+git push == push your commit
+
+when on VIM
+:x == exist and save
+
+rm == remove
