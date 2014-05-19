@@ -1,0 +1,17 @@
+*************************************************************************
+			 Comment organiser son serveur
+*************************************************************************
+
+visudo
+
+create /home/pseudo/public_html
+
+server : 
+	- git pull des 2 repository 
+	- toutes les heures
+	- filtrer tous les scripts bash et executables de chaque depôts
+	- on lance ces scripts avec "exec"
+
+Tous les processus génèrent des logs
+
+si un user a un script qui crash, on lui envoie un mail

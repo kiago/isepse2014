@@ -98,6 +98,9 @@ Les dossiers à la racine :
 	•	cd : changer de dossier
 	•	du : donne des informations sur la taille qu'occupent les
 	         dossiers sur votre disque.
+	         ou df -h
+	•	Ex : cat /proc/meminfo
+	•	ps aux | grep httpd : current running processus from apache server
 
 *************************************************************************
 			 Afficher un fichier
