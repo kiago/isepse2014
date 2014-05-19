@@ -49,3 +49,14 @@ Pour cela, on utilise la commande 'mv' :
 ou pour déplacer :
 > mv fichier autreRepertoire/
 
+7) Rendre un script exécutable
+> chmod +x monScript.sh
+
+8) Rendre un script inexécutable
+> chmod -x monScript.sh
+
+9) Exécuter un script
+> ./monScript.sh
+
+10) Lancer un script de raccourci (ex. : cd Documents/gitrepository/...) et faire en sorte d'être placé dans le dossier :
+> . ./projetBash (mon script permettant d'arriver dans mon dossier directement après avoir démarré le terminal)
