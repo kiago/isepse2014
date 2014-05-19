@@ -43,3 +43,5 @@ What I don't know ?
 - How can we know if a certain file is already in a folder ?
 
 - Extract the name of a file without extension ?
+
+- look for multiples extension in a folder ?
