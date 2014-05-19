@@ -28,6 +28,3 @@ do
   echo -e "$lineNumber.\t $line\n"
   lineNumber=`expr $lineNumber + 1`
 done < definitions.txt
-
-#Delete generated files
-rm pagecode.txt lineCode.txt senseGroups.txt iterations.txt definitions.txt
