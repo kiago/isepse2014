@@ -30,6 +30,11 @@ twitter library : https://github.com/sixohsix/twitter/tree/master
 
 ->parse : grep cmd line
 
+sur un tweet formaté (retour chariot quand il a trouvé ce motif  ", "")
+grep -nw '\(text\|name\)' format_un_tweet.txt 
+
 -> send by mail with mail cmd 
 
 -> need to config to use smtp GMAIL and not localhost 
+
+
