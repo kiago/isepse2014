@@ -1,0 +1,28 @@
+RACCOURCIS CLAVIER :
+
+TAB : Auto complète la commande (fichier, dossier, commande, ...)
+1. Déplacement
+Ctrl + a : aller au début de la ligne
+Ctrl + e : aller à la fin de la ligne
+Alt + b : se déplacer mot par mot dans la ligne de commande en arrière (b pour backward)
+Alt + f : se déplacer mot par mot dans la ligne de commande en avant (f pour forward)
+ctrl + xx : positionner le curseur au début du mot ou à la fin
+2. Couper / Coller
+Ctrl + k : couper la chaîne du curseur jusqu'à la fin de la ligne
+Ctrl + u : couper la chaîne du curseur jusqu'au début de la ligne
+Ctrl + w : couper le mot avant le curseur
+Ctrl + y : coller une chaîne
+3. Modification
+Ctrl + t : inverser la position des deux caractères avant le curseur (pratique quand on tape par exemple, sl au lieu de ls)
+Alt + t : inverser la position des deux mots avant le curseur
+Alt + c : mettre une lettre en majuscule
+Alt + l : mettre un mot en en minuscule (l pour lowercase)
+Alt + u : mettre un mot en majuscule (u pour uppercase)
+Alt + . : réécrire le paramètre de la dernière commande
+4. Divers
+Ctrl + L : effacer le contenu de l'écran
+Ctrl + r : rechercher une commande déjà tapée
+Ctrl + _ : annuler la dernière modification
+Ctrl + c : arrêter la commande en court
+Ctrl + d : quitter le shell en court
+                                      
