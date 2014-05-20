@@ -1,0 +1,20 @@
+Questions : 
+- Comment transformer une série de commandes Bash en fichier exécutable ?
+
+shebang
+
+- Est-il possible de remplacer une ligne en particulier dans un fichier ? à partir de son numéro par exemple ?
+
+  - comment afficher une ligne d’un fichier ? more, less, head, tail, cat
+	
+	Tail -n permet d’afficher les lignes d’un fichier à partie de la n-ième ligne, en le combinant avec head -n on peut obtenir une ligne précise
+
+- Peut-on faire des array ?
+Il suffit de déclarer une variable avec un indice entre crochets : tab[0] = ‘first’  tab[1] = ‘second’ etc.
+
+
+- Peut-on faire des listes ?
+Les listes n’existent pas, et ne sont pas vraiment nécessaires car les array n’ont pas une taille déterminée au moment de leur déclaration (comme en java par exemple)
+
+- Comment envoyer un mail et fixer ses champs ?
+mail -s « Le sujet du mail » adresse@example.com < corpsdumail.txt

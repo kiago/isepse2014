@@ -1,0 +1,29 @@
+Bash :
+
+Est-on oblige de travailler en ligne de commande ?
+Possibilite de faire des scripts
+
+Comment inserer un script ?
+$ ./SCRIPTNAME.sh 
+
+Comment commencer un script ?
+Tout script commence par : #!/bin/bash
+
+Comment inserer un commentaire ?
+Mettre un # en debut de ligne
+
+Comment definir des variables ? Attribuer, declarer une variable ?
+message='Bonjour tout le monde.'
+la variable a pour nom "message" et pour valeur "Bonjour tout le monde."
+On cree une variable dans un script de la même manière que vu precedemment
+
+Comment modifier une variable ?
+On declare une variable
+var="mype"
+On affiche la valeur de la variable
+echo "$var"
+
+On modifie la variable
+var="lami20j"
+On affiche la nouvelle valeur de la variable
+echo "$var"

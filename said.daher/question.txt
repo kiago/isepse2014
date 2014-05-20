@@ -1,0 +1,57 @@
+question sur Bash
+
+1) comment faire à partir d'une ligne de commande pour differencié les types de fichier (ceux qui sont executable, ceux sur lesquelles on peut ecrire)
+
+
+2) comment cree-t-on des focntions en bash (parametre d'entré, sortie) ?
+
+Reponse : Le shell bash propose plusieurs syntaxes pour définir une fonction. Nous utiliserons celle-ci :
+
+          function nom_fct
+
+          {
+
+             suite_de_commandes
+
+          }
+
+
+3) comment marche les boucles en bash (If, FOR, WHILE) ?
+
+Reponse : 
+Pour la boucle IF
+if [ condition ]
+then
+  //commande
+fi
+
+Pour la boucle WHILE
+while [ condition ]
+do
+  //commande
+done  
+
+Pour la boucle FOR
+for variable in liste_valeurs
+ do  instruction
+done
+
+ou 
+
+for fichier in txt1 txt2
+do
+echo $fichier 
+done
+
+4) que peut on stocké dans une variable bash ?
+
+Reponse : À l'inverse de nombreux langages de programmation, Bash ne regroupe pas ses variable par « type ». Essentiellement, les variables bash sont des chaînes de caractères mais, suivant le contexte, Bash autorise des opérations entières et des comparaisons sur ces variables, le facteur décisif étant la seule présence de chiffres dans la variable.
+
+5) difference entre bash et dash ?
+
+6) comment importer des donnes d’un url ?
+
+7) a quoi sert la commande sort ?
+
+
+

@@ -1,0 +1,11 @@
+Un serveur sur lequel on pourra avoir accès en root a été créé par le
+professeur.
+
+Pour se connecter, il faudra utiliser la commande ssh pseudo@serveur
+On aura alors accès au répertoire /home/pseudo
+Une fois que l'administrateur nous aura donné les accès root sur le 
+serveur, on pourra effectuer des actions en mode "root" en inscrivant
+la commande "sudo" au début de chaque ligne de code
+
+Pour cela, créer un fichier ssh dans son repository en inscrivant le
+pseudo souhaité et sa clé publique.

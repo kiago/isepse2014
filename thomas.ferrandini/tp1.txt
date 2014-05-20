@@ -1,0 +1,62 @@
+Local :
+- git clone
+- git add *
+- git commit
+- git status
+- git log
+
+
+Autre :
+- git push
+- git pull
+
+
+grep : look for a string in some path
+—> grep « toto » path
+
+find : find where what (recursive)
+—> find .[here] -name « .git »
+
+~ : home
+
+less: less file, allows to see the file in the console
+
+man: man cmd, allows to see how the command works
+
+mkdir: mkdir name_directory, create a directory
+
+
+28/04/2014
+
+- Compiled Language (JAVA)- Interpretated language → REPL environnement (Read Eval Print Loop) (Reading which is entered, evaluation , printing and loop)
+
+Absolute name: path to open a file from the root
+
+Attention: Upper & lower case are important
+Convention: uppercase variables
+
+Access the contents of a variable: $ variable
+Show variable : echo $ variable
+
+BASH interpreter mainly strings
+
+Basic commands :
+- Man: manual
+- Cut : cut out selected portions of Each line of a file
+- Nano: text editor
+- Cd ~ : go home
+- Ctrl + d : end command
+
+
+Exercise: Find the list of shells used on the machine
+→ Order: Cut -d :-f 7 / etc / passwd
+the same rank + number of occurrences and removing duplicates :
+→ cut-d :-f 7 / etc / passwd | sort | uniq- c | sort- n
+
+
+append >>
+<
+> overwrite
+ 
+Exercise: on retrieves all the words of the site and they are classified by the number of occurrences and the first 10 results are displayed ( head)
+→ curl www.gutenberg.org/cache/epub/45495/pg45495.txt | tr- s -c [: alpha:] '\ n' | tr "AZ" "az" | sort | uniq- c | sort- n -r | head

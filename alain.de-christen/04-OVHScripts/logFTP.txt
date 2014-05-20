@@ -1,0 +1,1 @@
+./scriptFTPovh.sh: line 4: scriptFTPovh.sh : commande introuvable

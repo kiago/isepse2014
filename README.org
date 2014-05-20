@@ -1,2 +1,8 @@
-Notes
+# Notes
+
+* Introduction aux expressions régulières
+
+http://www.funix.org/fr/unix/expr-sed.htm
+
+
 
