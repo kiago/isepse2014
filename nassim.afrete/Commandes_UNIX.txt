@@ -243,3 +243,38 @@ EX : chmod g+w rapport.txt 			chmod g+w,o-w rapport.txt
 	 chmod u+rx rapport.txt 		chmod +x rapport.txt
 
 	 chmod u=rwx,g=r,o=- rapport.txt
+
+*************************************************************************
+			 Lire le manuel
+*************************************************************************
+
+Ex : man nameCommand
+
+OU nameCommand -h
+OU nameCommand --help
+
+whatis nameCommande -> décrit brievement une commande
+
+*************************************************************************
+			 Retrouver une commande
+*************************************************************************
+
+Ex : apropos mkdir
+
+-> va afficher toutes les commandes qui manipulent les dossier
+   avec une courte description de chaque commande
+
+*************************************************************************
+			 Rechercher un fichier
+*************************************************************************
+
+locate fileName
+-> va afficher le ou les répertoires où le nom du fichier apparait.
+
+Remarque : locate affiche les fichiers qui se trouvent dans la base de
+           données des fichiers.
+           Un fichier créer à l'instant ne sera pas trouvable avec la 
+           commande locate, il faut attendre un moment...
+           Ou en mettant à jour cette base de données :
+
+           -> sudo updatedb

@@ -1,0 +1,90 @@
+*************************************************************************
+			GREP :  Filter les données
+*************************************************************************
+
+grep : recherche un mot dans un fichier et affiche  les lignes dans
+	   lesquelles ce mot apparaît.
+
+-> s'utilise souvent avec les expressions régulières
+
+ Utilisation : grep texte nomfichier
+
+ avec : -i pour ne pas tenir compte de la casse
+ 	    -n pour afficher le numéro de la ligne
+ 	    -v pour rechercher les lignes qui ne contiennent pas le mot
+ 	    -r pour rechercher dans tous les fichiers et sous-dossiers
+ 	    Ex : grep -r X-men films/
+
+*************************************************************************
+			GREP AVEC DES EXPRESSIONS REGULIERES
+*************************************************************************
+
+.  ->	Caractère quelconque
+
+^  ->	Début de ligne
+
+$  ->	Fin de ligne
+
+[] ->	Un des caractères entre les crochets
+
+?  ->	L'élément précédent est optionnel
+
+*  ->	L'élément précédent peut être présent 0 ou plusieurs fois
+
++  ->	L'élément précédent doit être présent 1 ou plusieurs fois
+
+|  ->	Ou
+
+()  ->	Groupement d'expressions
+
+Pour utilier une expression régulière il faut utilier : -E
+
+Ex : grep -E Bonjour bienvenue.txt
+     -> recherche "Bonjour" avec un B majuscule
+
+     grep -E ^Bonjour bienvenue.txt
+     -> "Bonjour" doit se trouvé au début de la ligne
+
+     grep -E [Bb]onjour bienvenue.txt
+     -> Afficher la ligne où il y a "bonjour" ou "Bonjour"
+
+     grep -E [0-4] rapport.txt
+
+     grep -E [a-zA-Z] rapport.txt
+
+*************************************************************************
+			SORT POUR TRIER LES LIGNES
+*************************************************************************
+
+sort nameFile.txt
+
+-o pour écrire le résultat dans un autre fichier
+-r pour inverser le résultat
+-R pour trier aléatoirement
+-n pour trier des nombres
+
+wc nameFile.txt -> compter le nombre de lignes
+				=> renvoie le nombre de lignes, mots, octets
+
+				-l pour le nombre de lignes
+				-w pour le nombre de mots
+				-c pour le nombre d'octets
+				-m pour le nombre de caractères
+
+uniq -> pour supprimer les doublons
+		-c pour compter le nombre d'occurences
+		-d pour afficher les lignes présentes doubles
+
+cut -> pour couper certains caractères
+	EX : cut -c 1-4 names.txt
+		 cut -c -4 names.txt // conserve les 4 premiers caractères
+		 cut -c 4- names.txt // ... les 4 derniers
+
+		 Avec un délimiteur -> -d ;
+		 					   -d .
+		 					   ........
+		 					   EX : cut -d , -f 1 notes.txt
+		 					        cut -d , -f 1,3 notes.txt
+		 					        -> pour avoir les champs 1 et 3
+		 					        cut -d , -f 2-4 notes.txt
+		 					        -> pour avoir les champs 2 à 4
