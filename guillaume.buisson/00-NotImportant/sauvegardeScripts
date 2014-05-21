@@ -1,0 +1,23 @@
+MacBook-Pro-de-Alain:alain.de-christen juniorisep$ ls
+-					01 - Notes				03 - Local sync folder			Scripts					fonctionnementServeur
+00 - No useful things			02 - Files for testing shell commands	Our project description			commandesDeBase				testcopie
+MacBook-Pro-de-Alain:alain.de-christen juniorisep$ nano Scripts
+MacBook-Pro-de-Alain:alain.de-christen juniorisep$ scp -r orthoeur@ssh1.240.ha.ovh.net:~/www/isep/TestCopie/source MacBook-Pro-de-Alain:~ juniorisep/Documents/gitrepository/isepse2014/alain.de-christen/testcopie/copieServeur
+juniorisep/Documents/gitrepository/isepse2014/alain.de-christen/testcopie/copieServeur: No such file or directory
+MacBook-Pro-de-Alain:alain.de-christen juniorisep$ scp -r orthoeur@ssh1.240.ha.ovh.net:~/www/isep/TestCopie/source MacBook-Pro-de-Alain:~ /Documents/gitrepository/isepse2014/alain.de-christen/testcopie/copieServeur
+/Documents/gitrepository/isepse2014/alain.de-christen/testcopie/copieServeur: No such file or directory
+MacBook-Pro-de-Alain:alain.de-christen juniorisep$ scp -r orthoeur@ssh1.240.ha.ovh.net:~/www/isep/TestCopie/source juniorisep@172.16.237.191:~ /Documents/gitrepository/isepse2014/alain.de-christen/testcopie/copieServeur
+/Documents/gitrepository/isepse2014/alain.de-christen/testcopie/copieServeur: No such file or directory
+MacBook-Pro-de-Alain:alain.de-christen juniorisep$  scp -r ~/www/isep/TestCopie/source orthoeur@ftp.ortho-europe78.fr juniorisep@172.16.237.191:~/Documents/gitrepository/isepse2014/alain.de-christen/testcopie/copieServeur
+ssh: connect to host 172.16.237.191 port 22: Connection refused
+lost connection
+MacBook-Pro-de-Alain:alain.de-christen juniorisep$  scp -r ~/www/isep/TestCopie/source orthoeur@ftp.ortho-europe78.fr juniorisep@172.16.237.191 -p:~/Documents/gitrepository/isepse2014/alain.de-christen/testcopie/copieServeur
+ssh: Could not resolve hostname -p: nodename nor servname provided, or not known
+lost connection
+MacBook-Pro-de-Alain:alain.de-christen juniorisep$  scp -r ~/www/isep/TestCopie/source orthoeur@ftp.ortho-europe78.fr juniorisep@172.16.237.191 -p :~/Documents/gitrepository/isepse2014/alain.de-christen/testcopie/copieServeur
+:~/Documents/gitrepository/isepse2014/alain.de-christen/testcopie/copieServeur: No such file or directory
+MacBook-Pro-de-Alain:alain.de-christen juniorisep$  scp -r ~/www/isep/TestCopie/source orthoeur@ftp.ortho-europe78.fr -p juniorisep@172.16.237.191 -p :~/Documents/gitrepository/isepse2014/alain.de-christen/testcopie/copieServeur
+:~/Documents/gitrepository/isepse2014/alain.de-christen/testcopie/copieServeur: No such file or directory
+MacBook-Pro-de-Alain:alain.de-christen juniorisep$ 
+
+
