@@ -278,3 +278,10 @@ Remarque : locate affiche les fichiers qui se trouvent dans la base de
            Ou en mettant à jour cette base de données :
 
            -> sudo updatedb
+
+*************************************************************************
+			 wget
+*************************************************************************
+
+wget -c : Reprendre un téléchargement arrêté
+wget --background : Lancer un téléchargement en tâche de fond
