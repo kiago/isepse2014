@@ -1,0 +1,192 @@
+                              		résumé de cours
+
+******************************************************************************************
+
+Cours 1 :
+•	Service : Web -80-http://                	 ftp-21-ftp://               	 smtp- -smtp://              	 pop               	g(web)-443-https://•	URL : file ://home/dgfyr/   = protocole//chemin d’accès. 
+http://www.lemonde.fr/Index•	Client/serveur : en locale localhost : 127.0.O.1 / port : 80 en local comme un serveur. Ne prendre que les requêtes venant du serveur local. Dans un pc en local même fonctionnement que en réel. Daemon•	Mail : fichier texte. Commence toujours par	o	From :  	o	To :  	o	Cc :
+Utiliser la ligne de commande pour aller faire des recherches à l’intérieur des fichiers texte.•	Cloud : Nuage/service disponible en ligne sur Internet. Juste pour dire qu’on accède a nos données sur les serveurs directement, on ne rapatrie plus les données. Migration des données.•	Internet depuis les années 90/ mais existe depuis les années 70(Mail).•	SaaS : Software as a Service, Migrations du logiciel. Accès a des logiciels sur internet (exemple Drive).•	Hébergement : location d’un emplacement sur serveur.•	Mutualiser : sur plusieurs machine-1 serveur pour plusieurs client.•	Dédier : « root » uniquement sur un serveur.•	Virtualiser : Machine virtuelle,  1 machine virtuelle par client. Mais ressources partager par plusieurs clients.•	PaaS : Platform as a Service (open Shift)•	IaaS : Infrastructure as a Service (Amazon)•	Logiciel libre : (modifiable, Open Source)	o	Linux	o	Unix	o	OpenOfice	o	Vlc•	Installer : 	o	Ubuntu	o	Fedora	o	Linux	o	Archlinux	o	Debian•	Créer clés public : ssh_keygen•	Créer un compte sur openshift.como	Uploader votre clés public sur OS•	Créer compte github sur GH.
+
+******************************************************************************************
+
+Cours 2 : 
+Process•	Git clone•	[change]•	git add *•	git commit•	git pushpath(patern)grep « toto » filetxtgrep « toto » *find . –name « * file * »find /home/user/ -name « .git » chmodchowncd ~cd git/isepse2014touch test.txtgit commit –a –m « ------»
+
+******************************************************************************************
+
+cours 3 :
+
+Langage interprété (interprété ligne par ligne)Read eval print  (repl)Bash est un interpreteurDsl (fait pour faire un sous ensemble de tache, outil specialisé)Chemin absolue/chemin relatif•	Commande	o	Copié cp	o	Listé ls	o	Créer fichier git touch	o	Editor (éditeur de texte) = nano	o	Nano nomdufichier	o	Etc/passwd (fichier dans lequel il y a les fichiers)	o	Autocompletion (tabulation)	o	Man (manuel)	o	Commande « cut –d : -f1/f7 /etc/passwd »	o	Pwd localisation 	o	Uniq	o	Sort nomfichier (-n –c)	o	Programme qui lit et écrit sortie standard /	o	« | » plusieurs ligne a la suite	o	>> append	o	> overwrite	o	<  retirer	o	tr –d < fichiertext.txt	o	tr –cs [ :alpha :] ‘\n’ < fichier text.txt•	Différence : éditeur de texte / traitement de texte	o	Editeur = texte brut	o	Traitement de texte = aspect de mise ne page (italique, gras)
+
+******************************************************************************************
+
+cours 4 : 
+
+Gmail software as a serviceDrive Google software as a service3 notations : git hub /  exam écrit /  projetProject : DictionnaireGet the html, repérer combien de fois les mots sont present.Commande « sed » Commande curlSudo app-get install curlCurl http://lite4.framapad.org/p/isepse2014 > fichier
+
+utilisation commande sed :
+
+sed -n '/Here/,/String/p’;
+
+******************************************************************************************   
+                          historique des commande
+
+******************************************************************************************sous Mac :
+    1  sudo mkdir -p /usr/local
+    2  sudo mkdir -p /usr/local
+    3  azerty
+    4  sudo mkdir -p /usr/local
+    5  sudo mkdir -p /usr/local
+    6  man sudo
+    7  mbp:~ stephane$ sudo sh
+    8  mbp:~ stephane$ sudo sh
+    9  Password:
+   10  sh-3.2# mv apache-tomcat-7.0.25.tar.gz /usr/local/
+   11  sh-3.2# cd /usr/local/
+   12  sh-3.2# gnutar -xzvf apache-tomcat-7.0.25.tar.gz
+   13  password azerty
+   14  sh-3.2# mv apache-tomcat-7.0.25.tar.gz /usr/local/
+   15  sh-3.2# cd /usr/local/
+   16  sudo rm -f /Library/Tomcat
+   17  azerty
+   18  mbp:~ Said$ sudo sh
+   19  mbp: Said$ sudo sh
+   20  manmbp
+   21  man mbp
+   22  sudo sh
+   23  sudo sh
+   24  sudo sh
+   25  cd/Utilisateurs/saiddher/Documents/tomcat
+   26  cd/Utilisateurs/saiddaher/Documents/tomcat
+   27  cd/Documents/tomcat
+   28  cd/Utilsateurs
+   29  java-version
+   30  java
+   31  java-version
+   32  /Users/saiddaher/Documents/eclipse/Eclipse.app/Contents/MacOS/eclipse ; exit;
+   33  cd /usr/local/tomcat/appache-tomcat-7.0.41.tar.gz
+   34  cd /usr/local/tomcat/appache-tomcat-7.0.41.tar.gz
+   35  cd/usr/saiddaher/tomcat/appache-tomcat-7.0.41.tar.gz
+   36  cd/usr/saiddaher/Documents/tomcat/appache-tomcat-7.0.41.tar.gz
+   37  /Volumes/VICTORINOX/certificat\ de\ scolarité ; exit;
+   38  /Volumes/VICTORINOX/certificat\ de\ scolarité\ copie ; exit;
+   39  cd
+   40  cd ../../Applications/MANP/htdoc/Symfony
+   41  cd ../../Applications/MANP/htdocs
+   42  cd ../../Applications/MAMP/htdocs/Symfony
+   43  php app/console router:debug
+   44  /Users/saiddaher/NetBeansProjects/test
+   45  rm -rf /Users/saiddaher/NetBeansProjects/test
+   46  Sqlplus.sh
+   47  sqlplus.sh <uname>
+   48  sqlplus.sh sdaher
+   49  Sqlplus.sh
+   50  sqlplus.sh <sdaher>
+   51  Password <sdaher
+   52  sqlplus.sh<sdaher>
+   53  pasword<saher>
+   54  htop
+   55  git
+   56  git help
+   57  cd.ssh
+   58  cd
+   59  .ssh
+   60  cd .ssh
+   61  ls
+   62  cd /home/
+   63  ls
+   64  cd ~/.ssh
+   65  ssh-keygen -t rsa -C "daher860@hotmail.com"
+   66  ssh-add ~/.ssh/id_rsa
+   67  pbcopy < ~/.ssh/id_rsa.pub
+   68  cd .ssh
+   69  cd ~/.ssh
+   70  ls -al
+   71  vim id_rsa.pub
+   72  echo "blablabla voila" >> bzg.txt
+   73  wim bzg.txt 
+   74  vim bzg.txt 
+   75  git status
+   76  cd
+   77  git status
+   78  ls
+   79  cd isepse2014
+   80  ls
+   81  git status
+   82  vim bzg.txt 
+   83  echo "voila voila said" >> bzg.txt 
+   84  vim bzg.txt 
+   85  git status
+   86  git add *
+   87  git commit -m "commit by said"
+   88  git push
+   89  mkdir saiddaher
+   90  cd saiddaher
+   91  echo "creation fichier test" >> test.text
+   92  vim test.text 
+   93  git status
+   94  git add
+   95  ls
+   96  git add *
+   97  git commit -m "commit by said"
+   98  git push
+   99  git push
+
+                                   *************
+
+
+sous Linux:
+
+    1  pwd
+    2  cd /etc/
+    3  cut -d : -f1 passwd
+    4  cut -d : -f1 passwd > fichierText
+    5  cut -d : -f7 passwd > fichier.txt
+    6  sudo
+    7  sudo cut -d : -f7 passwd > fichier.txt
+    8  cd /home/daher
+    9  cut -d : -f7 /etc/passwd > fichier.txt
+   10  cat fichier.txt
+   11  man unique
+   12  man uniq
+   13  uniq fichier.txt
+   14  uniq -c
+   15  uniq -c fichier.txt
+   16  uniq help
+   17  uniq --help
+   18  uniq -c fichier.txt
+   19  sort fichier.txt
+   20  uniq sort fichier.txt
+   21  sort fichier.txt
+   22  sort fichier.txt > fichierTrier.txt
+   23  uniq -c fichierTrier.txt > fichierTrierUniq.txt
+   24  cat fichierTrierUniq.txt
+   25  sort -n fichierTrierUniq.txt > fichierTrierUnique.txt
+   26  cat fichierTrierUniq.txt
+   27  sort -n fichierTrierUniq.txt
+   28  cat fichierTrierUnique.txt
+   29  cut -f7 -d : /etc/passwd | sort | uniq -c | sort -n
+   30  wget www.gutenberg.org/cache/epub/45495/pg45495.txt
+   31  ls
+   32  cat pg45495.txt
+   33  man tr
+   34  tr -d ',' '.' ':' pg45495.txt
+   35  tr -d , pg45495.txt
+   36  tr -d . , : < pg45495.txt
+   37  tr -d . < pg45495.txt
+   38  tr -cs [:alpha:] '\n' < pg45495.txt >> pg45495.txt
+   39  tr -cs [:alpha:] '\n' < pg45495.txt >> fichierMot.txt
+   40  ls -s --si pg45495.txt 
+   41  rm pg45495.txt 
+   42  grep man
+   43  man grep
+   44  sed -n '/<p itemprop="\decription"\>/,/<\/p>/p' ficherFilm.txt
+   45  sed -n '/<p itemprop="\decription"\>/,/<\/p>/p' fichierFilm.txt
+   46  sed -n '/<p itemprop="\decription"\>/,/<\/p>/p' fichierFilm
+   47  sed -n '/<p itemprop="\decription"\>/,/<\/p>/p' fichierFilm.txt
+   48  sed -n '/<p itemprop="\description"\>/,/<\/p>/p' fichierFilm.txt
+   49  sed -n '/<p itemprop="\description"\>/,/<\p>/p' fichierFilm.txt
+   50  sed -n '/<p itemprop=\"description\">/,/<\p>/p' fichierFilm.txt
+   51  sed -n '/<p itemprop=\"description\">/,/<\/p>/p' fichierFilm.txt
+   52  sed -n '/<p itemprop=\"description\">/,/<\/p>/p' fichierFilm.txt > fichierDescritption.txt
+   53  for i in 'seq 190918 190922'; do sed -n '/<p itemprop=\"description\">/,/<\/p>/p' fichierFilm.txt > fichierDescritption.txt ; done

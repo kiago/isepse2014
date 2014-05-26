@@ -1,0 +1,97 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf200
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fswiss\fcharset0 ArialMT;}
+{\colortbl;\red255\green255\blue255;\red254\green222\blue125;\red253\green185\blue187;\red254\green219\blue246;
+\red176\green234\blue188;\red216\green201\blue231;\red231\green218\blue174;\red254\green219\blue220;\red201\green171\blue231;
+\red255\green239\blue187;\red0\green0\blue233;\red106\green212\blue127;\red189\green255\blue203;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs24 \cf0 notes\
+\
+\pard\pardeftab720\sl320
+
+\f1 \cf0 \cb2 list of chars with a special meaning in a regex:\cb1 \
+\cb2 \'a0\'a0\'a0 ^ : finds the start of a line\cb1 \
+\cb2 \'a0\'a0\'a0 $ : finds the end of a line\cb1 \
+\cb2 \'a0\'a0\'a0 . : finds any character\cb1 \
+\cb2 \'a0\'a0\'a0 [ : starts a group of alternative chars\'a0\cb1 \
+\cb2 \'a0\'a0\'a0 ] : ends a group of ...\'a0\cb1 \
+\cb2 \'a0\'a0\'a0 Example : [abc] finds a or b or c\cb1 \
+\cb2 \'a0\'a0\'a0 Example : [12a] finds 1 or 2 or a\cb1 \
+\cb2 \'a0\'a0\'a0 \\| : or \\(abc\\|def\\)\cb1 \
+\cb2 \'a0\'a0\'a0 \\[ : finds the "[" character\'a0\'a0\'a0\'a0\cb1 \
+\cb2 \'a0\'a0\'a0 \\( : starts a group\'a0 Example:\'a0\'a0 sed -e "s/^\\([A-Z][a-z]*\\) \\([A-Z][a-z]*\\)$/\\2 \\1/g"\cb1 \
+\cb2 \'a0\'a0\'a0 Example (abc) : finds "abc" and makes the match accessible throug a number like \\1\cb1 \
+\cb2 \'a0\'a0\'a0 \\1 : refer to the match content of the group 1\cb1 \
+\cb2 \'a0\'a0\'a0 * : the previous occurrence recurring 0 or plus\cb1 \
+\cb2 \'a0\'a0\'a0 a* : finds "" "a" "aa" "aaaaaaa"\cb1 \
+\cb2 \'a0\'a0\'a0 [abc]* : finds "" "abc" "aa" "acccc" "aaabbbbb"\cb1 \
+\cb2 \'a0\'a0\'a0 [abc]* "abcd" => "abc"\cb3 \'a0\cb1 \
+\
+\
+\
+Porblemes\
+Problem 1 : TOTO\cb2  => TATA\cb1 \
+\cb2 Solution 1 : sed -e "s/TOTO/TATA/g" input.txt\cb1 \
+\
+\cb2 Problem 2 : TOTO (at the beginning of a line\cb4 )\cb2  => TATA\cb1 \
+\cb2 Solution 2 : sed -e "s/^TOTO/TATA/g" input.txt\cb1 \
+\
+\cb2 Problem 3 : replace every vowel => digi\cb5 t\cb1 \
+\cb2 Solution 3 : sed -e "s/[a|e|i|o|u|y]/2/g" input.txt\'a0\cb1 \
+\
+\cb2 Problem 4 : match "Firstname Lastname" on a line, replace "Lastname Firstname"\cb1 \
+\cb2 Solution 4 : sed -e "s/\\([A-Z][a-z]*\\) \\([A-Z][a-z]*\\)/\\2 \\1/g" input.txt\'a0\cb1 \
+\
+\pard\pardeftab720\sl320
+\cf0 \cb6 problem 5 : find the string between "\{" and "\}"\cb1 \
+\pard\pardeftab720\sl320
+\cf0 \cb2 Solution 5 : sed -n "/\{.*\}/p" input.txt\cb1 \
+\cb2 Solution 5 (bis) : sed -e "s/\{\\(.*\\)\}/\\1/g" input.txt [put this as another problem]\cb1 \
+\
+\pard\pardeftab720\sl320
+\cf0 \cb7 problem 6 :\cb4  \cb8 Find all blank lines\cb7  and delete them\cb1 \
+\pard\pardeftab720\sl320
+\cf0 \cb2 Solution 6 : sed -e "/^$/d" t.txt\cb1 \
+\
+\pard\pardeftab720\sl320
+\cf0 \cb7 problem 7 :\cb4  \cb2 Find all lines starting with one or more spaces\cb1 \
+\pard\pardeftab720\sl320
+\cf0 \cb2 Solution 7 : sed -n "/\\s\\(.*\\)/p" input.txt\cb1 \
+\
+\cb2 Problem 8 : find lines starting and ending with the same word\cb1 \
+\
+\cb2 Problem 9 :\'a0 find lines with the same word repeated three times\cb1 \
+\
+\cb2 Problem 10 : find an email xxx@yyy.ext (ext being from 2 to 3 chars)\cb1 \
+\
+\cb2 problem 11 : find a URL - example URLs: http:// https:// ftp:// git:// ssh://...\cb1 \
+\cb2 Solution 11 : sed -i "/[a-zA-Z]*:\\/\\/[a-zA-Z0-9_.]*/d" input.txt\cb1 \
+\
+\pard\pardeftab720\sl320
+\cf0 \cb9 problem 12 : replace all /\\ by / in http:\cb10 \\/\\\cb9 /\cb2  {\field{\*\fldinst{HYPERLINK "http://www.lequipe.fr//Tennis//Actualites//Tsonga-r-vasselin-au-1er-tour//467605"}}{\fldrslt \cf11 \cb9 \ul \ulc11 www.lequipe.fr\\/Tennis\\/Actualites\\/Tsonga-r-vasselin-au-1er-tour\\/467605}}\cb1 \
+\
+\pard\pardeftab720\sl320
+\cf0 \cb12 problem 13:\'a0\cb1 \
+\cb12 \'a0\'a0\'a0\'a0\cb1 \
+\pard\pardeftab720\sl320
+
+\b \cf0 \cb2 Other problems
+\b0 \cb1 \
+\
+Problem 3: Change the "destinataire" of the mail\
+Problem 4: verify password (regular caracter)\
+Problem 5 : Verify adresse mail with not capital\'a0 letters, an @, an extension (ex: .fr, .com)\
+Problem 6: Verify phone number\
+Problem 7: Check date of birth\
+problem 8 : \cb13 Check URL\cb1 \
+\pard\pardeftab720\sl320
+\cf0 \cb13 problem 9 : Verify a date\cb1 \
+\cb13 problem 10 :\'a0\cb1 \
+\
++plusieurs fois\
+*fois\
+\
+\
+\
+}

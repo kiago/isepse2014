@@ -1,0 +1,72 @@
+Ici vous trouverez les différents scripts de notre projet, au fur et à mesure de leur création.
+
+Pour rappel, le projet consiste à mettre en place une sauvegarde automatique d'un site internet, 
+c'est à dire de son répertoire FTP et de la base SQL.
+
+1-- Configuration de la connexion SSH
+
+En premier lieu, il s'agit de mettre en place la connexion SSH au serveur afin de ne pas avoir à rentrer
+l'identifiant et le mot de passe à chaque éxecution du script. La connexion se fait sur un serveur mutualisé OVH.
+Pour celà, il faut enregistrer la clé SSH publique de son ordinateur dans un fichier spécifique du serveur, se trouvant ici :
+/.ssh/authorized_keys
+Il est possible d'enregistrer plusieurs clés publiques.
+
+Une fois cela réalisé, le script suivant établie la connexion au serveur :
+
+MacBook-Pro-de-Alain:~ juniorisep$ ssh orthoeur@ftp.ortho-europe78.fr
+Welcome to Ovh //confirmation du serveur
+
+Il s'agit ensuite de se placer dans le dossier où l'on souhaite travailler, en l'occurrence :
+
+orthoeur@ssh1.240.ha.ovh.net:~$ cd www/isep/FTP-bashproject
+orthoeur@ssh1.240.ha.ovh.net:~/www/isep/FTP-bashproject$ //confirmation du serveur
+
+2-- Synchroniser un dossier local avec un dossier local
+
+Pour effectuer cela, j'ai créé deux dossiers : files et backup
+J'ai ensuite créé 4 fichiers dans le dossier files : file1.pdf,file2.pdf,...
+Pour effectuer une synchronisation entre les deux dossiers :
+> rsync -arv dossierSource/ dossierCible
+
+La synchronisation a eu lieu et les fichiers ont été copiés.
+Lorsque l'on fait une deuxième synchronisation sans changer les fichiers du dossier source,
+il indique bien que rien n'a été synchronisé !
+
+Ensuite, j'ai créé un fichier file5.pdf dans le dossier backup et ai reéffectué la synchronisation.
+Le fichier n'a donc pas été copié dans le dossierSource, la synchronisation a bien lieu uniquement
+dans le sens indiqué lors de la requête.
+
+3-- Synchroniser un  dossier du serveur avec un autre dossier du serveur
+
+La commande rsync fonctionne parfaitement pour synchroniser deux dossiers présents sur le serveur. Elle s'écrit de la même façon que pour deux dossiers en local.
+
+4-- Copier  un dossier du serveur vers l'ordinateur
+
+Pour cela, j'ai utilisé la commande scp, qui permet de copier des fichiers entre 2 serveurs :
+scp -r orthoeur@ftp.ortho-europe78.fr:~/www/isep/TestCopie/source  /Users/juniorisep/Documents/gitrepository/isepse2014/alain.de-christen/testcopie/copieServeur
+
+Le dossier a correctement été copié vers mon dossier local source.
+
+5-- Synchronnisation d'un dossier entre l'ordinateur et le serveur
+
+Je vais essailler de faire la synchronisation dans un premier temps avec la méthode rsync -arv.
+Cela semble marcher, la réponse du serveur :
+receiving file list ... done
+source/
+source/fichier1.png
+source/fichier2.png
+source/fichier3.png
+source/fichier4.png
+
+sent 114 bytes  received 330 bytes  296.00 bytes/sec
+total size is 0  speedup is 0.00
+
+Je vais faire des tests plus approfondis en modifiant quelques fichiers à plusieurs reprises à la source (serveur) et dans le dossier cible (local) et inversement.
+La synchronisation marche parfaitement, voici la commande à utiliser :
+> rsync -arv orthoeur@ftp.ortho-europe78.fr:~/www/isep/FTP-bashproject  /Users/juniorisep/Documents/gitrepository/isepse2014/alain.de-christen/"03 - Local sync folder"/
+
+Attention ! La synchronisation va copier ou synchroniser le dossier depuis le serveur; il ne faut pas mettre comme dossier de destination le dossier en synchronisation
+mais le dissier parent.
+
+6-- DUMP d'une base de données
+

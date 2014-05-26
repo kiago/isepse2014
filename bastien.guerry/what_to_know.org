@@ -1,0 +1,61 @@
+* Git
+
+- difference git clone https:// and git clone git@...
+- git add
+- git pull
+- git push
+- what is a pull request on github?
+
+* IaaS / PaaS / SaaS
+
+- What is SaaS?
+- connect to openshift
+- create an application on openshift
+- monitor logs on openshift
+
+* Linux LFS
+
+- /home
+- /usr/local/bin
+- /var
+- /etc
+
+* Command line tools
+
+- What's a terminal?
+- What is bash?
+- What is an environment variable?
+- how to do a for loop?
+- how to do a while loop?
+- what is an alias?
+- how to set an environment variable?
+- what standard environment variables do you know?
+
+Specific command line tools:
+
+- curl
+- sed
+
+* Misc
+
+- what is a MUA / MTA / MDA?
+- How to configure postfix with a relayhost using gmail?
+
+* Regular expressions
+
+- http://lite4.framapad.org/p/isep_regexp_problems
+- http://lite4.framapad.org/p/isep_regexp_notes
+
+- .
+- * \+ \?
+* Deliverables
+
+1. The project :
+   - a directory in the projects/ directory
+   - with bash script(s)
+   - and instructions on how to test them
+   - a diaporama in english explaining the project
+
+2. A small personal FAQ (questions/answers for oneself)
+
+3. Your logs in the git repository

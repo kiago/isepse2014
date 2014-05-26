@@ -1,0 +1,40 @@
+RECHERCHE COUNT MOT FICHIER TXT (TP1)
+
+tr -s -c [:alpha:] '\n' < textt.txt | sort | uniq -c | sort -rn | head
+
+
+RECHERCHE auteur et message d'un tweet d'un fichier JSON (TP2)
+
+grep "text\|from_user\>" tweetTest.txt
+
+
+QUESTIONNAIRE BASH :
+
+1) shell et bash ?
+
+BASH est un type de shell. sur ubuntu BASH est l'interpreteur par defaut.
+=> echo $SHELL
+
+2) creation de variables en shell
+
+3) creation de tableau en shell
+
+4) utilisation de boucles en shell
+
+
+---------------------------------------
+
+twitter library : https://github.com/sixohsix/twitter/tree/master
+
+->recuperation des 20 derniers tweets d'un compte tweeter
+
+->parse : grep cmd line
+
+sur un tweet formaté (retour chariot quand il a trouvé ce motif  ", "")
+grep -nw '\(text\|name\)' format_un_tweet.txt 
+
+-> send by mail with mail cmd 
+
+-> need to config to use smtp GMAIL and not localhost 
+
+

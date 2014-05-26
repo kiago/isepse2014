@@ -1,0 +1,24 @@
+12 mai 2014
+Session de questions
+
+Question 1.comment est on censé utiliser des API via le bash?curl
+Question .
+oauth2
+est ce qu'il est possible de s'authentifier en oauth2 avec curl?
+
+Réponse :
+curl -X POST
+_______________________
+Question 2.peut on faire tourner un script afin de récupérer des données pendant un lapse de temps?
+
+Réponse: 
+Oui, avec des boucles.
+_________________________
+Question 3.comment faire un pull request via la ligne de commandes (avec le check out)?
+Réponse : 
+check out la branche qui demande le pull request
+ensuite faire un pull de sa branche 
+se remettre sur la branche master
+merge la branche qui demande le pull request
+et enfin push sur le repo en ligne
+_______________________

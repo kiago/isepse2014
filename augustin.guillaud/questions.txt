@@ -1,0 +1,12 @@
+Commencer un script → #!/bin/bash
+Commentaire → #un commentaire
+$0 → nom du script
+$1 → 1er parametre 
+$2 → 2eme parametre
+$* → contient tous les éléments
+\n → retour à la ligne 
+-e permet l’utilisation de \n 
+${#variable} →  retourne le nb de caractère
+Rendre excécutable un script → chmod +x nom_du_script
+Excécuter un script →  ./nom_du_script
+Export PATH → modifier le chemin d’une variable

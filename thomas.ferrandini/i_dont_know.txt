@@ -1,0 +1,51 @@
+What I don't know ?
+
+- Browse the files of folder ?
+
+
+- Do we need to put semicolon at the end of lines within a function?
+--> No 
+
+- How to ask something to the user, such as java scanner
+--> Example :
+	
+	while true; do
+	    read -p "Do you wish to install this program?" yn
+	    case $yn in
+	        [Yy]* ) make install; break;;
+	        [Nn]* ) exit;;
+	        * ) echo "Please answer yes or no.";;
+	    esac
+	done
+
+- why !/bin/bash ?
+--> shebang. it tells the shell what program to interpret the script with, when executed. interpretated in bash
+
+- How to create an array ?
+--> Many ways apparently
+--> name[index]=value
+--> [OR] declare -a Unix=('Debian' 'Red hat' 'Red hat' 'Suse' 'Fedora');
+
+- can we declare functions ?
+--> function function_name { 
+		command... 
+	}
+
+	[OR]
+
+	function_name () { 
+		command... 
+	}
+
+
+- How can we get the path ?
+
+- How can we know if a certain file is already in a folder ?
+
+- Extract the name of a file without extension ?
+
+- look for multiples extension in a folder ?
+
+- Find the language of the system ?
+
+- change the browser language with cURL ?
