@@ -47,7 +47,7 @@ function download_subtitles {
 	
 	#declare format=($PWD/*.avi | $PWD/*.mpeg | $PWD/*.mkv | $PWD/*.m4v | $PWD/*.mov)
 
-	for fichier in $PWD/*.avi or $PWD/*.mkv or $PWD/*.mpeg
+	for fichier in $PWD/*.avi or $PWD/*.mkv or $PWD/*.mpeg 
 	#avi, mpeg, mkv, m4v , mov
 	do
 		#TVshow complete name + ep + season
