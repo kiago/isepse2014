@@ -28,7 +28,8 @@ mkdir: mkdir name_directory, create a directory
 
 28/04/2014
 
-- Compiled Language (JAVA)- Interpretated language → REPL environnement (Read Eval Print Loop) (Reading which is entered, evaluation , printing and loop)
+- Compiled Language (JAVA)
+- Interpretated language → REPL environnement (Read Eval Print Loop) (Reading which is entered, evaluation , printing and loop)
 
 Absolute name: path to open a file from the root
 
@@ -60,3 +61,26 @@ append >>
  
 Exercise: on retrieves all the words of the site and they are classified by the number of occurrences and the first 10 results are displayed ( head)
 → curl www.gutenberg.org/cache/epub/45495/pg45495.txt | tr- s -c [: alpha:] '\ n' | tr "AZ" "az" | sort | uniq- c | sort- n -r | head
+
+
+list of chars with a special meaning in a regex:
+	^ : finds the start of a line
+	$ : finds the end of a line
+	. : finds any character
+	[ : starts a group of alternative chars 
+	] : ends a group of ... 
+	Example : [abc] finds a or b or c
+	Example : [12a] finds 1 or 2 or a
+	\| : or \(abc\|def\)
+	\[ : finds the "[" character    
+	\( : starts a group  Example:   sed -e "s/^\([A-Z][a-z]*\) \([A-Z][a-z]*\)$/\2 \1/g"
+	Example (abc) : finds "abc" and makes the match accessible throug a number like \1
+	\1 : refer to the match content of the group 1
+	* : the previous occurrence recurring 0 or plus
+	a* : finds "" "a" "aa" "aaaaaaa"
+	[abc]* : finds "" "abc" "aa" "acccc" "aaabbbbb"
+	[abc]* "abcd" => "abc" 
+
+
+	sed  -n : quiet
+	sed -n "//p" : print
