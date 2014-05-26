@@ -1,0 +1,17 @@
+« ^\(abc\)*$ » : match toutes les lignes contenant abcabcabcabc….abc.
+« ^\(abc\)/1$ » : match toutes les lignes contenant abcabcXXXXXXXXX.
+
+Recherche tous les groupes commençant par abc et les remplacer par le contenu du premier groupe
+Sed –e « s/^\(abc\).*$ /\1/g$ » test.txt
+1/g = remplace le contenu par celui du premier groupe (abc)
+
+Autre exemple : inverser premier groupe et deuxième groupe sur une phrase
+
+Sed –e « s/^\([A-Z][a-z]*\) \([A-Z][a-z]*\) /\$2\1/g »
+
+Recherche un ou un autre groupe de caractères
+\(abc\|def\)
+
+
+
+
