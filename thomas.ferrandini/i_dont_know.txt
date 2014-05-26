@@ -45,3 +45,5 @@ What I don't know ?
 - Extract the name of a file without extension ?
 
 - look for multiples extension in a folder ?
+
+- Find the language of the system ?
