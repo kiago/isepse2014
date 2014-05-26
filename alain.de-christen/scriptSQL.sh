@@ -11,7 +11,7 @@
  backup_path="/Users/juniorisep/Documents/gitrepository/isepse2014/alain.de-christen/03-LocalSyncFolder/SQL-bashproject/"
  date=$(date +"%d-%b-%Y")
 
-# Permissions de fichier
+# Permissions de lecture et écriture pour le priopriétaire uniquement
  umask 177
 
 # Dump de la base en un fichier SQL

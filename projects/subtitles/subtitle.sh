@@ -44,8 +44,11 @@ function download_subtitles {
 	echo "Subtitle language is --> $lang"
 
 	ask_path
+	
+	#declare format=($PWD/*.avi | $PWD/*.mpeg | $PWD/*.mkv | $PWD/*.m4v | $PWD/*.mov)
 
-	for fichier in $PWD/*.avi
+	for fichier in $PWD/*.avi or $PWD/*.mkv or $PWD/*.mpeg
+	#avi, mpeg, mkv, m4v , mov
 	do
 		#TVshow complete name + ep + season
 		

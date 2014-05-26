@@ -30,4 +30,8 @@ uniq : filtre les lignes en fonction de leur unicité
 
 cut : sélectionne une chaîne de caractère dans une ligne
 
-echo : affiche un message (peut être écrit dans un fichier par exemple
+echo : affiche un message (peut être écrit dans un fichier par exemple)
+
+mail : envoie un mail   mail -s « Sujet du mail » adresse@exemple.com < corpsdumail.txt
+
+read : récupère du texte entré par l’utilisateur (read resp), le String est stocké dans la variable $resp

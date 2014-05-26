@@ -85,3 +85,42 @@ Les programmes sur Linux :
 	-	Sont gratuits
 	-	Souvent mis à jour
 	-	Certains sont meilleurs que sur Windows
+
+*************************************************************************
+				Le transfert de données
+*************************************************************************
+Le cryptage symétrique :
+C'est la méthode de cryptage la plus simple. 
+Avec cette méthode, on utilise une clé (un mot de passe secret) pour 
+crypter un message.
+
+Le cryptage asymétrique :
+Le cryptage symétrique utilise une seule clé pour crypter et décrypter.
+Le cryptage asymétrique, lui, utilise une clé pour crypter, et une autre 
+pour décrypter.
+
+Il y a donc deux clés :
+	une clé dite « publique » qui sert à crypter
+	une clé dite « privée » qui sert à décrypter
+
+=> L'algorithme de cryptage asymétrique le plus connu s'appelle RSA
+
+=> SSH combine cryptage asymétrique et cryptage symétrique
+
+SSH utilise les deux cryptages : asymétrique et symétrique. Cela 
+fonctionne dans cet ordre :
+
+On utilise d'abord le cryptage asymétrique pour s'échanger discrètement 
+une clé secrète de cryptage symétrique.
+
+Ensuite, on utilise tout le temps la clé de cryptage symétrique pour 
+crypter les échanges.
+
+Transformer sa machine en serveur :
+sudo apt-get install openssh-server
+
+- lancer/arreter le serveur SSH : sudo /etc/init.d/ssh start
+							      sudo /etc/init.d/ssh stop
+
+
+46.193.132.38

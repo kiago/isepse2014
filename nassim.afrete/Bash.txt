@@ -17,7 +17,7 @@
 
   Ex : 
 
-  	#!/bin/bash
+  #!/bin/bash
 
 	if [ $1 -ge 5 ]
 	then
@@ -49,3 +49,29 @@
 
   Et on peut accéder à une valeur de ce tableau de la façon suivante :
   Ex : ${tableau[2]}
+
+******************************************************************
+            SCRIPT SHELL
+******************************************************************
+
+Ex : vim monScript.sh
+
+__________________________________________
+#!/bin/bash
+
+# Affichage de la liste des fichiers
+ls
+___________________________________________
+
+Pour l'executer il faut le rendre executable : chmod +x monScript.sh
+
+Puis : ./monScript.sh
+
+Déboguer un script :  bash -x monScript.sh
+
+Pour executer le script de n'importe où il faut le déplacer ou le copier 
+dans /bin, /usr/bin ou /usr/local/bin.
+=> monScript.sh
+
+Afficher une valeur : echo laValeur
+Faire un retour à la ligne : $ echo -e "Message\nAutre ligne"
