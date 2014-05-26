@@ -8,9 +8,7 @@ r(4) - w(2) - x(1) [read, write, execute]
 	user	group	others
        -rwx	r-x	--x	: 751
        -rw	r--	r--	: 644
-
 ------------------
-
 find : find something in the path
 find 	   .	-name ".git"
 find 	[here]	[filename]
@@ -18,19 +16,13 @@ By default, find is recursive
 
 grep : search a string in a specific file
 grep "toto" file.txt
-
 ------------------
-
 "globbing" : finding something globally by using a shortcut
 "*.jpg" - "file*"
-
 ------------------
-
 Create a program : put this line at the beginning of the script 
 #!/bin/bash
-
 ------------------
-
 Renaming a file
 mv file1.txt to file2.txt
 
@@ -129,3 +121,12 @@ Questions - Programmation Bash
 8. Comment utiliser la commande awt ?
 9. Comment parcourir les lignes d'un fichier texte ?
 10. Règles d'indentation pour un programme Bash ?
+----------------------
+
+
+----------------------
+----------------------
+Cours du 19 mai 2014
+----------------------
+----------------------
+Récupération des définitions sur le dictionnaire en ligne

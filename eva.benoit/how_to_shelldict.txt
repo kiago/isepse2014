@@ -1,0 +1,11 @@
+Using the Shelldict dictionary
+(based on the definitions of the website http://www.oxforddictionaries.com/)
+
+To launch the script, go into the right repository and type the command
+bash shelldict.sh
+
+Follow the instructions given by the script :
+if you need to look for a compound word, type it this way
+"video-game", "daughter_in_law"...
+
+Relaunch the script to look for a new word definition
