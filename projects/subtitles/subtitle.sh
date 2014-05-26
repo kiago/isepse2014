@@ -88,6 +88,7 @@ function download_subtitles {
 	done
 }
 
+
 #Default language
 lang="fre"
 
