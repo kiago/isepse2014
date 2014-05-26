@@ -1,0 +1,26 @@
+List of chars with a special meaning in regex => http://lite4.framapad.org/p/isep_regexp_notes {
+	^: finds the start of a line
+	$ : finds the end of a line
+	. : finds any character
+	[ : starts a group of alternative chars
+	] : ends a group of alternative chars
+		Example : [abc2] finds a or b or c or 2
+	\[ : finds the "[" character
+	\( : starts a group 
+		Example : sed -e "s/^\(abc\).*$/\1/g$"
+		Example : (abc) finds "abc" and maks the match accessible through a number like \1
+		\1 : refer to the match content of the group 1
+    * : the previous occurrence recurring 0 or plus
+	    Example : a* finds "" "a" "aa" "aaaaaaa"
+	    Example : [abc]* finds "" "abc" "aa" "acccc" "aaabbbbb"
+	    Example : [abc]* "abcd" finds "abc" 
+}
+
+
+
+sed : transformation de texte
+
+
+http://lite4.framapad.org/p/isep_regexp_solutions
+http://lite4.framapad.org/p/isep_regexp_problems
+

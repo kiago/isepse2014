@@ -48,3 +48,14 @@ Specific command line tools:
 
 - .
 - * \+ \?
+* Deliverables
+
+1. The project :
+   - a directory in the projects/ directory
+   - with bash script(s)
+   - and instructions on how to test them
+   - a diaporama in english explaining the project
+
+2. A small personal FAQ (questions/answers for oneself)
+
+3. Your logs in the git repository

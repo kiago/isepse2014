@@ -51,8 +51,11 @@ function download_subtitles {
 	#avi, mpeg, mkv, m4v , mov
 	do
 		#TVshow complete name + ep + season
-		fichier=${fichier##*/};
-		fichier=${fichier%.*};
+		
+		fichier=${fichier##*/}; #extract the name + extension
+		fichier=${fichier%.*}; #extract just the name + without extension
+		#fichier=${fichier// /.}; #replace spaces by "." in the name of the file
+
 		echo $fichier
 
 		#Check if subtitle file (srt) for this video already exists
@@ -64,7 +67,9 @@ function download_subtitles {
 	   		#This link doesn't need to extract episode number and season
 			page=$(curl -s "http://www.opensubtitles.org/fr/search/sublanguageid-${lang}/moviename-${fichier}");
 
-			sub_link=$(echo "$page" | grep -o '<a href="/fr/subtitleserve/sub/[^"]*"' | sed 's/<a href="\/fr\/subtitleserve\///;s/"$//');
+			#sub_link=$(echo "$page" | grep -o '<a href="/fr/subtitleserve/sub/[^"]*"' | sed 's/<a href="\/fr\/subtitleserve\///;s/"$//');
+			sub_link=$(echo "$page" | grep -o '<a href="/fr/subtitleserve/sub/[^"]*"' | sed 's/<a href="\/fr\/subtitleserve\///;s/"//');
+			#sed substitute <a href="\/fr\/subtitleserve\/ with nothing + substitute  " with nothing
 
 			echo $sub_link; 
 			curl -o $PWD/${fichier}.zip "http://dl.opensubtitles.org/fr/download/${sub_link}";
