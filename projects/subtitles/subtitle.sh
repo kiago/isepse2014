@@ -64,9 +64,8 @@ function download_subtitles {
 	   		#This link doesn't need to extract episode number and season
 			page=$(curl -s "http://www.opensubtitles.org/fr/search/sublanguageid-${lang}/moviename-${fichier}");
 
-			#sub_link=$(echo "$page" | grep -o '<a href="/fr/subtitleserve/sub/[^"]*"' | sed 's/<a href="\/fr\/subtitleserve\///;s/"$//');
-			sub_link=$(echo "$page" | grep -o '<a href="/fr/subtitleserve/sub/[^"]*"' | sed 's/<a href="\/fr\/subtitleserve\///;s/"//');
-			#sed substitute <a href="\/fr\/subtitleserve\/ with nothing + substitute  " with nothing
+			sub_link=$(echo "$page" | grep -o '<a href="/fr/subtitleserve/sub/[^"]*"' | sed 's/<a href="\/fr\/subtitleserve\///;s/"$//');
+			#sed substitute <a href="\/fr\/subtitleserve\/ with nothing + substitute  " at the end of the line with nothing
 
 			echo $sub_link; 
 			curl -o $PWD/${fichier}.zip "http://dl.opensubtitles.org/fr/download/${sub_link}";

@@ -25,8 +25,11 @@ man: man cmd, allows to see how the command works
 
 mkdir: mkdir name_directory, create a directory
 
-
+----------------------
+----------------------
 28/04/2014
+----------------------
+----------------------
 
 - Compiled Language (JAVA)
 - Interpretated language → REPL environnement (Read Eval Print Loop) (Reading which is entered, evaluation , printing and loop)
@@ -62,6 +65,11 @@ append >>
 Exercise: on retrieves all the words of the site and they are classified by the number of occurrences and the first 10 results are displayed ( head)
 → curl www.gutenberg.org/cache/epub/45495/pg45495.txt | tr- s -c [: alpha:] '\ n' | tr "AZ" "az" | sort | uniq- c | sort- n -r | head
 
+----------------------
+----------------------
+26/05/2014 :
+----------------------
+----------------------
 
 list of chars with a special meaning in a regex:
     ^ : finds the start of a line
