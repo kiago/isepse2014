@@ -13,11 +13,15 @@ curl $wordUrl > pagecode.txt
 tr -d '\r\n' < pagecode.txt > lineCode.txt
 #Only keep <section class="senseGroup">...</section>
 sed -i "s/<\/section>/\n/g" lineCode.txt
-grep -o '<section class="senseGroup">.*' lineCode.txt > senseGroups.txt
+grep -o '<section class="senseGroup">.*' lineCode.txt > webScraping.txt
 
 #Get all definitions
-grep -o '<span class="iteration">.*</span>' senseGroups.txt > iterations.txt
-grep -o '<span class="definition">.*</span>' iterations.txt | sed -re 's/<span class="exampleGroup.*//g' -e 's/<div class="moreInformation">.*//g' -e 's/<span class="definition">//g' -e 's/.<\/span>//g' > definitions.txt
+sed -i "s/<span class=\"iteration\">/\n/g" webScraping.txt
+grep -o '<span class="definition">.*</span>' webScraping.txt | sed -re 's/<span class="exampleGroup.*//g' -e 's/<div class="moreInformation">.*//g' -e 's/<span class="definition">//g' -e 's/.<\/span>//g' > definitions.txt
+
+#Delete links in definitions
+sed -i "s/<\/a>//g" definitions.txt
+sed -i "s/<a.*>//g" definitions.txt
 
 echo "--------------------------------------------------"
 echo "----------------DEFINITIONS FOUND-----------------"
@@ -30,4 +34,5 @@ do
 done < definitions.txt
 
 #Delete generated files
-rm pagecode.txt lineCode.txt senseGroups.txt iterations.txt definitions.txt
+rm pagecode.txt lineCode.txt webScraping.txt definitions.txt
+
