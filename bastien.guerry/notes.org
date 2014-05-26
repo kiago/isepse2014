@@ -1,0 +1,28 @@
+(Ce fichier en .org peut être lu avec Emacs.  Une version .txt
+est disponible dans le même répertoire.)
+
+* Liste de discussion
+
+Envoyez un mail à =iosa@librelist.com= pour vous inscrire à la liste.
+
+* Outil interactif pour apprendre le shell
+
+http://explainshell.com
+
+* Commandes présentées en cours
+
+- cd
+- mv
+- rm
+- cp
+- cat
+- echo
+- man
+- less
+- head
+- tail
+- chmod
+- chown
+
+
+
