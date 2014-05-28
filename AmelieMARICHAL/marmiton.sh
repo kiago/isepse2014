@@ -5,3 +5,4 @@ sed -n -f titles.sed page
 sed -n -f tps_cuisson.sed page
 sed -n -f tps_preparation.sed page
 sed -n -f type.sed page
+sed -n -f nb_personne.sed page
