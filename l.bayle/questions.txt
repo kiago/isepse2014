@@ -1,0 +1,34 @@
+Comment on commence un script bash?
+>
+#!/bin/bash
+
+-----
+Comment executer le script?
+>
+chmod +x nom_du_script  => rend le script executable
+./nom_du_script  => execute le script
+
+-----
+Comment instancier une variable?
+>
+message = 'variable'
+
+-----
+Comment appeller la variable?
+>
+On met $ devant
+echo $message
+
+-----
+Comment faire un tableau?
+>
+tab[0]=lulu
+tab[1]=augu
+
+-----
+Comment voir le tableau?
+>
+echo ${tab[@]}
+
+-----
+A quoi servent les crochets / accolade ? 
