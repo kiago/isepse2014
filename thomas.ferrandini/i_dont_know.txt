@@ -47,3 +47,5 @@ What I don't know ?
 - look for multiples extension in a folder ?
 
 - Find the language of the system ?
+
+- change the browser language with cURL ?
