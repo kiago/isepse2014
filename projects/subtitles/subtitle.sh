@@ -47,7 +47,9 @@ function download_subtitles {
 	
 	#declare format=($PWD/*.avi | $PWD/*.mpeg | $PWD/*.mkv | $PWD/*.m4v | $PWD/*.mov)
 
-	for fichier in $PWD/*.avi or $PWD/*.mkv or $PWD/*.mpeg 
+	#Look for (avi, mkv, mpeg, m4v, mp4) files in $PWD
+	# -o : OR operator
+	for file in $(find . -name "*.avi" -o -name "*.mkv" -o -name "*.mpeg" -o -name "*.m4v" -o -name "*.mp4")
 	#avi, mpeg, mkv, m4v , mov
 	do
 		#TVshow complete name + ep + season
