@@ -60,3 +60,15 @@ ou pour déplacer :
 
 10) Lancer un script de raccourci (ex. : cd Documents/gitrepository/...) et faire en sorte d'être placé dans le dossier :
 > . ./projetBash (mon script permettant d'arriver dans mon dossier directement après avoir démarré le terminal)
+
+11) Programmer l'execution d'un script
+> at 11:50
+ou pour l'executer le lendemain :
+> at 11:50 tomorrow
+ou un autre jour
+> at 11:15 06/13/14 (format mm/dd/yy)
+
+La commande at ne permet pas cependant d'effectuer une commande de facon régulière, ce qui peut etre fait avec la commande crontab :
+> crontab -l permet d'afficher la crontab qui liste les tâches à exécuter
+> crontab -e permet d'éditer la crontab
+> crontab -r permet de supprimer la crontab

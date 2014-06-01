@@ -67,6 +67,3 @@ La synchronisation marche parfaitement, voici la commande à utiliser :
 
 Attention ! La synchronisation va copier ou synchroniser le dossier depuis le serveur; il ne faut pas mettre comme dossier de destination le dossier en synchronisation
 mais le dissier parent.
-
-6-- DUMP d'une base de données
-
