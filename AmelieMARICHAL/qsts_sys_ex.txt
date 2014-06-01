@@ -101,6 +101,37 @@ Comment l'utiliser?
 - $commande pour utiliser le contenu de la commande
 - dans une liste d'arguments passés dans un script
 
+--------------------------------
+
+8) Comment fonctionne le switch/case version bash? 
+	
+case expression in
+    pattern1 )
+        statements ;;
+    pattern2 )
+        statements ;;
+    ...
+esac
+
+Utilisable dans une boucle for. Il vérifie la condition et contrôle le flux du programme.
+On peut utiliser la commande 'read variable' avant et récupérer cette variable pour matcher le pattern à utiliser en fonction de la valeur de la variable.
+
+ex : 
+#!/bin/bash
+echo -n "Entrez un nombre :"
+read nombre
+case $nombre in
+# Si $nombre = 1
+	1)echo "Vous avez tapÃ© 1";;
+# Si $nombre = 2
+	2)echo "Vous avez tapÃ© 2";;
+# Pour le reste des valeurs de $nombre	
+	*)echo "Vous n'avez tapÃ© ni 1 ni 2";;
+esac
+
+-> 'read' permet d'utiliser l'élément entré par l'utilisateur après 'echo' et le met dans une variable 'nombre'.
+
+
 
 
 
