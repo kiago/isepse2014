@@ -1,1 +1,1 @@
-./backup.sh: line 40: backup.sh : commande introuvable
+./backup.sh: line 35: backup.sh : commande introuvable

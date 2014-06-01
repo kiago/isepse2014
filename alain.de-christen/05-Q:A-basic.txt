@@ -72,3 +72,6 @@ La commande at ne permet pas cependant d'effectuer une commande de facon réguli
 > crontab -l permet d'afficher la crontab qui liste les tâches à exécuter
 > crontab -e permet d'éditer la crontab
 > crontab -r permet de supprimer la crontab
+
+Cette commande ajoutée au crontab permet de lancer le script qui va télécharger des fichiers de mon serveur OVH :
+33 12 01 06 0 /Users/juniorisep/Documents/gitrepository/isepse2014/alain.de-christen/scriptDLovh.sh
