@@ -90,3 +90,27 @@ inet_interfaces = all
 _________________________________________________________________________________
 
 $ echo "salut tout le monde" | mail -s "Test mail" example@test.com
+_________________________________________________________________________________
+
+PROJET :
+
+-> Récupérer les pages HTML des films du box office
+
+#!/bin/bash
+
+echo "Récupération des films..."
+
+wget -O allMovies.html http://www.allocine.fr/boxoffice/france/
+
+sleep 1
+
+tr -d '\n' < allMovies.html | grep -o -E '<h3><a class="fs12 bold" href="([^"#]+)"' | grep href | sed 's/^.*href="\([^"]*\)".*$/\1/' | sed "s/^/http:\/\/www.allocine.fr/g" > movies.html
+
+echo -e "\nFin de Récupération des films"
+echo "Récupération des descriptions..."
+
+for movie in $(cat movies.html)
+do
+	echo "lien : $movie"
+	wget $movie
+done
