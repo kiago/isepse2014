@@ -1,0 +1,40 @@
+*********************************************************
+     REGULAR EXPRESSION
+*********************************************************
+
+
+Problem 1 : TOTO => TATA
+Solution 1 : sed -e "s/TOTO/TATA/g" input.txt
+
+Problem 2 : TOTO (at the beginning of a line) => TATA
+Solution 2 : sed -e "s/^TOTO/TATA/g" input.txt
+
+Problem 3 : replace every vowel => digit
+Solution 3 : sed -e "s/[a|e|i|o|u|y]/2/g" input.txt 
+
+Problem 4 : match "Firstname Lastname" on a line, replace "Lastname Firstname"
+Solution 4 : sed -e "s/\([A-Z][a-z]*\) \([A-Z][a-z]*\)/\2 \1/g" input.txt 
+
+problem 5 : find the string between "{" and "}"
+Solution 5 : sed -n "/{.*}/p" input.txt
+Solution 5 (bis) : sed -e "s/{\(.*\)}/\1/g" input.txt [put this as another problem]
+
+problem 6 : Find all blank lines and delete them
+Solution 6 : sed -e "/^$/d" t.txt
+
+problem 7 : Find all lines starting with one or more spaces
+Solution 7 : sed -n "/\s\(.*\)/p" input.txt
+
+Problem 8 : find lines starting and ending with the same word
+Solution 8 : sed -n "/^\([a-zA-Z]\+\) .*\1$/p" input.txt
+
+
+Problem 9 :  find lines with the same word repeated three times
+Solution 9  
+
+Problem 10 : find an email xxx@yyy.ext (ext being from 2 to 3 chars)
+
+problem 11 : find a URL - example URLs: http:// https:// ftp:// git:// ssh://...
+Solution 11 : sed -i "/[a-zA-Z]*:\/\/[a-zA-Z0-9_.]*/d" input.txt
+
+problem 12 : replace all /\ by / in http:\/\/ www.lequipe.fr\/Tennis\/Actualites\/Tsonga-r-vasselin-au-1er-tour\/467605

@@ -47,7 +47,7 @@ function download_subtitles {
 	
 	#Look for (avi, mkv, mpeg, m4v, mp4) files in $PWD
 	# -o : OR operator
-	#for file in $(find . -name "*.avi" -o -name "*.mkv" -o -name "*.mpeg" -o -name "*.m4v" -o -name "*.mp4")
+	for file in $(find . -name "*.avi" -o -name "*.mkv" -o -name "*.mpeg" -o -name "*.m4v" -o -name "*.mp4")
 
 	do
 		#TVshow complete name + ep + season
@@ -90,6 +90,7 @@ function download_subtitles {
 
 	done
 }
+
 
 #Default language
 lang="fre"

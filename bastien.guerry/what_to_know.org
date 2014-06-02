@@ -1,61 +1,114 @@
+#+TITLE: What to know?  Prepare for the exam and the evaluation
+
 * Git
 
-- difference git clone https:// and git clone git@...
-- git add
-- git pull
-- git push
-- what is a pull request on github?
+You need to be comfortable with a basic Git collaborative workflow
+such as the one we used during the lessons.
 
-* IaaS / PaaS / SaaS
+For example, you need to know
 
-- What is SaaS?
-- connect to openshift
-- create an application on openshift
-- monitor logs on openshift
+1. how to connect to your github.com account
+2. how to "fork" a repository from someone else account
+3. how to clone this repository of yours into your computer
+4. how to commit changes locally on your computer
+5. how to push these changes on your github repository
+6. how to send a "pull request" to the repository you forked from
+
+More precisely, you need to know the meaning of these commands
+
+- =git status=
+- =git log=
+- =git clone=
+- =git add= and =git rm=
+- =git commit=
+- =git pull and git pull=
+
+* Public key
+
+You need to know how to create a public key.
+
+* IaaS / PaaS / SaaS and openshift
+
+You need to know the basics about what is SaaS, PaaS and IaaS.
+
+In front of a project, you need to be able to make choices about what
+web service to use and why.
+
+You need to be able to connect to your openshift account on the web,
+and through =SSH=.
+
+You need to know your /username/ and your fully qualified domain name
+on openshift (each domain matches /one and only one/. application.)
+
+You need to be able to /clone/ the repository of your Wordpress
+application from openshift, and to push changes into this application.
 
 * Linux LFS
 
-- /home
-- /usr/local/bin
-- /var
-- /etc
+You need to know the basics about the Linux File System.
+
+- =/home=
+- =/usr/bin=
+- =/usr/local/bin=
+- =/var=
+- =/var/log=
+- =/etc=
+- =/dev=
+- =/tmp=
 
 * Command line tools
 
+** Misc
+
 - What's a terminal?
-- What is bash?
+- What is a shell?
+- What is Bash?
 - What is an environment variable?
-- how to do a for loop?
-- how to do a while loop?
-- what is an alias?
-- how to set an environment variable?
-- what standard environment variables do you know?
+- How to set an environment variable for a session?
+- How to set an environment variable for all sessions?
+- What standard environment variables do you know?
+- What is a Bash alias?
+- What is the syntax of a =if= test?
+- What is the syntax of a =for= loop?
+- What is the syntax of a =while= loop?
 
-Specific command line tools:
+** Specific command line tools
 
-- curl
+- cd / pwd / rm / rmdir / mkdir / ls / ln
+- find
+- grep
 - sed
+- curl
 
-* Misc
+* Emails
 
-- what is a MUA / MTA / MDA?
-- How to configure postfix with a relayhost using gmail?
+You need to know how email works: what is a MUA / MTA / MDA?
 
 * Regular expressions
+
+You need to know how to use regular expressions *for sed*.
+
+See these two pages for example and notes:
 
 - http://lite4.framapad.org/p/isep_regexp_problems
 - http://lite4.framapad.org/p/isep_regexp_notes
 
-- .
-- * \+ \?
 * Deliverables
 
+On top of the written exam, the evaluation will take these
+deliverables into account:
+
 1. The project :
-   - a directory in the projects/ directory
-   - with bash script(s)
-   - and instructions on how to test them
-   - a diaporama in english explaining the project
 
-2. A small personal FAQ (questions/answers for oneself)
+   - each project has a directory in the =projects/= directory
+   - each project contains bash script(s)
+   - each project contains instructions on how to test the scripts
+   - each project contains a diaporama *in english* explaining the
+     project (the diaporama should be self-contained, with code
+     examples and screen captures).
 
-3. Your logs in the git repository
+2. Your small personal FAQ (questions/answers for oneself)
+
+3. Your logs in the git repositories -- not *your* repository, but
+   either https://github.com/nicolasroger17/isepldc2014 or
+   https://github.com/kiago/isepse2014

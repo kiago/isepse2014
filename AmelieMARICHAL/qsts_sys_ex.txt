@@ -1,12 +1,43 @@
-Comment marchent les boucles (for, if, else?, etc.)?
+1) Comment marchent les boucles (for, if, else?, etc.)?
 
-Comment transférer un fichier d'un dossier à un autre? Avec ">"?
+for : 
+for VAR in LISTE  -- avec liste par exemple "$var1"
+do
+# actions
+done 
 
-Comment parser des données pour récupérer les éléments que l'on souhaite?
+construction alternative:
+for ((initialisation de VAR; contrôle de VAR; modification de VAR)) --double parenthèses?
+do
+# actions
+done 
+
+Permet de parcourir une liste de valeurs et de boucler autant de fois qu'il y a de valeurs
+La syntaxe avec double boucle est issue du C et la limite de la variable est sans "$". La virgule chaîne les opérations
+Elle fonctionne avec Bash seulement et des versions précises.
+
+---------------------------------
+
+2) Comment transférer un fichier d'un dossier à un autre? Avec ">"?
+
+Utilisation de la commande mv qui permet de déplacer un fichier mais aussi de le renommer
+faire : mv fichier dossier/ pour déplacer un fichier dans un dossier
+	mv fichier/ dossier/ pour déplacer un dossier dans un dossier
+
+Le fichier ou dossier (avec tous ses sous-dossiers) est déplacé et n'existe plus dans son dossier d'origine.
+
+---------------------------------
+
+3) Comment parser des données pour récupérer les éléments que l'on souhaite?
+
+
+
 
 Comment créer une variable? 
 
 Comment déclarer une variable sans lui associer de valeurs? 
+
+Comment initialiser la variable, lui attribuer une valeur?
 
 Comment l'utiliser? 
 
