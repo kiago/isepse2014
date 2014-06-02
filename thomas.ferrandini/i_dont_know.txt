@@ -45,6 +45,8 @@ What I don't know ?
 --> if [ -e ${file} ]; then ...
 
 - Extract the name of a file without extension ?
+--> If $file is complete path+file name+extension :
+--> name_without_extension = ${file%.*};
 
 - look for multiples extension in a folder ?
 
