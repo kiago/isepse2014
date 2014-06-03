@@ -1,21 +1,21 @@
-# Paramètres de sauvegarde
+# Backup folders
 serverDirectory="www/isep/FTP-bashproject"
 localDirectory="/Users/juniorisep/Desktop/backupData"
 
-# Connexion au serveur
+# Server information
 sshAuth="orthoeur@ftp.ortho-europe78.fr"
 
-# SQL database information
+# Database information
 user="orthoeurscinfo"
 password="waJPtbG2"
 host="mysql51-31.bdb"
 dbname="orthoeurscinfo"
 
-# Name of the SQL backup file
+# Define SQL file name
 date=$(date +"%d-%m-%Y-%Hh%M")
 sqldumpname=$dbname-$date
 
-#Création du fichier scriptServeur.sh qui sera exécuté sur le serveur
+# Build the file scriptServer.sh to be executed on the server
 touch scriptServer.sh
 chmod +x scriptServer.sh
 
@@ -34,15 +34,15 @@ echo 'rsync -arv --exclude "backups" ~/'$serverDirectory' ~/'$serverDirectory'/b
 echo '# SQL dump of the database including all tables' >> scriptServer.sh
 echo 'mysqldump --user='$user'  --password='$password'  --host='$host' '$dbname' > ~/'$serverDirectory'/backups/backup-'$date'/'$sqldumpname.sql >> scriptServer.sh
 
-# Envoie du fichier scriptServer.sh sur le serveur
+# Send the file scriptServer.sh to the server
 scp scriptServer.sh $sshAuth:$serverDirectory
 
-# Connexion au serveur et execution du script de backup
+# Run the script on the server
 ssh $sshAuth "~/"$serverDirectory/scriptServer.sh
 
-# Recupération du backup du serveur vers le dossier local
+# Transfer localy the backup files
 rsync -arv $sshAuth:$serverDirectory/backups  $localDirectory
 
-# Suppression des fichiers scriptServer.sh en local et sur le serveur
+# Delete the file scriptServer.sh
 rm scriptServer.sh
 rm $localDirectory/backups/backup-$date/FTP-bashproject/scriptServer.sh
