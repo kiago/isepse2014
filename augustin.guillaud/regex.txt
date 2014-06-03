@@ -1,0 +1,27 @@
+grep “^.+$” recipe.txt → differentiate every ligne of our text file 
+^ == matches the beginning of a line or string
+. == matches any character except a newline
++ == matches the preceding pattern element one or more times
+* == matches the preceding pattern element zero or more times
+$ == matches the end of a line or string
+
+scénario avec grep → quel type d’output (option pour afficher le n° de ligne)
+
+un autre avec awk
+
+regex + group matching
+
+grep “^(.*)([0-9]+)(.*)$” toto.txt → regex. find 0 to multiple number anywhere in mu doc toto.txt
+
+grep “\[“ → find especially a “ [ “
+
+sed -n "5p" recipe.txt | sed -e "s/\(.*personnes)\).*$/\1/g" → print to personnes) 
+
+sed -n "5p" recipe.txt | sed -e "s/\(.*personnes)\).*$/\1/g" | sed -e "s/.*\([0-9]\{2\}\).*/\1/g" → print 30
+
+sed -n "5p" recipe.txt | sed -e "s/\(.*personnes)\).*$/\1/g" | sed -e "s/.*\([0-9]\).*/\1/g" → print 8
+
+sed -n "5p" recipe.txt | sed -e "s/\(.*personnes)\).*$/\1/g" | sed -e "s/.*\([0-9]\{2\}\).*\([0-9]\{1,2\}\).*/[\1,\2]/g" → print [30,8]
+
+
+

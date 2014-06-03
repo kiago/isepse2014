@@ -1,0 +1,123 @@
+*************************************************************************
+			Cours Système d'exploitation
+*************************************************************************
+
+					WEB / INTERNET
+
+Services :
+	-	Web -> port 80 -> http://
+	-	ftp -> port 21 -> ftp://
+	-	smtp -> -> smtp://
+	-	pop -> -> 
+	-	s(web) -> port 443 -> htps://
+
+
+Structure client-serveur (dans son propre ordinateur) :
+	-	Apache (serveur Web)
+	-	: 80
+	-	127.0.0.1
+	-	localhost
+
+Serveur Mail :
+	Daemon (vérifier spam) : fonctionne en tant que serveur spam.
+	Spamassassin : 	Le but de ce logiciel est de filtrer le trafic des
+			courriels pour éradiquer les courriels reconnus comme
+			spam.
+
+Un mail (fichier source, toujours du texte brut) :
+	-	From :
+	-	To :
+	-	Cc :
+
+Cloud = Services sur internet.
+=> Moins de données sur nos machines et plus de données sur les serveurs
+
+SaaS (Software as a Service) : Migration des logiciels sur Internet 
+                               (Exemple : Google Drive).
+
+Internet : Année 90  - 1er service internet : Année 70.
+
+Hébergement :
+	-	Mutualisé : Chaque utilisateur (ou client) se voit attribuer un
+	                    compte sur une machine donnée.
+	-	Dédié (« root »).
+	-	Virtualisé : Utiliser virtualement un Système d'exploitation sur
+	                     un autre OS mais ressources partagées).
+
+
+Exemples de services :
+	- Paas (Plateform as a service)      : Ex : OpenShift
+	- IaaS (Infrastructure as a service) : Ex : Amazon
+
+Qu'est-ce qu'un logiciel libre ?
+	-	Modifiable
+	-	Open source
+	-	Copyright
+	-	Droit d’auteur
+
+Exemples de logiciels libres :
+	-	Linux
+	-	Unix
+	-	Openoffice
+	-	Firefox
+	-	Notepad++
+	-	Vlc
+
+
+				HISTOIRE DE LINUX
+
+- Microsoft sort son premier OS : MS-DOS
+- Depuis 1969, il existait déjà UNIX, qui était plus puissant et plus
+  complexe.
+
+Le projet GNU :
+	- En 1984, Richard Stallman crée le projet GNU. Il voulait créer une
+	  copie de UNIX (qui était payant et de plus en plus cher).
+	- Linus Torvalds = créateur de Linux.
+
+=> Le projet GNU (programmes libres) et Linux (noyau d'OS) ont fusionné
+   pour créer GNU/Linux.
+
+Unix -> Mac OS / Linux
+MS-DOS -> Windows
+
+Les programmes sur Linux :
+	-	Sont gratuits
+	-	Souvent mis à jour
+	-	Certains sont meilleurs que sur Windows
+
+*************************************************************************
+				Le transfert de données
+*************************************************************************
+Le cryptage symétrique :
+C'est la méthode de cryptage la plus simple. 
+Avec cette méthode, on utilise une clé (un mot de passe secret) pour 
+crypter un message.
+
+Le cryptage asymétrique :
+Le cryptage symétrique utilise une seule clé pour crypter et décrypter.
+Le cryptage asymétrique, lui, utilise une clé pour crypter, et une autre 
+pour décrypter.
+
+Il y a donc deux clés :
+	une clé dite « publique » qui sert à crypter
+	une clé dite « privée » qui sert à décrypter
+
+=> L'algorithme de cryptage asymétrique le plus connu s'appelle RSA
+
+=> SSH combine cryptage asymétrique et cryptage symétrique
+
+SSH utilise les deux cryptages : asymétrique et symétrique. Cela 
+fonctionne dans cet ordre :
+
+On utilise d'abord le cryptage asymétrique pour s'échanger discrètement 
+une clé secrète de cryptage symétrique.
+
+Ensuite, on utilise tout le temps la clé de cryptage symétrique pour 
+crypter les échanges.
+
+Transformer sa machine en serveur :
+sudo apt-get install openssh-server
+
+- lancer/arreter le serveur SSH : sudo /etc/init.d/ssh start
+							      sudo /etc/init.d/ssh stop

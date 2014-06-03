@@ -1,0 +1,287 @@
+﻿*************************************************************************
+			 Commandes UNIX
+*************************************************************************
+
+En mode console : 
+
+nassim@nassim-VirtualBox:~$
+	•	nassim : Le premier élément est votre pseudonyme.
+	•	@ : C'est le symbole « at » qui signifie « chez » : « nassim chez
+	        … ».
+	•	nassim-VirtualBox : le nom de l'ordinateur sur lequel vous êtes en
+	                        train de travailler.
+	•	: : Séparateur
+	•	~ : Répertoire /home
+	•	$ : Indique votre niveau d'autorisation sur la machine :
+				o	$ =  utilisateur « normal »
+				o	# = mode superutilisateur
+
+*************************************************************************
+			     COMMANDES
+*************************************************************************
+
+	•	pwd 	: afficher le dossier actuel (« Print Working Directory »).
+	•	which 	: connaître l'emplacement d'une commande.
+	•	date 	: affiche la date.
+	•	ls 		: lister les fichiers et dossiers du répertoire actuel
+	•	ls –a 	: affiche tout le contenu du dossier, même les fichiers
+	              cachés.
+	•	history  : historique des commandes.
+	•	Ctrl + L : efface le contenu de la console.
+	•	Ctrl + A : ramène le curseur au début de la commande.
+	•	Ctrl + E : ramène le curseur à la fin de la ligne de commandes.
+	•	Ctrl + U : supprime tout ce qui se trouve à gauche du curseur.
+	•	Ctrl + K : supprime tout ce qui se trouve à droite du curseur.
+	•	Ctrl + W : supprime le premier mot situé à gauche du curseur. Un «
+	               mot » est séparé par des espaces.
+	•	Ctrl + Y : raccourci Ctrl + Y « collera » le texte que vous venez
+	               de supprimer.
+
+*************************************************************************
+		        ORGANISATION DES DOSSIERS
+*************************************************************************
+
+Pour LINUX TOUT EST UN FICHIER !!!
+
+Il n'y a pas de dossier de plus haut niveau que /
+
+Les dossiers à la racine :
+
+	•	bin 	: contient des programmes (exécutables).
+	•	boot 	: fichiers permettant le démarrage de Linux.
+	•	dev 	: fichiers contenant les périphériques.
+	•	etc 	: fichiers de configuration.
+	•	home 	: répertoires personnels des utilisateurs.
+	•	lib 	: dossier contenant les bibliothèques partagées (
+	              généralement des fichiers .so) utilisées par les
+	              programmes.
+	•	media 	: lorsqu'un périphérique amovible (comme une carte mémoire
+	              SD ou une clé USB) est inséré dans votre ordinateur,
+	              Linux permet d'y accéder à partir d'un sous-dossier de
+	              media. On parle de "montage".
+	•	opt 	: répertoire utilisé pour les add-ons de programmes.
+	•	root 	: c'est le dossier personnel de l'utilisateur « root ».
+	•	sbin 	: contient des programmes système importants.
+	•	tmp 	: dossier temporaire utilisé par les programmes pour
+	              stocker des fichiers.
+	•	usr 	: c'est un des plus gros dossiers, dans lequel vont
+	              s'installer la plupart des programmes demandés par l'utilisateur.
+	•	var 	: ce dossier contient des données « variables », souvent
+				  des logs (traces écrites de ce qui s'est passé récemment
+				  sur l'ordinateur).
+
+*************************************************************************
+		    Lister les fichiers avec « ls »
+*************************************************************************
+
+	•	ls 	: lister les fichiers et dossiers du répertoire actuel.
+	•	ls –a : Cela affiche tout le contenu du dossier, même les fichiers
+				cachés.
+	•	-F 	: indique le type d'élément
+	•	-l 	: liste détaillée
+				o	droits sur le fichier
+				o	nombre de liens physiques
+				o	nom de la personne propriétaire du fichier.
+				o	groupe auquel appartient le fichier. Il se peut que le
+				    nom du groupe soit le même que celui du propriétaire
+				o	taille du fichier, en octets
+				o	date de dernière modification
+				o	nom du fichier (ou dossier).
+	•	-h 	: afficher la taille en Ko, Mo, Go…
+	•	-t 	: trier par date de dernière modification
+	•	-r 	: inverser l’ordre d’affichage
+
+*************************************************************************
+			 Changer de dossier
+*************************************************************************
+
+	•	cd : changer de dossier
+	•	du : donne des informations sur la taille qu'occupent les
+	         dossiers sur votre disque.
+	         ou df -h
+	•	Ex : cat /proc/meminfo
+	•	ps aux | grep httpd : current running processus from apache server
+
+*************************************************************************
+			 Afficher un fichier
+*************************************************************************
+Pour voir un fichier :
+
+	•	cat 	: cat –n nomFichier
+	•	less 	:
+			o Espace : affiche la suite du fichier. La touche Espace fait
+			           défiler le fichier vers le bas de la console.
+			o Entrée : affiche la ligne suivante. Cela permet donc de
+			           faire défiler le fichier vers le bas ligne par
+			           ligne.
+			o y : retourne d'une ligne en arrière ( ou Flèche du haut).
+			o q : arrête la lecture du fichier. Cela met fin à la 
+			      commande less.
+	•	head : afficher le début du fichier (Ex : head -n 3 nameFile)
+	•	tail : afficher la fin du fichier (Ex : tail -n 3 nameFile ou
+	           tail –f pour suivre la fin d’un fichier)
+	•	touch : créer un fichier
+	•	mkdir : créer un dossier
+	•	cp : copier un fichier 
+			 Ex: cp fichier1 nouveauFichier
+			 	 cp -R dossier1 nouveauDossier (pour copier un dossier)
+			 	 cp *.jpg mondossier/ (pour copier toutes les images dans
+			 	 mondossier/ )
+	•	mv : déplacer un fichier
+			 Ex : mv fichier mondossier/
+			 Ex : mv fichier1 fichier2 (pour renommer un fichier)
+	• 	rm : supprimer un fichier
+			 -i pour demander confirmation
+			 -f pour forcer la suppression
+			 -v pour savoir ce que le programme fait
+			 -r pour supprimer dossier et son contenu
+			 NE JAMAIS FAIRE  rm -rf /* !!!!!!!!!!!!!!!!!!!!!
+	•	ln : créer des liens entre fichiers
+		Remarque : la liste des noms de fichiers est stockée à un autre
+		endroit que leur contenu (ou inode). Cette séparation aide Linux à
+		s'organiser.
+
+		Liens physiques : seulement pour les fichiers
+		Liens symboliques : = raccourcis
+
+*************************************************************************
+				 Les utilisateurs et les droits
+*************************************************************************
+
+Linux est un système multi-utilisateurs. Cela signifie que plusieurs
+personnes peuvent travailler simultanément sur le même OS, en s'y
+connectant à distance notamment.
+Il existe un ensemble de règles qui disent qui a le droit de faire quoi.
+
+•	sudo : devenir root un instant
+•	sudo su - : devenir root
+•	exit ou Ctrl + D : quitter le mode root
+•	adduser : ajouter un utilisateur
+•	passwd : changer le mot de passe
+•	addgroup : créer un groupe
+•	usermod : modifier un utilisateur
+			    -l pour changer son nom
+			    -g pour changer de groupe (Ex: usermod -g friends nassim)
+			    -G pour changer dans plusieurs groupes
+			    -ag pour le mettre aussi dans d'autres groupes
+•	delgroup : supprimer un groupe
+
+*************************************************************************
+				Gestion des propriétaires d'un fichier
+*************************************************************************
+
+Seu l'utilisateur root peut changer le propriétaire d'un fichier
+
+- chown : changer le propriétaire d'un fichier
+			- le nom du nouveau propriétaire.
+			- le nom du fichier à modifier.
+
+- chgrp : changer le groupe propriétaire d'un fichier (mêmes paramètres)
+
+- chown peut combiner les deux commandes précédentes :
+	EX : chown nassim:friends fichier.txt
+
+Avec -R : pour affecter récursivement les sous-dossiers
+			EX : chown nassim:nassim /home/wolverine/
+
+*************************************************************************
+				chmod : modifier les droits d'accès
+*************************************************************************
+
+Pour indiquer qui a le droit de voir le fichier, de le modifier et de l'exécuter.
+
+Voir les droits sur un fichier avec : ls -l
+
+5 lettres différentes :
+ - d (Directory) : indique si l'élément est un dossier.
+ - l (Link) : indique si l'élément est un lien (raccourci).
+ - r (Read) : indique si on peut lire l'élément.
+ - w (Write) : indique si on peut modifier l'élément.
+ - x (eXecute) : si c'est un fichier, « x » indique qu'on peut l'exécuter.
+ 				 Si c'est un dossier, « x » indique qu'on peut voir les
+ 				 sous-dossiers qu'il contient si on a le droit de lecture
+ 				 dessus.
+
+   d        rwx       rwx   rwx 
+dossier utilisateur groupe autres
+
+chmod : modifier les droits d'accès
+			-R pour affecter récursivement
+-> pas besoin d'être root pour utiliser chmod, juste être propriétaires
+du fichier dont on veut modifier les droits d'accès.
+
+Attribuer des droits avec des chiffres (chmod absolu)
+_____________________________________________________
+
+r : 4
+w : 2
+x : 1
+
+Exemples :
+--- : 0
+r-- : 4
+-w- : 2
+--x : 1       =>  Droit Max : 777
+rw- : 6
+r-x : 5
+-wx : 3
+rwx : 7
+
+Attribuer des droits avec des lettres (chmod relatif)
+_____________________________________________________
+
+u = user
+g = group
+o = other
+						
++ : ajouter droit
+- : supprimer droit
+= : affecter droit
+
+EX : chmod g+w rapport.txt 			chmod g+w,o-w rapport.txt
+	 chmod o-r rapport.txt 			chmod go-r rapport.txt
+	 chmod u+rx rapport.txt 		chmod +x rapport.txt
+
+	 chmod u=rwx,g=r,o=- rapport.txt
+
+*************************************************************************
+			 Lire le manuel
+*************************************************************************
+
+Ex : man nameCommand
+
+OU nameCommand -h
+OU nameCommand --help
+
+whatis nameCommande -> décrit brievement une commande
+
+*************************************************************************
+			 Retrouver une commande
+*************************************************************************
+
+Ex : apropos mkdir
+
+-> va afficher toutes les commandes qui manipulent les dossier
+   avec une courte description de chaque commande
+
+*************************************************************************
+			 Rechercher un fichier
+*************************************************************************
+
+locate fileName
+-> va afficher le ou les répertoires où le nom du fichier apparait.
+
+Remarque : locate affiche les fichiers qui se trouvent dans la base de
+           données des fichiers.
+           Un fichier créer à l'instant ne sera pas trouvable avec la 
+           commande locate, il faut attendre un moment...
+           Ou en mettant à jour cette base de données :
+
+           -> sudo updatedb
+
+*************************************************************************
+			 wget
+*************************************************************************
+
+wget -c : Reprendre un téléchargement arrêté
+wget --background : Lancer un téléchargement en tâche de fond

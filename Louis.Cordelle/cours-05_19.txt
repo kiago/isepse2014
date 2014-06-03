@@ -1,0 +1,8 @@
+Questions sur le Bash Script {
+	- can we create a bash environement for Windows without Unix ? {
+		many ways:
+			* http://win-bash.sourceforge.net/
+			* http://msysgit.github.io/
+		Solution used => GNU https://www.gnu.org/home.fr.html
+	}
+}

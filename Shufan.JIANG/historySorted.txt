@@ -1,0 +1,1000 @@
+ argouml-0.34
+ bash variables.sh
+ ./bin/mongo
+ ./bin/mongo
+ ./bin/mongo
+ bin/mongo
+ bin/mongo
+ ./bin/mongod
+ ./bin/mongod
+ ./bin/mongod
+ ./bin/mongod 
+ ./bin/mongod --dbpath data/db
+ ./bin/mongod --journal
+ ./bin/run-example org.apache.spark.examples.JavaWordCount
+ ./bin/run-example org.apache.spark.examples.JavaWordCount
+ ./bin/run-example org.apache.spark.examples.JavaWordCount
+ ./bin/run-example org.apache.spark.examples.JavaWordCount
+ ./bin/run-example org.apache.spark.examples.JavaWordCount 
+ ./bin/run-example org.apache.spark.examples.JavaWordCount 
+ ./bin/run-example org.apache.spark.examples.JavaWordCount localhost
+ ./bin/run-example org.apache.spark.examples.JavaWordCount localhost ./README.md 
+ ./bin/run-example org.apache.spark.examples.JavaWordCount localhost README.md 
+ ./bin/run-example org.apache.spark.examples.JavaWordCount local README.md
+ ./bin/run-example org.apache.spark.examples.JavaWordCount README.md
+ ./bin/run-example org.apache.spark.examples.JavaWordCount README.md
+ ./bin/run-example org.apache.spark.examples.JavaWordCount spark README.md
+ ./bin/run-example org.apache.spark.examples.JavaWordCount spark README.md
+ ./bin/run-example org.apache.spark.examples.JavaWordCount sufian README.md
+ ./bin/run-example org.apache.spark.streaming.examples.NetworkWordCount local[2] localhost 9999
+ ./bin/spark-class org.apache.spark.deploy.worker.Worker spark://feihua-V5-171:7077
+ ./bin/spark-class org.apache.spark.deploy.worker.Worker spark://http://localhost:8080
+ bin/spark-class org.apache.spark.deploy.worker.Worker spark://localhost:7077
+ ./bin/spark-class org.apache.spark.deploy.worker.Worker spark://sufian-ThinkPad-X100e:7077
+ bin/spark-class org.apache.spark.deploy.worker.Worker spark://sufian-ThinkPad-X100e:7077
+ ./bin/spark-shell
+ ./bin/spark-shell
+ build
+ ./build
+ ./build.sbt
+ cat allSh.txt 
+ cat /etc/passwd
+ cat .git/config
+ cat part-00000.deflate
+ cd
+ cd 
+ cd ~
+ cd ~
+ cd ~
+ cd ~
+ cd ~
+ cd ..
+ cd ..
+ cd ..
+ cd ..
+ cd ..
+ cd ..
+ cd ..
+ cd ..
+ cd ..
+ cd ..
+ cd ..
+ cd ..
+ cd ..
+ cd ..
+ cd ..
+ cd ..
+ cd ..
+ cd ..
+ cd ..
+ cd ..
+ cd ..
+ cd ..
+ cd ..
+ cd ..
+ cd ..
+ cd ..
+ cd ..
+ cd ..
+ cd..
+ cd..
+ cd..
+ cd..
+ cd 04
+ cd 07
+ cd 15
+ cd 2014
+ cd 2014/04/07/17
+ cd 24
+ cd 2408_osa/
+ cd 38
+ cd apache
+ cd apache
+ cd apache-maven-3.0.4
+ cd argouml-0.34
+ cd bin
+ cd bin
+ cd bin
+ cd bin
+ cd /bin
+ cd ../../bin
+ cd ../../bin
+ cd build
+ cd cmake-2.8.6
+ cd ../data/db
+ cd data/db/
+ cd data/db/
+ cd docs
+ cd Downloads
+ cd Downloads
+ cd Downloads
+ cd ~/Downloads
+ cd ~/eclipse_workspace/
+ cd eclipse_workspace/
+ cd examples
+ cd examples
+ cd examples
+ cd features
+ cd $HOME
+ cd inflate/
+ cd inflate/
+ cd isep2014
+ cd isepse2014
+ cd ~/isepse2014/
+ cd isepse2014/
+ cd isepse2014/
+ cd isepse2014/
+ cd isepse2014/
+ cd isepse2014/
+ cd isepse2014/
+ cd isepse2014/
+ cd isepse2014/
+ cd ix2415_dm/
+ cd ix2415_dm/
+ cd java
+ cd Jiang.Shufan
+ cd Jiang.Shufan/
+ cd ../local/mongobd/
+ cd main
+ cd main
+ cd mongodb-linux-i686-2.2.2/
+ cd mongodb-linux-i686-2.2.2/
+ cd mongodb-linux-i686-2.2.2/
+ cd monproj
+ cd /opt
+ cd /opt
+ cd /opt/eclipse
+ cd org
+ cd org
+ cd ../plugins
+ cd ROOMVC_phonebook/
+ cd /root
+ cd s
+ cd sbin
+ cd sbt
+ cd scala
+ cd shufan.jiang/
+ cd shufan.jiang/
+ cd shufan.jiang/
+ cd Shufan.JIANG/
+ cd Shufan.JIANG/
+ cd Shufan.JIANG/
+ cd sj
+ cd sjiang2014
+ cd sjiang2014/
+ cd sjiang2014/
+ cd sjiang2014/
+ cd sjiang2014/
+ cd sjiang2014/
+ cd spark
+ cd spark
+ cd spark
+ cd spark_proj/
+ cd spark_proj/
+ cd spark_proj/
+ cd ~/spark_proj/spark-twitter-collection
+ cd ~/spark_proj/spark-twitter-collection/
+ cd ~/spark_proj/spark-twitter-collection/
+ cd spark_proj/spark-twitter-collection/
+ cd spark_proj/spark-twitter-collection/
+ cd spark_proj/spark-twitter-collection/
+ cd spark_proj/spark-twitter-collection/
+ cd spark_proj/spark-twitter-collection/
+ cd spark_proj/spark-twitter-collection/
+ cd spark_proj/spark-twitter-collection/tmp
+ cd spark-twitter-collection/
+ cd spark-twitter-collection/
+ cd springsource
+ cd springsource/
+ cd .sqldeveloper
+ cd src
+ cd src
+ cd .ssh
+ cd streaming/
+ cd sts-3.1.0.RELEASE/
+ cd sufian
+ cd SufianTest
+ cd sufianTest1
+ cd sufianTest1
+ cd sufianTest1
+ cd sufianTest1
+ cd ../sufianTest1
+ cd sufianTest1/
+ cd SufianTest1
+ cd tmp
+ cd tmp
+ cd /tmp
+ cd /tmp
+ cd /tmp/tweets_out/
+ cd /tmp/tweets_out/
+ cd tweets_out
+ cd ~/twitter4j-tutorial/
+ cd twitter4j-tutorial/
+ cd umbrello
+ cd umbrello/
+ cd umbrello/
+ cd /user/local/spark
+ cd /user/local/spark/bin
+ cd /usr/bin
+ cd /usr/bin
+ cd /usr/local
+ cd /usr/local/apache-maven-3.0.4/
+ cd /usr/local/bin
+ cd /usr/local/mongobd
+ cd /usr/local/mongobd
+ cd /usr/local/mongobd/mongodb-linux-i686-2.2.2/bin/
+ cd /usr/local/spark
+ cd /usr/local/spark
+ cd /usr/local/spark
+ cd /usr/local/spark
+ cd /usr/local/spark
+ cd /usr/local/spark
+ cd /usr/local/spark
+ cd /usr/local/spark
+ cd /usr/local/spark
+ cd /usr/local/spark
+ cd /usr/local/spark
+ cd /usr/local/spark
+ cd /usr/local/spark
+ cd /usr/local/spark/
+ cd /usr/local/spark/bin
+ cd utorrent-server-alpha-v3_3
+ cd utserver
+ chmod a+x build
+ chmod +x variables.sh 
+ chmod +x variables.sh 
+ clear
+ clear
+ clear
+ ./cmake-2.8.12.2-Linux-i386.sh
+ ./cmake-2.8.12.2-Linux-i386.sh
+ ./cmake-2.8.12.2-Linux-i386.sh
+ ./cmake-2.8.12.2.Linux-i386.sh
+ cmake -DCMAKE_INSTALL_PREFIX=$HOME/sufianTest1/umbrello /
+ cmake -DCMAKE_INSTALL_PREFIX=$HOME/sufianTest1/umbrello ../
+ cmake -DCMAKE_INSTALL_PREFIX=$HOME/sufianTest1/umbrello ../
+ cmake -DCMAKE_INSTALL_PREFIX=$HOME/sufianTest1/umbrello ../
+ cmake -DCMAKE_INSTALL_PREFIX=$HOME/sufianTest1/umbrello ../umbrello
+ ./configure
+ cp credentials.txt.template credentials.txt
+ cs spark-twitter-collection/
+ cvt -f 7 -d : /etc/passwd > allSh.txt
+ dpkg -i scala-2.10.3.deb
+ echo $
+ echo $AWS_SECRET_ACCESS_KEY
+ echo $HME
+ echo $HOME
+ echo $JAVA_HOME
+ echo $JAVA_HOME
+ echo $MAVEN_HOME
+ echo $MAVEN_HOME
+ echo $OUTPUT_BATCH_INTERVAL
+ echo $OUTPUT_BATCH_INTERVAL
+ echo "OUTPUT_BATCH_INTERVAL = "$OUTPUT_BATCH_INTERVAL
+ echo "OUTPUT_BATCH_INTERVAL = "$OUTPUT_BATCH_INTERVAL
+ echo $OUTPUT_DIR
+ echo $path
+ echo $PATH
+ echo $PATH
+ echo $PATH
+ echo $PATH
+ echo $PATH
+ echo $PATH
+ echo $PATH
+ echo $PATH
+ echo $SPARK_TEST_JAR
+ ./ ex1205.sh 
+ ./ex1205.sh
+ ./ex1205.sh 
+ ./ex1205.sh 
+ exit
+ exit
+ export export PATH=$PATH:$MAVEN_HOME/bin
+ export help
+ export MAVEN_HOME=/home/sufian/springsource/maven-3.0.4 
+ export MAVEN_HOME=/home/sufian/springsource/maven-3.0.4 
+ export MAVEN_HOME=/usr/local/apache-maven-3.0.4/bin
+ export MESOS_NATIVE_LIBRARY=/usr/local/lib/libmesos.so
+ export OUTPUT_BATCH_INTERVAL=3600
+ export OUTPUT_DIR=
+ export OUTPUT_DIR=/home/sufian/spark_proj/spark-twitter-collection/tmp
+ export -p
+ export PATH=/usr/local/apache-maven-3.0.4/bin:$PATH
+ export PATH=/usr/local/apache-maven-3.0.4/bin:$PATH
+ export PATH=/usr/local/apache-maven-3.0.4/bin:$PATH
+ export SPARK_JAVA_OPTS="-XX:+UseConcMarkSweepGC -Dspark.cleaner.delay=100"
+ export SPARK_MEM=2000m
+ file:///home/sufian/sjiang2014/isepse2014
+ find . -name "*.txt"
+ find . -name "*.txt" -print0 | xargs -0 grep "t"
+ find . -name "*.txt" print0 | xargs -0 grep "t"
+ find /usr/ -type f -name "*kdev*.so*"
+ for i in `ls`; do touch -a 15041992; done
+ for i in `ls`; do touch -a 15041992; ; done
+ fuser 58479
+ fuser 58479/tcp
+ fuser 7077
+ fuser 7077/tcp
+ git add
+ git add another.txt
+ git add empty.txt
+ git add empty.txt
+ git add empty.txt
+ git add ex1205.sh
+ git add ex1205.sh
+ git add ex1205.sh
+ git add ex2015.sh
+ git add Jiang.Shufan
+ git add Jiang.Shufan
+ git add readme.md
+ git add shufan.jiang/
+ git add ShufanJIANG
+ git add Shufan.JIANG/
+ git checkout
+ git checkout
+ git checkout
+ git checkout
+ git checkout
+ git clone git://anogit.kde.org/umbrello
+ git clone git://anongit.kde.org/um
+ git clone git@github.com:kiago/isepse2014.git
+ git clone git@github.com:kiago/isepse2014.git
+ git clone git@github.com:kiago/isepse2014.git
+ git clone git@github.com:kiago/isepse2014.git
+ git clone git@github.com:sufianj/isepse2014.git
+ git clone git@github.com:sufianj/isepse2014.git
+ git clone git@github.com:sufianj/isepse2014.git
+ git clone git@github.com:sufianj/isepse2014.git
+ git clone https://github.com/pwendell/spark-twitter-collection.git
+ git commit
+ git commit
+ git commit -a
+ git commit -a variables.sh
+ git commit -m "add directory"
+ git commit -m "ajouter dossier Shufan.JIANG"
+ git commit -m "-another.txt -empty.txt"
+ git commit -m "exercise 12 mai 2014"
+ git commit -m "exercise 12 mai 2014"
+ git commit -m "Initial (test) commit"
+ git commit -m "modified empty.txt"
+ git commit -m "mon dossier a ete supprime :/"
+ git commit -m "Mon dossier a ete suprime :/"
+ git config --global user.email sufianj415@gmail.com
+ git config --global user.name sufianj 
+ git diff
+ git diff TwitterCollector.scala TwitterCollector_origin.scala
+ git diff TwitterCollector.scala TwitterCollector_origin.scala
+ git --gelp
+ git help
+ git help
+ git --help
+ git help commit
+ git --help merge
+ git history
+ git init
+ git init
+ git init
+ git pull
+ git pull
+ git pull
+ git pull
+ git pull
+ git push
+ git push
+ git push
+ git push
+ git push
+ git push
+ git push
+ git push
+ git push
+ git push -u origin master
+ git rm another.txt
+ git rm empty.txt
+ git status
+ git status
+ git status
+ git status
+ git status
+ git status
+ git status
+ git status
+ git status
+ git status
+ git status
+ git status
+ git status
+ git status
+ git status
+ git status
+ git status
+ git status
+ git ststus
+ git update
+ hadoop -fs /tmp/tweets_out/2014/05/02/15/17/part-00000.deflate | perl -MCompress::Zlib -e 'undef $/; print uncompress(<>)'
+ help
+ help
+ help copy
+ help export
+ help export
+ help export
+ help kill
+ help mv
+ help mvn
+ help mvn
+ help shell
+ hexdump -b /tmp/tweets_out/2014/05/02/15/17/part-00000.deflate 
+ hexdump -C part-00000.deflate 
+ hexdump -C part-00000.txt
+ hexdump -C part-00000.txt
+ hexdump hadoop -fs /tmp/tweets_out/2014/05/02/15/17/part-00000.deflate | perl -MCompress::Zlib -e 'undef $/; print uncompress(<>)'
+ hexdump  /tmp/tweets_out/2014/05/02/15/17/part-00000.deflate 
+ history
+ history
+ history
+ history
+ history
+ history| export
+ history | grep 14
+ history | grep 14*
+ history | grep 15
+ history|grep export
+ history | grep export
+ history | grep export
+ history | grep git
+ history | grep git
+ history | grep key
+ history | grep maven
+ history | grep mongod
+ history | grep mongodb
+ history | grep mv
+ history | grep mv
+ history | grep mvn
+ history | grep sbt
+ history | grep scala
+ history | grep scala
+ history | grep spark
+ history | grep spark
+ history | grep ssh
+ history | grep wordcount
+ history > history.txt
+ histroy | grep mv
+ histroy | grep mv
+ histroy | grep wordcount
+ ifconfig
+ info mvn
+ info mvn
+ ipcs
+ ipcs
+ ipcs
+ ipcs
+ ipcs
+ ipcs -m -p
+ javac inflaterTest.java 
+ javac inflaterTest.java 
+ javac inflaterTest.java 
+ javac inflaterTest.java 
+ javac JavaWordCount.java
+ java -Dspark.cleaner.delay=100 -Xmx2000m -jar $(dirname $0)/sbt-launch-*.jar "$@"
+ java help
+ java --help
+ java inflaterTest
+ java inflaterTest.class
+ java inflaterTest.class
+ java inflaterTest.java
+ java inflaterTest part-00000.deflate
+ java inflaterTest part-00000.deflate
+ java -jar argouml.jar
+ java -version
+ java -version
+ java -version
+ JavaWordCount.java
+ JavaWordCount localhost Readme.rm
+ java -Xms512M -Xmx1536M -Xss1M -XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=384M -jar `dirname $0`/sbt-launch.jar "$@"
+ java -Xms512M -Xmx1536M -Xss1M -XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=384M -jar `dirname $0`/sbt-launch.jar "$@"
+ jps
+ kill 8151
+ kill 8960
+ leafpad
+ Leafpad
+ less
+ less allSh.txt
+ less empty.txt
+ less id_rsa
+ less part-00000.deflate
+ less README.txt 
+ less /tmp/tweets_out/2014/05/02/15/17/part-00000.deflate 
+ less tp3.sql
+ less variables.sh 
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ ls
+ LS
+ LS
+ ls -a
+ ls -a
+ ls -a
+ ls -a
+ ls -a
+ ls -a
+ ls -a
+ ls -a
+ l s-l
+ ls -l
+ ls -l
+ ls -l
+ ls -l
+ ls -l
+ ls -l
+ ls -la
+ ls -la
+ ls -la
+ ls -la
+ ls -ls
+ ls -lt
+ ls -t
+ mail -s "bonjour le monde" sufianj415@gmail.com
+ make
+ man 7 undocumented
+ man bash
+ man cat
+ man chmod
+ man chown
+ man chown
+ man cmake
+ man cmake
+ man cmake
+ man cmake
+ man cmd
+ man copy
+ man copy
+ man cp
+ man curl
+ man cvt
+ man dpkg
+ man dpkg
+ man echo
+ man export
+ man false
+ man find
+ man getconf
+ man git
+ man git
+ man grep
+ man hadoop
+ man hexdump
+ man history
+ man ipcs
+ man java
+ man javac
+ man javac
+ man kill
+ man -k mvn
+ man less
+ man less
+ man ln
+ man ls
+ man ls
+ man man
+ man maven
+ man more
+ man more
+ man mv
+ man mv
+ man mvn
+ man mvn
+ man mvn
+ man mvn
+ man mvn
+ man nano
+ man nc
+ man netstat
+ man nmap
+ man php
+ man preg_split
+ man ps
+ man python
+ man rm
+ man sbt
+ man sbt
+ man sbt
+ man sbt/sbt
+ man scala
+ man scala
+ man scala
+ man scalac
+ man scalac
+ man seq
+ man set
+ man shell
+ man sort
+ man source
+ man sudo 
+ man sudo | grep -i
+ man touch
+ man tr
+ man trim
+ man uniq
+ man uniq
+ man uniq
+ man wget
+ man xargs
+ man xxb
+ man xxd
+ mkdir build
+ mkdir data
+ mkdir/data
+ mkdir data/db
+ mkdir Jiang.Shufan
+ mkdir mongodb0
+ mkdir -p /data/db/
+ mkdir ROOMVC_phonebook
+ mkdir shufan.jiang
+ mkdir shufan.jiang
+ mkdir ShufanJIANG
+ mkdir Shufan.JIANG
+ mkdir sjiang2014
+ mkdir spark_proj/spark-twitter-collection/tmp
+ mkdir ~/twitter4j-tutorial
+ mn ls
+ ./mongo
+ ./mongo
+ ./mongod
+ more id_rsa
+ more log | echo
+ ./mvn
+ mvn help
+ mvn --help
+ mvn help:system
+ mvn help:system
+ mvn Twitter spark-streaming-twitter_2.10
+ mvn Twitter:spark-streaming-twitter_2.10
+ mvn -version
+ mvn -version
+ mvn --version
+ mvn --version
+ mvn --version
+ mvn --version
+ mvn --version
+ nc -lk 9999
+ netstat
+ netstat -lnp
+ nmap
+ ps
+ ps
+ ps
+ ps
+ ps
+ pwd
+ pwd
+ pwd
+ pwd
+ pwd
+ python -version
+ rm 15041992
+ rm another.txt
+ rm empty.txt
+ rm -fr .git
+ rm -fr .git
+ rm -fr .git
+ rm -fr isepse2014
+ rm -fr ShufanJIANG
+ rm Jiang.Shufan/
+ rm mongod.lock
+ rm -r .git
+ rm -r isepse2014/
+ rm -r isepse2014/
+ rm -r Jiang.Shufan/
+ rm -rm .git
+ rm -r _tmp
+ rm test.bash
+ rm _tmp
+ ./sbin/spark-shell
+ ./sbin/spark-shell
+ ./sbin/start-master.sh
+ ./sbin/start-master.sh
+ ./sbin/start-master.sh
+ ./sbin/start-master.sh
+ ./sbin/start-master.sh
+ sbt
+ sbt console
+ sbt run
+ sbt/sbt run
+ sbt/sbt run
+ sbt/sbt run
+ sbt/sbt run
+ sbt/sbt run
+ sbt/sbt run
+ sbt/sbt run
+ sbt/sbt run
+ sbt/sbt run
+ sbt/sbt run
+ sbt/sbt run
+ sbt/sbt run
+ sbt/sbt run
+ scala
+ scalac -help
+ scalac SimpleApp.scala
+ scalac SimpleApp.scala
+ scalac SimpleApp.scala
+ scala SimpleApp.scala
+ scala SimpleApp.scala
+ scala -version
+ scala --version
+ set
+ set
+ set help
+ shell help
+ sh variables.sh 
+ ./spark-shell
+ ./spark-shell
+ ./spark-shell
+ ../spring-roo-1.2.2.RELEASE/bin/roo.sh
+ ssh keygen
+ ssh -keygen
+ ssh-keygen
+ sublime-text
+ sublime-text build.sbt
+ sublime-text build.sbt
+ sublime-text build.sbt
+ sublime-text credentials.txt
+ sublime-text empty.txt
+ sublime-text empty.txt
+ sublime-text empty.xt
+ sublime-text test.bash
+ sublime-text test.sh
+ sublime-text  ~/twitter4j-tutorial/src/main/scala/TwitterStream.scala
+ sublime-text TwitterCollector.scala
+ sublime-text TwitterCollector.scala 
+ sublime-text TwitterUtils.scala
+ sublime-text variables.sh
+ sublime-text variables.sh
+ sublime-text variables.sh
+ sudo apt-get -f install
+ sudo apt-get -f install openjdk-6-jre
+ sudo apt-get -f install openjdk-7-jre
+ sudo apt-get install Amarok
+ sudo apt-get install argouml
+ sudo apt-get install ArgoUML
+ sudo apt-get install Audacious
+ sudo apt-get install cmake
+ sudo apt-get install cmake
+ sudo apt-get install eclipse
+ sudo apt-get install ktorrent
+ sudo apt-get install libssl0.9.8
+ sudo apt-get install libssl0.9.8:i386
+ sudo apt-get install mailutils
+ sudo apt-get install mvn
+ sudo apt-get install openjdk
+ sudo apt-get install openjdk-7-jre
+ sudo apt-get install postfix mailutils libsasl2-2 ca-certificates libsasl2-modules
+ sudo apt-get install scala
+ sudo apt-get install scalac
+ sudo apt-get install Umbrello
+ sudo apt-get install utorrent
+ sudo apt-get shell
+ sudo ./bin/mongod --journal
+ sudo cd /root
+ sudo cd /root
+ sudo chmod -R 777 /opt/utorrent-server-v3_0/
+ sudo chmod +x cmake-2.8.12.2-Linux-i386.sh
+ sudo chmod +x ex1205.sh 
+ sudo chmod +x test.sh
+ sudo chmod +x tset.sh
+ sudo chown `id-u` /data/db
+ sudo chown sufian /data/db
+ sudo cp utorrent-server-3.3-ubuntu-13.04-i386-30235.tar.gz /opt/
+ sudo dpkg -i scala-2.10.3.deb
+ sudo -i
+ sudo -i
+ sudo kill 2384
+ sudo Leafpad
+ sudo ln -s /opt/utorrent-server-alpha-v3_3 o/utserver/usr/bin/utserver
+ sudo ln -s /opt/utorrent-server-alpha-v3_3/utserver/usr/bin/utserver
+ sudo ln -s /opt/utorrent-server-alpha-v3_3/utserver /usr/local/bin/utserver
+ sudo ln -s /opt/utorrent-server-v3_0/utserver /usr/bin/utserver
+ sudo make install
+ sudo $MAVEN_HOME
+ sudo mkdir -p /data/db/
+ sudo mkdir /usr/local/mongobd
+ sudo mongo
+ sudo ./mongod
+ sudo ./mongod 
+ sudo ./mongod --dbpath /data/db/
+ sudo ./mongod --dbpath ../data/db
+ sudo ./mongod --dbpath /data/db/ --repair
+ sudo ./mongod --dbpath /usr/local/mongobd/mongodb-linux-i686-2.2.2/data/bd/ --repair
+ sudo ./mongod --dbpath /usr/local/mongobd/mongodb-linux-i686-2.2.2/data/bd --repair --journal
+ sudo ./mongod --dbpath /usr/local/mongobd/mongodb-linux-i686-2.2.2/datacd ..
+ sudo ./mongod --dbpath /usr/local/mongobd/mongodb-linux-i686-2.2.2/data/db --repair
+ sudo mongod --dbpath /usr/local/mongobd/mongodb-linux-i686-2.2.2/data/db --repair
+ sudo ./mongod --depath /usr/local/mongobd/mongodb-linux-i686-2.2.2/data/bd/ --repair
+ sudo .mongod --depath /usr/local/mongobd/mongodb-linux-i686-2.2.2/data/bd/ --repair
+ sudo ./mongod --journal
+ sudo mv apache-maven-3.0.4 /usr/local/
+ sudo mv mongodb-linux-i686-2.2.2 /usr/local/mongobd
+ sudo netstat -lnp
+ sudo netstat -lnp
+ sudo netstat -lnp
+ sudo netstat -lnp
+ sudo netstat -lnp
+ sudo Notepad
+ sudo Notes
+ sudo rm -r -f isepse2014
+ sudo service mongodb start
+ sudo sublime-text
+ sudo sublime-text conf
+ sudo tar xvzf utorrent-server-3.0-25053.tar.gz -C /opt/
+ sudo tar -xzf utorrent-server-3.3-ubuntu-13.04-i386-30235.tar.gz
+ sudo vi
+ sudo vim
+ tar -zxvf eclipse-java-juno-SR2-linux-gtk.tar.gz
+ tar zxvf mongodb-linux-i686-2.2.2.tgz 
+ ./test.sh
+ ./test.sh
+ touch notes.txt
+ touch notes.txt
+ touch note.txt
+ touch Shufan.JIANG/notes
+ touch test1.txt
+ uniq
+ ./usr/local/spark/bin/spark-shell
+ utserver
+ ./utserver
+ utserver -settingspath /opt/utorrent-server-alpha-v3_3/
+ utserver -settingspath /opt/utorrent-server-alpha-v3_3/
+ utserver -settingspath /opt/utorrent-server-v3_0/
+ ./variables.sh
+ ./variables.sh
+ ./variables.sh
+ ./variables.sh
+ ./variables.sh
+ ./variables.sh
+ ./variables.sh 
+ ./variables.sh 
+ .variables.sh
+ wget http://download.utorrent.com/linux/utorrent-server-3.0-25053.tar.gz
+ wget http://http://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/sbt-launch/0.12.2/sbt-launch.jar
+ wget http://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/sbt-launch/0.12.2/sbt-launch.jar
+ which cmake
+ which cmake
+ which cmake
+ which eclipse
+ which java
+ which java
+ which java
+ which java
+ which java
+ which man
+ which maven
+ which mvn
+ which mvn
+ which netbeans
+ which python
+ which scala
+ which scala
+ which scala
+ which sts
+ which sts
+ y

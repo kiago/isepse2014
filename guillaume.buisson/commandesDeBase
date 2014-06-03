@@ -1,0 +1,62 @@
+1) Comment travailler dans son répertoire Git
+
+Une fois la configuration SSH et la synchronisation effective en local avec son
+dossier sur son compte Git, il suffit de se rendre dans le dossier local pour
+commencer à travailler. Dans mon cas :
+
+> cd Documents/gitrepository/isepse2014
+
+2) Comment créer un fichier vide
+
+> touch nomDuFichier
+
+3) Comment éditer un fichier
+
+> nano nomDuFichier
+
+Pour sauvegarder le fichier, utiliser la commande ^X (Exit) dans l'interface. Attention,
+il faut remplacer le ^ par la touche ctrl.
+
+4) Synchronisation serveur vers local
+
+> git pull
+
+5) Synchronisation local vers serveur : comment faire un commit ?
+
+Astuce : pour voir les modifications qui n'ont pas été mises dans la file
+d'attente des commit, saisir : git status. 
+Pour passer les lignes rouges en vert afin de pouvoir les commiter :
+> git add *
+
+Pour faire un commit après avoir modifié un fichier :
+> git commit -m "textCommit"
+
+Enfin, pour envoyer le tout sur le serveur,
+> git push
+
+Pour naviguer :
+- afficher le contenu d'un dossier : ls
+- aller dans un dossier : cd nomDuDossier
+- aller dans le fichier parent : cd ..
+- aller dans un sous-dossier : cd nomDuDossier/sousDossier
+
+Console :
+- effacer toutes les écritures : cmd+K
+
+6) Déplacer ou renommer un fichier :
+Pour cela, on utilise la commande 'mv' :
+> mv nomFichier nouveauNomFichier
+ou pour déplacer :
+> mv fichier autreRepertoire/
+
+7) Rendre un script exécutable
+> chmod +x monScript.sh
+
+8) Rendre un script inexécutable
+> chmod -x monScript.sh
+
+9) Exécuter un script
+> ./monScript.sh
+
+10) Lancer un script de raccourci (ex. : cd Documents/gitrepository/...) et faire en sorte d'être placé dans le dossier :
+> . ./projetBash (mon script permettant d'arriver dans mon dossier directement après avoir démarré le terminal)
