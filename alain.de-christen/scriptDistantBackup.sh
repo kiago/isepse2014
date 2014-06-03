@@ -1,6 +1,6 @@
 # Paramètres de sauvegarde
 serverDirectory="www/isep/FTP-bashproject"
-localDirectory="/Users/juniorisep/Desktop/backupData"
+localDirectory="/Users/juniorisep/Desktop/backupSite"
 
 # Connexion au serveur
 sshAuth="orthoeur@ftp.ortho-europe78.fr"
@@ -31,7 +31,7 @@ echo 'umask 177 # Owner only has access in reading and writing' >> scriptServer.
 echo '# FTP backup script' >> scriptServer.sh
 echo 'rsync -arv --exclude "backups" ~/'$serverDirectory' ~/'$serverDirectory'/backups/backup-'$date >> scriptServer.sh
 
-echo '# SQL dump of the database including all tables' >> scriptServer.sh
+echo '#basic dump of the database including all tables' >> scriptServer.sh
 echo 'mysqldump --user='$user'  --password='$password'  --host='$host' '$dbname' > ~/'$serverDirectory'/backups/backup-'$date'/'$sqldumpname.sql >> scriptServer.sh
 
 # Envoie du fichier scriptServer.sh sur le serveur
