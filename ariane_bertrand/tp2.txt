@@ -1,0 +1,78 @@
+Pourquoi preferer un clavier par rapport à une souri ?
+Lignes de commandes = texte donc on peut notamment stoker le texte quelque part (on garde les operations realiser, on peut ensuite les automatiser…)
+
+--------------------------------------------------------------------------------------------------------------------------
+2 grandes familles de langages :
+-	Langages compiles (java…) : on ecrit du teste, on le met dans des fichiers, on compile et on peut lancer notre programme
+-	Langages interpretes () : on a un programme (un interpreteur) qui va au fur et à mesure, à chaque fois qu’on envoie une ligne elle est interpretee (environnement REPL Read Eval Print Loop)
+
+En ligne de commande on est dans le deuxieme cas
+
+--------------------------------------------------------------------------------------------------------------------------
+DSL domaine specifique langage (utilise seulement pour faire un sous ensemble de tâches et rien d’autre)
+
+--------------------------------------------------------------------------------------------------------------------------
+Bash : langage specialement fait pour manipuler les objets (on peut appeler n’importe quel programme). C’est le Shell le plus repandu
+
+Comment il sait où est le programme ?
+Le chemin absolu à partir de la racine
+Sur linux doit être modifiable de maniere dynamique
+On a donc une variable d’environnent  qui contient les noms des chemins : PATH
+On utilise des majuscules pour les variables pour les faire ressortir 
+$PATH pour appeler 
+Par defaut execute les fonctions, pour les afficher : echo
+SHELL variable d’environnent qui nous permet de savoir quel shell on utilise
+
+--------------------------------------------------------------------------------------------------------------------------
+Commandes de bases :
+ls : lister
+cp : copier
+cd : change le working directory
+touch : creer un fichier vide
+man : afficher la doc d’une commande
+false : ne fait rien et retourne faux
+cut : retire des parties des lignes d’un fichier
+pwd : affiche le nom du directory actuellement utilise (affiche où iront par defaut les fichiers crees)
+uniq : filtre les doublons (mais uniquement s’ils sont consecutifs)
+sort : trie des donnees
+cat : 
+wget :
+curl :
+tr : translate
+head :
+…
+
+--------------------------------------------------------------------------------------------------------------------------
+$HOME correspond à ~
+
+--------------------------------------------------------------------------------------------------------------------------
+Editeur de texte pour lire /etc/passwd : [nom editeur de texte] [nom du fichier à editer]
+Utiliser vi ou vim comme editeur de texte
+Pour quitter :q
+ 
+--------------------------------------------------------------------------------------------------------------------------
+Sous Bash on a la completion automatique : tab -> complete directement s’il y a qu’une seule solution ou la liste s’il y en a plusieurs
+
+--------------------------------------------------------------------------------------------------------------------------
+Obtenir la liste des shells (non triee et avec doublons):
+cut  /etc/passwd –d « : » -f 7
+
+notion de redirection : par defaut la sortie de texte s’affiche sur le termi,al mais on peut rediriger vers un fichier texte.
+cut  /etc/passwd –d « : » -f 7 > [nom d’un fichier].txt
+
+On veut maintenant une liste sans doublons qui affiche le nombre d’utilisation et trie du plus utilise au moins utilise. On fait ça progressivement. Avec sort on trie les donnees et avec uniq on se debarrasse des doublons :
+
+cut  /etc/passwd –d « : » -f 7 > allShells.txt
+sort allShells.txt > allShellsSorted.txt
+uniq –c allShellsSorted.txt > allShellsSortedUniq.txt
+sort –nr allShellsSortedUniq.txt
+
+Pour tout faire en une fois :
+cut  /etc/passwd –d « : » -f 7 | sort | uniq –c | sort –nr
+
+--------------------------------------------------------------------------------------------------------------------------
+tr –c [ :alpha :]  ‘\n’ < gutenberg.txt > gutenbergSorted.txt
+(prend tous les mots du premier fichier pour les afficher sous forme de liste dans le deuxieme fichier)
+Tr « A-Z » « a-z » < gutenbergSorted.txt  > gutenbergSortedLowerCase.txt
+(met tout en minuscule)
+

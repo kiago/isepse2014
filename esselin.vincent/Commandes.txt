@@ -1,0 +1,37 @@
+history : affiche l’historique des commandes utilisées
+
+ls  : liste des fichiers et dossiers présents (marqueurs -a pour tout afficher et -l pour plus de détail)
+
+man : affiche la documentation d’une commande
+
+cd : pour aller dans un répertoire
+
+rm : supprime un fichier
+
+rmdir : supprime un dossier vide
+
+mkdri : crée un dossier
+
+touch : crée un ficher
+
+find : trouve un fichier
+
+grep : cherche une ligne de caractères dans un fichier
+
+sort : trie les lignes d’un fichier texte
+
+head : contrôle le nombre d’entrées affichées
+
+tr : remplace une catégorie de caractère par une autre
+
+uniq : filtre les lignes en fonction de leur unicité
+
+> : enregistre les sorties dans un fichier
+
+cut : sélectionne une chaîne de caractère dans une ligne
+
+echo : affiche un message (peut être écrit dans un fichier par exemple)
+
+mail : envoie un mail   mail -s « Sujet du mail » adresse@exemple.com < corpsdumail.txt
+
+read : récupère du texte entré par l’utilisateur (read resp), le String est stocké dans la variable $resp

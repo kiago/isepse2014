@@ -1,0 +1,164 @@
+*************************************************************************
+			 Comment organiser son serveur
+*************************************************************************
+
+visudo
+
+create /home/pseudo/public_html
+
+server : 
+	- git pull des 2 repository 
+	- toutes les heures
+	- filtrer tous les scripts bash et executables de chaque depôts
+	- on lance ces scripts avec "exec"
+
+Tous les processus génèrent des logs
+
+si un user a un script qui crash, on lui envoie un mail
+
+__________________________________________________________________________
+
+w      : Savoir qui fait quoi sur un serveur Linux:
+date   : afficher la date
+uptime : durée de fonctionnement de l'ordinateur
+tload  : voir l'évolution de la charge
+who    : liste des connectés
+
+ps     : liste statique des processus
+Avec :
+PID : c'est le numéro d'identification du processus. 
+TTY : c'est le nom de la console depuis laquelle a été lancé le processus.
+TIME : la durée d'exécution du processus.
+CMD : le programme qui a généré ce processus.
+
+ps -ef : lister tous les processus
+ps -ejH : afficher les processus en arbre (processus de processus)
+top : liste dynamique des processus
+
+kill PID_Processus : arrêter un processus
+ou kill -9 PID_Processus : pour forcer l'arrêt d'un processus
+
+halt : arrêter l'ordinateur
+reboot : redémarrer l'ordinateur
+
+___________________________________________________________________________
+
+& : lancer un processus en arrière-plan
+Ex : 
+$ cp video.avi copie_video.avi &
+[1] 16504
+
+Avec : [1] = numéro du processus
+	   16504 = PID du processu pour le kill au cas où
+
+nohup : détacher le processus de la console
+$ nohup cp video.avi copie_video.avi
+nohup: ajout à la sortie de `nohup.out'
+
+=> permet de pouvoir fermer la console tout en continuant d'executer le 
+   processus
+
+Ctrl + Z : mettre en pause l'exécution du programme
+bg : passer le processus en arrière-plan
+jobs : connaître les processus qui tournent en arrière-plan
+fg : reprendre un processus au premier plan
+$ fg %2 => pour spécifier quel processus on veur revoir
+
+at : exécuter une commande plus tard
+Ex :
+$ at 14:17
+$ at 14:17 tomorrow
+$ at 14:17 11/15/10
+$ at now +5 minutes
+$ at now +2 weeks
+
+atq et atrm : lister et supprimer les jobs en attente
+
+__________________________________________________________________________
+
+sleep : faire une pause
+EX : $ touch fichier.txt; sleep 10; rm fichier.txt
+
+Crée un fichier, attend 10s, supprime ce fichier
+
+OU 
+
+$ touch fichier.txt; sleep 1m; rm fichier.txt
+$ touch fichier.txt && sleep 10 && rm fichier.txt
+
+___________________________________________________________________________
+
+crontab et cron : le premier permet de modifier la liste des programmes à exécuter, le second les exécute.
+
+LES CHAMPS :
+
+# m h  dom mon dow   command
+
+m : minutes (0 - 59)
+
+h : heures (0 - 23)
+
+dom (day of month) : jour du mois (1 - 31)
+
+mon (month) : mois (1 - 12)
+
+dow (day of week) : jour de la semaine (0 - 6, 0 étant le dimanche)
+
+command : c'est la commande à exécuter.
+
+L'étoile = Tous le temps 
+
+Ex : 47 15 * * * touch /home/nassim/fichier.txt
+Chaque fois qu'il est 15 h 47, la commande indiquée à la fin sera exécutée
+
+SIGNIFICATION 
+
+
+47 * * * * commande
+
+Toutes les heures à 47 minutes exactement. Donc à 00 h 47, 01 h 47, 02 h 47, etc.
+
+
+0 0 * * 1 commande
+
+Tous les lundis à minuit.
+
+
+0 4 1 * * commande
+
+Tous les premiers du mois à 4 h du matin.
+
+
+0 4 * 12 * commande
+
+Tous les jours du mois de décembre à 4 h du matin.
+
+
+0 * 4 12 * commande
+
+Toutes les heures les 4 décembre.
+
+
+* * * * * commande
+
+Toutes les minutes !
+
+
+30 5 1-15 * * commande
+
+À 5 h 30 du matin du 1er au 15 de chaque mois.
+
+
+0 0 * * 1,3,4 commande
+
+À minuit le lundi, le mercredi et le jeudi.
+
+
+0 */2 * * * commande
+
+Toutes les 2 heures (00 h 00, 02 h 00, 04 h 00…)
+
+
+*/10 * * * 1-5 commande
+
+Toutes les 10 minutes du lundi au vendredi.
