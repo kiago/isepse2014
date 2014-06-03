@@ -49,6 +49,7 @@ What I don't know ?
 --> name_without_extension = ${file%.*};
 
 - look for multiples extension in a folder ?
+--> for file in $(find . -name "*.avi" -o -name "*.mkv")
 
 - Find the language of the system ?
 
