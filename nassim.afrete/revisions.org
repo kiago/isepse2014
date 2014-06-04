@@ -41,7 +41,7 @@ Avantages :
 
 Inconvénients :
 
--L'utilisation des réseaux publics, dans le cas du cloud public, entraîne des risques liés à la sécurité du cloud. En effet, la connexion entre les postes et les serveurs applicatifs passe par le réseau internet, et expose à des risques supplémentaires de cyberattaques, et de violation de confidentialité.
+- L'utilisation des réseaux publics, dans le cas du cloud public, entraîne des risques liés à la sécurité du cloud. En effet, la connexion entre les postes et les serveurs applicatifs passe par le réseau internet, et expose à des risques supplémentaires de cyberattaques, et de violation de confidentialité.
 - Le client d'un service de cloud computing devient très dépendant de la qualité du réseau pour accéder à ce service.
 - Les entreprises perdent la maîtrise de l'implantation de leurs données.
 - Les entreprises n'ont plus de garanties de l'utilisation qui est faite de leurs données, puisqu'elles les confient à des tiers.
