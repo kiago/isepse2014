@@ -1,21 +1,19 @@
-# Révisions sur le type d'hébergement
+* Hébergement Mutualisé, Virtuel, Dédié, Cloud ?
 
-**Hébergement Mutualisé, Virtuel, Dédié, Cloud ?**
-
-**hébergement mutualisé** : c’ est la solution la plus simple et la plus avantageuse à condition que :
+hébergement mutualisé : c’ est la solution la plus simple et la plus avantageuse à condition que :
 
 - Votre site ai un trafic faible ou moyen, jusqu’à quelques milliers de visiteurs par jour.
 - Vous utilisez Apache / Php / Mysql.
 - Vous utilisez surtout le back-office de votre application web pour modifier votre site.
 
-**Serveur Virtuel** pour les raisons suivantes :
+Serveur Virtuel pour les raisons suivantes :
 
 - Votre site génére un trafic moyen ou important, plus d’un milliers de visiteurs par jour..
 - Vous utilisez des logiciels spécifiques : scripts bash, crontab, applis de sécurisation, besoin d’accès SSH, réplication, etc.
 - Vous gérez vous même l’administration système d’un serveur linux
 - Vous avez besoin de souplesse en terme de ressources.
 
-**Serveur Dédié** :
+Serveur Dédié :
 
 - Votre trafic est important, au delà de quelques dizaines de milliers de visiteurs / jours.
 - Vous gérez vous même l’administration système d’un serveur linux
@@ -23,7 +21,7 @@
 - Vous hébergez plusieurs de sites ou d’applications
 - Vous avez besoin de sécurité et de confidentialité pour protéger les données hébergées.
 
-**système de type Cloud / CDN** :
+système de type Cloud / CDN :
 
 - Votre trafic est important, au delà de quelques dizaines de milliers de visiteurs / jours.
 - Votre public est international.
@@ -31,17 +29,17 @@
 - Vous désirez optimiser votre architecture web,
 - Vous recherchez une résilience optimale de votre service.
 
-## Le Cloud
+* Le Cloud
 
 Le cloud computing ou cloud (« nuage » en français) désigne un ensemble de processus qui consiste à utiliser la puissance de calcul et/ou de stockage de serveurs informatiques distants à travers un réseau, généralement Internet. Ces ordinateurs serveurs sont loués à la demande, le plus souvent par tranche d'utilisation selon des critères techniques (puissance, bande passante…) mais également au forfait. Le cloud computing se caractérise par sa grande souplesse d'utilisation.
 
-**Avantages :**
+Avantages :
 
 - Le cloud computing peut permettre d'effectuer des économies, notamment grâce à la mutualisation des services sur un grand nombre de clients.
 - Le coût est fonction de la durée de l'utilisation du service rendu et ne nécessite aucun investissement préalable (homme ou machine).
 - L'« élasticité » du nuage permet de fournir des services évolutifs et peut permettre de supporter des montées en charge.
 
-**Inconvénients :**
+Inconvénients :
 
 -L'utilisation des réseaux publics, dans le cas du cloud public, entraîne des risques liés à la sécurité du cloud. En effet, la connexion entre les postes et les serveurs applicatifs passe par le réseau internet, et expose à des risques supplémentaires de cyberattaques, et de violation de confidentialité.
 - Le client d'un service de cloud computing devient très dépendant de la qualité du réseau pour accéder à ce service.
@@ -49,25 +47,24 @@ Le cloud computing ou cloud (« nuage » en français) désigne un ensemble de p
 - Les entreprises n'ont plus de garanties de l'utilisation qui est faite de leurs données, puisqu'elles les confient à des tiers.
 - Absence de localisation précise des données du cloud computing
 
-## Infrastructure as a Service (IaaS)
+* Infrastructure as a Service (IaaS)
 
 L'infrastructure en tant que service est un modèle de Cloud computing destiné aux entreprises où l'entreprise dispose sur abonnement payant d'une infrastructure informatique (serveurs, stockage, sauvegarde, réseau) qui se trouve physiquement chez le fournisseur. Cela peut représenter pour certaines Directions des Systèmes d’Information (DSI) un moyen de réaliser des économies, principalement en transformant des investissements en contrats de location.
 
-## Software as a Service (SaaS)
+* Software as a Service (SaaS)
 
 Le logiciel en tant que service ou Software as a Service (SaaS) est un modèle d'exploitation commerciale des logiciels dans lequel ceux-ci sont installés sur des serveurs distants plutôt que sur la machine de l'utilisateur. Les clients ne paient pas de licence d'utilisation pour une version, mais utilisent généralement gratuitement le service en ligne ou payent un abonnement récurrent.
 
-## Platform as a Service (PaaS)
+* Platform as a Service (PaaS)
 
 Plate-forme en tant que service est un des types de Cloud computing principalement destiné aux entreprises. Il permet de mettre à disposition des entreprises un environnement d'exécution rapidement disponible, en leur laissant la maîtrise des applications qu'elles peuvent installer, configurer et utiliser elles-mêmes. Il permet donc d'héberger des applications qui ne sont pas adaptées au modèle du SaaS (par exemple des applications spécifiques, des applications en cours de développement…).
 
-## OPENSHIFT
+* OPENSHIFT
 
-**OpenShift** est de type PaaS.
+OpenShift est de type PaaS.
 
 Création d'une application Wordpress : https://openshift.redhat.com/
 
 Connection à l'application en ssh
 
 Aperçu des logs dans `/app-root/logs/php.Log` et lancer la commande `tail php.log -f` pour avoir un aperçu des logs en temps réel.
-
