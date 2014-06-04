@@ -10,7 +10,7 @@
 #curl -o test.zip http://dl.opensubtitles.org/fr/download/sub/5089217
 
 # episode season + episode
-# episode=${fichier##*.};
+# episode=${file##*.};
 # echo $episode
 
 # #season number
@@ -21,12 +21,12 @@
 # ep=$(echo "$episode" | cut -c5-6);
 # echo $ep;
 
-# #episode=${fichier}
-# #echo “filename: ${fichier%.*}”
-# #echo “extension: ${fichier##*.}”
+# #episode=${file}
+# #echo “filename: ${file%.*}”
+# #echo “extension: ${file##*.}”
 
 ##This url requires to extract season number and episode 
-# #page=$(curl -s "http://www.opensubtitles.org/fr/search/sublanguageid-${lang}/season-${season}/episode-${ep}/moviename-${fichier}");
+# #page=$(curl -s "http://www.opensubtitles.org/fr/search/sublanguageid-${lang}/season-${season}/episode-${ep}/moviename-${file}");
 
 function help_function {
 	echo -e "This application download all subtitles for the videos in a folder"
@@ -45,45 +45,46 @@ function download_subtitles {
 
 	ask_path
 	
-	#declare format=($PWD/*.avi | $PWD/*.mpeg | $PWD/*.mkv | $PWD/*.m4v | $PWD/*.mov)
-
 	#Look for (avi, mkv, mpeg, m4v, mp4) files in $PWD
 	# -o : OR operator
 	for file in $(find . -name "*.avi" -o -name "*.mkv" -o -name "*.mpeg" -o -name "*.m4v" -o -name "*.mp4")
-	#avi, mpeg, mkv, m4v , mov
+
 	do
 		#TVshow complete name + ep + season
 		
-		fichier=${fichier##*/}; #extract the name + extension
-		fichier=${fichier%.*}; #extract just the name + without extension
-		#fichier=${fichier// /.}; #replace spaces by "." in the name of the file
+		file=${file##*/}; #extract the name + extension
+		file=${file%.*}; #extract just the name + without extension
+		#file=${file// /.}; #replace spaces by "." in the name of the file
 
-		echo $fichier
+		echo "Looking for $file subtitles..."
 
 		#Check if subtitle file (srt) for this video already exists
-		if [ -e ${fichier}.srt ]; then
+		if [ -e ${file}.srt ]; then
 
-			echo -e "srt for ${fichier} already exists"
+			echo "------------------------------"
+			echo "| --> Subtitles for ${file} already exists"
+			echo "------------------------------"
 	   	
 	   	else
 	   		#This link doesn't need to extract episode number and season
-			page=$(curl -s "http://www.opensubtitles.org/fr/search/sublanguageid-${lang}/moviename-${fichier}");
+			page=$(curl -s "http://www.opensubtitles.org/fr/search/sublanguageid-${lang}/moviename-${file}");
 
-			#sub_link=$(echo "$page" | grep -o '<a href="/fr/subtitleserve/sub/[^"]*"' | sed 's/<a href="\/fr\/subtitleserve\///;s/"$//');
-			sub_link=$(echo "$page" | grep -o '<a href="/fr/subtitleserve/sub/[^"]*"' | sed 's/<a href="\/fr\/subtitleserve\///;s/"//');
-			#sed substitute <a href="\/fr\/subtitleserve\/ with nothing + substitute  " with nothing
+			sub_link=$(echo "$page" | grep -o '<a href="/fr/subtitleserve/sub/[^"]*' | sed 's/<a href="\/fr\/subtitleserve\///;s/"$//');
+			#sed substitute <a href="\/fr\/subtitleserve\/ with nothing + substitute  " at the end of the line with nothing
 
 			echo $sub_link; 
-			curl -o $PWD/${fichier}.zip "http://dl.opensubtitles.org/fr/download/${sub_link}";
+			curl -o $PWD/${file}.zip "http://dl.opensubtitles.org/fr/download/${sub_link}";
 
 			#Extract .srt from zip and delete .zip (move in trash)
-		   	unzip $PWD/${fichier}.zip "*.srt" -d $PWD/${fichier} && mv $PWD/${fichier}.zip ~/.Trash/${fichier}.zip;
+		   	unzip $PWD/${file}.zip "*.srt" -d $PWD/${file} && mv $PWD/${file}.zip ~/.Trash/${file}.zip;
 
 		   	#move the srt file next to the videos
-		   	mv $PWD/${fichier}/*.srt $PWD/${fichier}.srt;
+		   	mv $PWD/${file}/*.srt $PWD/${file}.srt;
 
 		   	#delete (move in trash) the old folder containing the subtitles
-		   	mv $PWD/${fichier} ~/.Trash/${fichier};
+		   	mv $PWD/${file} ~/.Trash/${file};
+
+		   	echo "$file subtitles have been downloaded and extrated successfully."
 	   	fi;
 
 
@@ -95,13 +96,16 @@ function download_subtitles {
 lang="fre"
 
 # verify if script has a parameter
+# $# : Le nombre de paramètres passés au script
+# $@ : L'ensemble des arguments, un argument par paramètre
+# $1 : Le premier argument
 if [[ $# != 0 ]] ; then
 	# We show the help if required
 	if [[ $# == 1 ]] ; then 
 		if [[ $1 == '-h' || $1 == '--help' ]] ; then
 		    help_function
 		else
-			lang=$(echo "$@" | cut -c1-3);
+			lang=$(echo "$1" | cut -c1-3);
 			download_subtitles
 		fi
 	else download_subtitles
