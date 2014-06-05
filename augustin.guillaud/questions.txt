@@ -10,3 +10,32 @@ ${#variable} →  retourne le nb de caractère
 Rendre excécutable un script → chmod +x nom_du_script
 Excécuter un script →  ./nom_du_script
 Export PATH → modifier le chemin d’une variable
+
+Input in bash (with "read" commande line):
+
+echo "Please enter some input: "
+read input_variable
+echo "You entered: $input_variable"
+
+Yes No (Y N) in bash:
+
+read -p "Continue (y/n)?" choice
+case "$choice" in 
+  y|Y ) echo "yes";;
+  n|N ) echo "no";;
+  * ) echo "invalid";;
+esac
+
+read -p --> Display PROMPT
+read -r	--> Backslash does not act as an escape character. It's considered to be part of the line
+read -n --> returns after reading NCHARS characters
+
+example:
+
+#!/bin/bash
+echo Please, enter your name
+read NAME
+echo "Hi $NAME!"
+                
+echo -n "Enter your gender and press [ENTER]: "
+read -n 1 gender
