@@ -1,0 +1,15 @@
+instructions on how to test the script marmiton.sh
+
+- open your terminal
+- go to the project repository (marmiton)
+- type in chmod +x marmiton.sh to make the script executable
+- type in ./marmiton.sh to launch it
+--> you'll see this error : rm: impossible de supprimer «/tmp/raw»: Aucun fichier ou dossier de ce type
+This is normal because you don't have (yet) this temp file. It'll be used to store the retreived html content. 
+
+- Once it's launch, it will ask you 2 questions : 
+	- first the recipe you're looking for, such as the word 'baguette'
+	- second how you want to sort the results by (title, votes, type, preparation time, cooking time or the number for which the recipe is done) : you'll have to enter the number corresponding to your choice, from 1 to 6.  
+
+
+
