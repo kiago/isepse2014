@@ -1,2 +1,41 @@
 link to our presentation:
 https://docs.google.com/presentation/d/1_O3KHmskHn4di8LfXGEJXT5lXGQ-I4IsBOHtoQyNRZw/edit?usp=sharing
+
+Key points of our project:
+
+DONE:
+sed -n "1 p" ~/recipe.txt → first line of the recipe book
+grep “^.*$” recipe.txt → distinguish each line 
+sed -n "1 p;5 p" → print the lines 1 and 5
+sed -n "5p" recipe.txt | sed -e "s/\(.*personnes)\).*$/\1/" | sed -e "s/.*\([0-9]\{2\}\).*\([0-9]\{2\}\).*/[\1,\2]/" → print [15,30]
+
+TO DO:
+script that :
+show the first and fifth lines of each recipes
+retrieve time of cooking and time of preparation
+organise them by time of cooking
+
+DONE:
+curl http://www.marmiton.org/recettes/recherche.aspx?aqt=cheesecake –o projet_marmiton 
+→ Retrieve the HTML content of the page result for cheesecake
+curl -o page -s http://www.marmiton.org/recettes/recherche.aspx?aqt=$1 
+→ Retrieve the HTML content of the page result
+$ ./marmiton.sh cheesecake → Does a curl request on the page result for cheesecake
+sed -n -f titles.sed page → Extract the titles from the HTML retrieved
+/.*<div class="m_search_titre_recette"><a href=.*>\(.*\)<\/a><\/div>/ { s//\1/p;} 
+→ Research in the HTML content the elements corresponding to this regex
+/.*<div class="m_search_tps_prepa">.*<\/strong>\(.*\)<\/div>/ { s//\1/p;} 
+/.*<div class="m_search_tps_cuisson">.*<\/strong>\(.*\)<\/div>/ { s//\1/p;} 
+/.*<div class="m_search_type_plat">\(.*\)<\/div>/ { s//\1/p;} 
+→ Same thing for preparation time, cooking time, and type of recipe
+
+TO DO:
+Loop retrieving all the pages corresponding to the results of a recipe search
+Regex for all the informations to retrieve next : number of people, votes
+Ask the user : a recipe, the number of guests ...
+
+
+
+
+
+
