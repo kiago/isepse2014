@@ -1,15 +1,137 @@
-Comment marchent les boucles (for, if, else?, etc.)?
+1) Comment marchent les boucles (for, if, else?, etc.)?
 
-Comment transférer un fichier d'un dossier à un autre? Avec ">"?
+for : 
+for VAR in LISTE  -- avec liste par exemple "$var1"
+do
+# actions
+done 
 
-Comment parser des données pour récupérer les éléments que l'on souhaite?
+construction alternative:
+for ((initialisation de VAR; contrôle de VAR; modification de VAR)) --double parenthèses?
+do
+# actions
+done 
 
-Comment créer une variable? 
+Permet de parcourir une liste de valeurs et de boucler autant de fois qu'il y a de valeurs
+La syntaxe avec double boucle est issue du C et la limite de la variable est sans "$". La virgule chaîne les opérations
+Elle fonctionne avec Bash seulement et des versions précises.
+
+---------------------------------
+
+2) Comment transférer un fichier d'un dossier à un autre? Avec ">"?
+
+Utilisation de la commande mv qui permet de déplacer un fichier mais aussi de le renommer
+faire : mv fichier dossier/ pour déplacer un fichier dans un dossier
+	mv fichier/ dossier/ pour déplacer un dossier dans un dossier
+
+Le fichier ou dossier (avec tous ses sous-dossiers) est déplacé et n'existe plus dans son dossier d'origine.
+
+---------------------------------
+
+3) Comment parser des données pour récupérer les éléments que l'on souhaite?
+Comment récupérer d'internet un ensemble de données sur plusieurs pages et les mettre automatiquement dans un fichier? 
+
+On utilise curl auquel on rajoute l'URL à parser pour récupérer le code HTML d'une page Internet par exemple. 
+Curl peut s'utiliser avec des options (-o, -s, etc.). 
+Pour récupérer les éléments que l'on souhaite sur une page il faut donc utiliser curl puis faire des 'regex'
+
+Ensuite, pour mettre l'ensemble des données dans un fichier on utilise : -o ou >
+
+Si on souhaite récupérer des éléments sur plusieurs pages, il faudra utiliser une boucle for avec incrémentation d'une variable.
+
+---------------------------------
+
+4) Qu'est qu'une regex?
+
+Expression régulière : permet d'identifier des éléments (chaînes de caractères) répondant à certain schéma dans une page. 
+Elles peuvent s'utiliser à l'intérieur de plusieurs commandes dont sed. 
+Plusieurs éléments à utiliser pour les regex : 
+- \ : ne pas interpréter un caractère comme 'spécial'
+- [] : caractères compris dans un intervalle spécifique 
+- ^ : début de ligne
+- $ : fin de ligne
+- * : répète un caractère
+
+--------------------------------
+
+5) Comment fonctionne la commande sed?
+
+La commande sed lit les lignes d'un fichier une par une et renvoie les lignes correspondant aux fonctions appliquées, par exemple -n.
+Il s'agit seulement d'affichage. 
+La fonction -n n'affiche que les lignes concernées, ce qui évite d'afficher les lignes qui ne sont pas à traiter. 
+
+Il existe beaucoup d'autres fonctions comme s, d, p, l, etc. 
+On peut en utiliser plusieurs en même temps. 
+
+Elle est très utilisée dans la réalisation de parseur/scrapeur et pour le traitement de gros fichiers, en ajoutant des regex. 
+
+ex :  sed -e "q" fichier 
+sed -e "s/\([0-9][0-9]*\)/**\1**/" fichier (avec regex)
+
+
+--------------------------------
+
+6) Comment garder certaines données d'un fichier liées?
+
+On peut par exemple les 'ranger' dans un tableau. Une solution dite 'propre' consiste à jouer avec le hold buffer de sed. Il permet d'effectuer des commandes et de garder dans un espace de stockage les résultats puis de les réutiliser lorsqu'il y a besoin, ou à la suite d'une autre ligne. 
+Le contenu de cet espace doit être copié ou ajouté à la fin pour pouvoir être utilisé. 
+Aucune opération à proprement parlé ne se passe dans le 'hold buffer'. 
+Ainsi, grâce à cela on peut printer des données d'un seul bloc et les garder liées. Attention, cela s'utilise seulement avec la commande sed.  
+
+Plusieurs fonctions possibles : 
+h : copie le contenu dans le hold buffer
+H : rajoute du contenu à la fin du hold buffer (donc après la ligne précédente copiée). Cela évite de réécrire dessus. 
+g : copie le contenu du hold buffer dans l'espace de traitement de sed (pattern space) et détruit le contenu précédent de ce dernier. Cela permet de traiter plusieurs lignes en même temps plutôt que de ne traiter que la dernière ligne en utilisant les options précédentes. 
+G : rajoute à la fin de l'espace de traitement le contenu du hold buffer
+x : échange les contenus du pattern buffer et du hold buffer
+
+--------------------------------
+
+7) Variables 
 
 Comment déclarer une variable sans lui associer de valeurs? 
+écire son nom sans le signe $
+
+Comment initialiser la variable, lui attribuer une valeur?
+écrire son nom précédé du signe $
+On peut utiliser ensuite export. 
+On lui donne une valeur avec une commande du type : nom_variable = valeur
 
 Comment l'utiliser? 
+- $commande pour utiliser le contenu de la commande
+- dans une liste d'arguments passés dans un script
 
-Comment garder certaines données d'un fichier liées? ou comment les lier (associer a et b)?
+--------------------------------
 
-Comment récupérer d'internet un ensemble de données sur plusieurs pages et les mettre automatiquement dans un fichier? 
+8) Comment fonctionne le switch/case version bash? 
+	
+case expression in
+    pattern1 )
+        statements ;;
+    pattern2 )
+        statements ;;
+    ...
+esac
+
+Utilisable dans une boucle for. Il vérifie la condition et contrôle le flux du programme.
+On peut utiliser la commande 'read variable' avant et récupérer cette variable pour matcher le pattern à utiliser en fonction de la valeur de la variable.
+
+ex : 
+#!/bin/bash
+echo -n "Entrez un nombre :"
+read nombre
+case $nombre in
+# Si $nombre = 1
+	1)echo "Vous avez tapÃ© 1";;
+# Si $nombre = 2
+	2)echo "Vous avez tapÃ© 2";;
+# Pour le reste des valeurs de $nombre	
+	*)echo "Vous n'avez tapÃ© ni 1 ni 2";;
+esac
+
+-> 'read' permet d'utiliser l'élément entré par l'utilisateur après 'echo' et le met dans une variable 'nombre'.
+
+
+
+
+
