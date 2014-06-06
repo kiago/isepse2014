@@ -1,2 +1,0 @@
-login : LucasBayle
-ssh : e1:a7:eb:b1:14:a4:2d:8c:40:04:ba:e3:53:14:8a:91
