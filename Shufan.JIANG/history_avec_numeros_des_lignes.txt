@@ -1,0 +1,1000 @@
+  919  ps
+  920  sudo apt-get install libssl0.9.8
+  921  utserver -settingspath /opt/utorrent-server-alpha-v3_3/
+  922  sudo ln -s /opt/utorrent-server-alpha-v3_3/utserver /usr/local/bin/utserver
+  923  sudo apt-get install libssl0.9.8:i386
+  924  utserver -settingspath /opt/utorrent-server-alpha-v3_3/
+  925  cd Downloads
+  926  wget http://download.utorrent.com/linux/utorrent-server-3.0-25053.tar.gz
+  927  ls
+  928  sudo tar xvzf utorrent-server-3.0-25053.tar.gz -C /opt/
+  929  sudo chmod -R 777 /opt/utorrent-server-v3_0/
+  930  cd /opt
+  931  ls
+  932  sudo ln -s /opt/utorrent-server-v3_0/utserver /usr/bin/utserver
+  933  utserver -settingspath /opt/utorrent-server-v3_0/
+  934  which java
+  935  which netbeans
+  936  which sts
+  937  which java
+  938  ls
+  939  cd sufianTest1
+  940  ls
+  941  ./bin/run-example org.apache.spark.examples.JavaWordCount
+  942  cd /usr/local/spark
+  943  ./bin/run-example org.apache.spark.examples.JavaWordCount
+  944  ls
+  945  ./bin/run-example org.apache.spark.examples.JavaWordCount README.md
+  946  ./bin/run-example org.apache.spark.examples.JavaWordCount sufian README.md
+  947  ./bin/run-example org.apache.spark.examples.JavaWordCount spark README.md
+  948  cd /usr/local
+  949  cd spark
+  950  history | grep scala
+  951  history | grep spark
+  952  ./sbin/spark-shell
+  953  cd sbin
+  954  ./spark-shell
+  955  cd ..
+  956  cd bin
+  957  ls
+  958  ./spark-shell
+  959  man sbt
+  960  man sbt/sbt
+  961  echo $path
+  962  echo $PATH
+  963  which java
+  964  cd /user/local/spark/bin
+  965  cd /user/local/spark
+  966  cd /usr/local/spark/bin
+  967  ./spark-shell
+  968  histroy | grep wordcount
+  969  history | grep wordcount
+  970  history
+  971  cd /usr/local/spark
+  972  ./bin/run-example org.apache.spark.examples.JavaWordCount spark README.md
+  973  ./bin/run-example org.apache.spark.examples.JavaWordCount 
+  974  ./bin/run-example org.apache.spark.examples.JavaWordCount README.md
+  975  man scala
+  976  scala
+  977  sudo apt-get install scala
+  978  sudo apt-get install scalac
+  979  more log | echo
+  980  man more
+  981  clear
+  982  man trim
+  983  man php
+  984  man preg_split
+  985  history
+  986  cd /usr/local/spark
+  987  ./bin/run-example org.apache.spark.examples.JavaWordCount
+  988  ./bin/run-example org.apache.spark.examples.JavaWordCount 
+  989  jps
+  990  java -version
+  991  ./bin/run-example org.apache.spark.examples.JavaWordCount localhost
+  992  ./bin/run-example org.apache.spark.examples.JavaWordCount localhost ./README.md 
+  993  ls
+  994  ./bin/run-example org.apache.spark.examples.JavaWordCount localhost README.md 
+  995  which java
+  996  which scala
+  997  man scala
+  998  ls
+  999  cd monproj
+ 1000  ls
+ 1001  cd ..
+ 1002  scala SimpleApp.scala
+ 1003  man dpkg
+ 1004  cd ~/Downloads
+ 1005  ls
+ 1006  dpkg -i scala-2.10.3.deb
+ 1007  sudo dpkg -i scala-2.10.3.deb
+ 1008  which scala
+ 1009  man scala
+ 1010  cd /usr/local/spark
+ 1011  scala SimpleApp.scala
+ 1012  man scalac
+ 1013  scalac -help
+ 1014  scalac SimpleApp.scala
+ 1015  ls
+ 1016  scalac SimpleApp.scala
+ 1017  clear
+ 1018  java -version
+ 1019  man cmd
+ 1020  sudo apt-get install openjdk
+ 1021  sudo apt-get install openjdk-7-jre
+ 1022  sudo apt-get -f install openjdk-7-jre
+ 1023  sudo apt-get -f install openjdk-6-jre
+ 1024  man dpkg
+ 1025  echo $PATH
+ 1026  which python
+ 1027  python -version
+ 1028  man python
+ 1029  sudo apt-get install ktorrent
+ 1030  sudo apt-get install utorrent
+ 1031  which mvn
+ 1032  which maven
+ 1033  man maven
+ 1034  man mvn
+ 1035  clear
+ 1036  sudo apt-get install mvn
+ 1037  ls
+ 1038  cd springsource
+ 1039  ls
+ 1040  cd apache-maven-3.0.4
+ 1041  ls
+ 1042  cd bin
+ 1043  ls
+ 1044  ./mvn
+ 1045  mvn -version
+ 1046  export MAVEN_HOME=/home/sufian/springsource/maven-3.0.4 
+ 1047  echo $
+ 1048  export export PATH=$PATH:$MAVEN_HOME/bin
+ 1049  echo $PATH
+ 1050  which mvn
+ 1051  man mvn
+ 1052  mvn --version
+ 1053  cd /usr/local/spark
+ 1054  scalac SimpleApp.scala
+ 1055  cd examples
+ 1056  ls
+ 1057  cd src
+ 1058  ls
+ 1059  cd main
+ 1060  ls
+ 1061  cd scala
+ 1062  ls
+ 1063  cd org
+ 1064  ls
+ 1065  cd apache
+ 1066  ls
+ 1067  cd spark
+ 1068  ls
+ 1069  cd examples
+ 1070  ls
+ 1071  cd ..
+ 1072  cd main
+ 1073  cd java
+ 1074  ls
+ 1075  cd org
+ 1076  ls
+ 1077  cd apache
+ 1078  ls
+ 1079  cd spark
+ 1080  ls
+ 1081  cd examples
+ 1082  ls
+ 1083  man javac
+ 1084  man 7 undocumented
+ 1085  javac JavaWordCount.java
+ 1086  JavaWordCount.java
+ 1087  JavaWordCount localhost Readme.rm
+ 1088  cd /opt/eclipse
+ 1089  ls
+ 1090  cd features
+ 1091  ls
+ 1092  man chown
+ 1093  ls
+ 1094  cd ../plugins
+ 1095  ls
+ 1096  sudo apt-get install eclipse
+ 1097  cd Downloads
+ 1098  ls
+ 1099  tar -zxvf eclipse-java-juno-SR2-linux-gtk.tar.gz
+ 1100  ls
+ 1101  man sudo | grep -i
+ 1102  man sudo 
+ 1103  sudo -i
+ 1104  man cp
+ 1105  echo $SPARK_TEST_JAR
+ 1106  sbt console
+ 1107  pwd
+ 1108  ps
+ 1109  ipcs
+ 1110  ls
+ 1111  sudo apt-get install ArgoUML
+ 1112  sudo apt-get install argouml
+ 1113  argouml-0.34
+ 1114  cd argouml-0.34
+ 1115  ls
+ 1116  java -jar argouml.jar
+ 1117  ipcs
+ 1118  ps
+ 1119  pwd
+ 1120  bin/mongo
+ 1121  ls
+ 1122  cd ix2415_dm/
+ 1123  ls
+ 1124  tar zxvf mongodb-linux-i686-2.2.2.tgz 
+ 1125  ls
+ 1126  cd /usr/local/bin
+ 1127  ls
+ 1128  cd ..
+ 1129  ls
+ 1130  cd 
+ 1131  cd sufian
+ 1132  ls
+ 1133  cd ix2415_dm/
+ 1134  ls
+ 1135  sudo mkdir /usr/local/mongobd
+ 1136  sudo mv mongodb-linux-i686-2.2.2 /usr/local/mongobd
+ 1137  cd /usr/local/mongobd
+ 1138  ls
+ 1139  cd mongodb-linux-i686-2.2.2/
+ 1140  ls
+ 1141  cd bin
+ 1142  ls
+ 1143  cd..
+ 1144  cd ..
+ 1145  mkdir/data
+ 1146  mkdir data
+ 1147  mkdir data/db
+ 1148  ./bin/mongod --dbpath data/db
+ 1149  sudo apt-get install Umbrello
+ 1150  sudo apt-get install Audacious
+ 1151  sudo apt-get install Amarok
+ 1152  ls
+ 1153  cd SufianTest1
+ 1154  cd sufianTest1
+ 1155  ls
+ 1156  git clone git://anogit.kde.org/umbrello
+ 1157  git clone git://anongit.kde.org/um
+ 1158  ls
+ 1159  cd umbrello
+ 1160  mkdir build
+ 1161  cd build
+ 1162  man cmake
+ 1163  which man
+ 1164  which cmake
+ 1165  echo $HME
+ 1166  echo $HOME
+ 1167  cmake -DCMAKE_INSTALL_PREFIX=$HOME/sufianTest1/umbrello ../
+ 1168  sudo apt-get install cmake
+ 1169  cd $HOME
+ 1170  ls
+ 1171  ./cmake-2.8.12.2.Linux-i386.sh
+ 1172  ./cmake-2.8.12.2-Linux-i386.sh
+ 1173  sudo chmod +x cmake-2.8.12.2-Linux-i386.sh
+ 1174  ./cmake-2.8.12.2-Linux-i386.sh
+ 1175  y
+ 1176  ./cmake-2.8.12.2-Linux-i386.sh
+ 1177  which cmake
+ 1178  ls
+ 1179  cd sufianTest1
+ 1180  cd umbrello/
+ 1181  ls
+ 1182  cmake -DCMAKE_INSTALL_PREFIX=$HOME/sufianTest1/umbrello ../
+ 1183  sudo apt-get install cmake
+ 1184  sudo apt-get -f install
+ 1185  cd ..
+ 1186  cd cmake-2.8.6
+ 1187  ./configure
+ 1188  make
+ 1189  man cmake
+ 1190  which cmake
+ 1191  sudo make install
+ 1192  man cmake
+ 1193  which java
+ 1194  java -version
+ 1195  cd ../sufianTest1
+ 1196  cd umbrello/
+ 1197  cmake -DCMAKE_INSTALL_PREFIX=$HOME/sufianTest1/umbrello ../
+ 1198  man cmake
+ 1199  cmake -DCMAKE_INSTALL_PREFIX=$HOME/sufianTest1/umbrello /
+ 1200  cmake -DCMAKE_INSTALL_PREFIX=$HOME/sufianTest1/umbrello ../umbrello
+ 1201  find /usr/ -type f -name "*kdev*.so*"
+ 1202  ./mongo
+ 1203  ls
+ 1204  cd bin
+ 1205  ls
+ 1206  ./mongo
+ 1207  ./bin/mongo
+ 1208  history | grep mongodb
+ 1209  cd /usr/local/mongobd
+ 1210  ls
+ 1211  cd mongodb-linux-i686-2.2.2/
+ 1212  ls
+ 1213  ./bin/mongod
+ 1214  bin/mongo
+ 1215  ./bin/mongod
+ 1216  sudo chown `id-u` /data/db
+ 1217  sudo chown sufian /data/db
+ 1218  man chown
+ 1219  sudo mongo
+ 1220  sudo service mongodb start
+ 1221  cd data/db/
+ 1222  rm mongod.lock
+ 1223  cd ..
+ 1224  ./bin/mongod
+ 1225  cd data/db/
+ 1226  rm _tmp
+ 1227  man rm
+ 1228  rm -r _tmp
+ 1229  cd ../../bin
+ 1230  ls
+ 1231  ./mongod
+ 1232  sudo ./mongod
+ 1233  cd ../data/db
+ 1234  mkdir mongodb0
+ 1235  cd ../../bin
+ 1236  sudo mongod --dbpath /usr/local/mongobd/mongodb-linux-i686-2.2.2/data/db --repair
+ 1237  sudo ./mongod --dbpath /usr/local/mongobd/mongodb-linux-i686-2.2.2/data/db --repair
+ 1238  sudo ./mongod 
+ 1239  sudo ./mongod --dbpath /data/db/
+ 1240  sudo ./mongod --dbpath /data/db/ --repair
+ 1241  cd /usr/bin
+ 1242  mkdir -p /data/db/
+ 1243  sudo mkdir -p /data/db/
+ 1244  cd ../local/mongobd/
+ 1245  cd mongodb-linux-i686-2.2.2/
+ 1246  ./bin/mongod 
+ 1247  ./bin/mongod --journal
+ 1248  sudo ./bin/mongod --journal
+ 1249  exit
+ 1250  ./bin/mongo
+ 1251  sudo ./mongod --dbpath /usr/local/mongobd/mongodb-linux-i686-2.2.2/datacd ..
+ 1252  cd ..
+ 1253  ./bin/mongo
+ 1254  history | grep mongod
+ 1255  cd /usr/local/mongobd/mongodb-linux-i686-2.2.2/bin/
+ 1256  sudo .mongod --depath /usr/local/mongobd/mongodb-linux-i686-2.2.2/data/bd/ --repair
+ 1257  sudo ./mongod --depath /usr/local/mongobd/mongodb-linux-i686-2.2.2/data/bd/ --repair
+ 1258  sudo ./mongod --dbpath /usr/local/mongobd/mongodb-linux-i686-2.2.2/data/bd/ --repair
+ 1259  sudo ./mongod --dbpath /usr/local/mongobd/mongodb-linux-i686-2.2.2/data/bd --repair --journal
+ 1260  sudo ./mongod --journal
+ 1261  sudo ./mongod --dbpath ../data/db
+ 1262  history | grep ssh
+ 1263  history | grep key
+ 1264  help mv
+ 1265  help copy
+ 1266  man copy
+ 1267  man mv
+ 1268  cd springsource/
+ 1269  man copy
+ 1270  man mv
+ 1271  sudo mv apache-maven-3.0.4 /usr/local/
+ 1272  export PATH=/usr/local/apache-maven-3.0.4/bin:$PATH
+ 1273  echo $PATH
+ 1274  mvn --version
+ 1275  echo $JAVA_HOME
+ 1276  mkdir ROOMVC_phonebook
+ 1277  cd ROOMVC_phonebook/
+ 1278  ../spring-roo-1.2.2.RELEASE/bin/roo.sh
+ 1279  ls
+ 1280  cd sts-3.1.0.RELEASE/
+ 1281  ls
+ 1282  which sts
+ 1283  which eclipse
+ 1284  cd /usr/local/spark
+ 1285  ./bin/run-example org.apache.spark.streaming.examples.NetworkWordCount local[2] localhost 9999
+ 1286  nc -lk 9999
+ 1287  man nc
+ 1288  cd /usr/local/spark
+ 1289  ./bin/run-example org.apache.spark.examples.JavaWordCount
+ 1290  ls
+ 1291  ./bin/run-example org.apache.spark.examples.JavaWordCount local README.md
+ 1292  man mvn
+ 1293  mvn --version
+ 1294  history | grep mvn
+ 1295  mvn -version
+ 1296  echo $PATH
+ 1297  cd /usr/bin
+ 1298  ls
+ 1299  cd /bin
+ 1300  histroy | grep mv
+ 1301  history | grep mv
+ 1302  history | grep export
+ 1303  echo $MAVEN_HOME
+ 1304  export MAVEN_HOME=/home/sufian/springsource/maven-3.0.4 
+ 1305  export PATH=/usr/local/apache-maven-3.0.4/bin:$PATH
+ 1306  mvn --version
+ 1307  man mvn
+ 1308  help
+ 1309  help mvn
+ 1310  info mvn
+ 1311  histroy | grep mv
+ 1312  history | grep mv
+ 1313  history | grep export
+ 1314  export MAVEN_HOME=/usr/local/apache-maven-3.0.4/bin
+ 1315  man -k mvn
+ 1316  info mvn
+ 1317  mvn --version
+ 1318  cd ..
+ 1319  cd /usr/local/apache-maven-3.0.4/
+ 1320  LS
+ 1321  ls
+ 1322  sudo sublime-text conf
+ 1323  mvn help:system
+ 1324  history| export
+ 1325  history|grep export
+ 1326  export PATH=/usr/local/apache-maven-3.0.4/bin:$PATH
+ 1327  mvn help:system
+ 1328  help mvn
+ 1329  man mvn
+ 1330  mvn help
+ 1331  mvn --help
+ 1332  mvn Twitter spark-streaming-twitter_2.10
+ 1333  mvn Twitter:spark-streaming-twitter_2.10
+ 1334  cd /usr/local/spark
+ 1335  cd streaming/
+ 1336  sudo Leafpad
+ 1337  sudo Notepad
+ 1338  sudo Notes
+ 1339  sudo sublime-text
+ 1340  sudo vim
+ 1341  sudo vi
+ 1342  sudo cd /root
+ 1343  cd /root
+ 1344  sudo cd /root
+ 1345  sudo -i
+ 1346  echo $PATH
+ 1347  sudo $MAVEN_HOME
+ 1348  echo $MAVEN_HOME
+ 1349  man find
+ 1350  cd /usr/local/spark
+ 1351  ls
+ 1352  ./bin/spark-shell
+ 1353  cd ~
+ 1354  pwd
+ 1355  mkdir ~/twitter4j-tutorial
+ 1356  cd twitter4j-tutorial/
+ 1357  wget http://http://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/sbt-launch/0.12.2/sbt-launch.jar
+ 1358  wget http://repo.typesafe.com/typesafe/ivy-releases/org.scala-sbt/sbt-launch/0.12.2/sbt-launch.jar
+ 1359  sublime-text build.sbt
+ 1360  java -Xms512M -Xmx1536M -Xss1M -XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=384M -jar `dirname $0`/sbt-launch.jar "$@"
+ 1361  build
+ 1362  ./build
+ 1363  ls
+ 1364  ./build.sbt
+ 1365  java -Xms512M -Xmx1536M -Xss1M -XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=384M -jar `dirname $0`/sbt-launch.jar "$@"
+ 1366  cd ~/twitter4j-tutorial/
+ 1367  chmod a+x build
+ 1368  sublime-text  ~/twitter4j-tutorial/src/main/scala/TwitterStream.scala
+ 1369  ls -a
+ 1370  rm -r .git
+ 1371  ls -a
+ 1372  cd sjiang2014/
+ 1373  ls -a
+ 1374  man chmod
+ 1375  man source
+ 1376  cd sjiang2014/
+ 1377  cd isepse2014/
+ 1378  rm test.bash
+ 1379  ls
+ 1380  cd ..
+ 1381  ls
+ 1382  cd isepse2014/
+ 1383  cd s
+ 1384  cd Shufan.JIANG/
+ 1385  ls
+ 1386  cd ..
+ 1387  ls
+ 1388  ./test.sh
+ 1389  sudo chmod +x tset.sh
+ 1390  sudo chmod +x test.sh
+ 1391  ./test.sh
+ 1392  man xargs
+ 1393  touch test1.txt
+ 1394  find . -name "*.txt"
+ 1395  find . -name "*.txt" print0 | xargs -0 grep "t"
+ 1396  find . -name "*.txt" -print0 | xargs -0 grep "t"
+ 1397  l s-l
+ 1398  ls -l
+ 1399  man touch
+ 1400  for i in `ls`; do touch -a 15041992; ; done
+ 1401  for i in `ls`; do touch -a 15041992; done
+ 1402  ls -l
+ 1403  ls -la
+ 1404  man ls
+ 1405  ls -t
+ 1406  ls -lt
+ 1407  rm 15041992
+ 1408  ssh keygen
+ 1409  ssh -keygen
+ 1410  ssh-keygen
+ 1411  mn ls
+ 1412  man ls
+ 1413  ls -a
+ 1414  cd .ssh
+ 1415  ls
+ 1416  ls -a
+ 1417  more id_rsa
+ 1418  ls -a
+ 1419  man more
+ 1420  less id_rsa
+ 1421  ls
+ 1422  cd ~
+ 1423  ls
+ 1424  cd SufianTest
+ 1425  ls
+ 1426  cd ..
+ 1427  cd sufianTest1/
+ 1428  ls
+ 1429  git status
+ 1430  git add
+ 1431  cd ..
+ 1432  mkdir sjiang2014
+ 1433  git init
+ 1434  ls -a
+ 1435  man git
+ 1436  cd sjiang2014
+ 1437  git init
+ 1438  ls -l
+ 1439  ls -la
+ 1440  sublime-text empty.txt
+ 1441  git add empty.txt
+ 1442  git ststus
+ 1443  git status
+ 1444  git commit
+ 1445  git commit -m "Initial (test) commit"
+ 1446  git add readme.md
+ 1447  git clone git@github.com:kiago/isepse2014.git
+ 1448  ls
+ 1449  cd isepse2014/
+ 1450  ls
+ 1451  ls -l
+ 1452  git status
+ 1453  git pull
+ 1454  rm -fr .git
+ 1455  git init
+ 1456  git clone git@github.com:sufianj/isepse2014.git
+ 1457  git status
+ 1458  git pull
+ 1459  cat .git/config
+ 1460  git checkout
+ 1461  git status
+ 1462  git add another.txt
+ 1463  git add empty.txt
+ 1464  cd ..
+ 1465  rm -fr .git
+ 1466  cd isepse2014
+ 1467  rm -rm .git
+ 1468  rm -fr .git
+ 1469  ls
+ 1470  cd ..
+ 1471  rm -fr isepse2014
+ 1472  git clone git@github.com:sufianj/isepse2014.git
+ 1473  ls
+ 1474  ls -a
+ 1475  cd isepse2014/
+ 1476  ls
+ 1477  sublime-text empty.xt
+ 1478  sublime-text empty.txt
+ 1479  git status
+ 1480  git add empty.txt
+ 1481  git commit
+ 1482  git commit -m "modified empty.txt"
+ 1483  git push
+ 1484  git pull
+ 1485  less empty.txt
+ 1486  ls
+ 1487  mkdir ShufanJIANG
+ 1488  git add ShufanJIANG
+ 1489  git status
+ 1490  git commit -m "add directory"
+ 1491  git checkout
+ 1492  git pull
+ 1493  git push
+ 1494  git --gelp
+ 1495  git --help
+ 1496  rm -fr ShufanJIANG
+ 1497  mkdir Shufan.JIANG
+ 1498  touch Shufan.JIANG/notes
+ 1499  cd Shufan.JIANG/
+ 1500  ls
+ 1501  cd ..
+ 1502  git status
+ 1503  git add Shufan.JIANG/
+ 1504  git commit -m "ajouter dossier Shufan.JIANG"
+ 1505  git config --global user.name sufianj 
+ 1506  git config --global user.email sufianj415@gmail.com
+ 1507  git push
+ 1508  ls
+ 1509  git rm another.txt
+ 1510  git rm empty.txt
+ 1511  rm another.txt
+ 1512  rm empty.txt
+ 1513  git status
+ 1514  git commit -m "-another.txt -empty.txt"
+ 1515  git push
+ 1516  git --help merge
+ 1517  man less
+ 1518  history | grep maven
+ 1519  sublime-text
+ 1520  sublime-text test.bash
+ 1521  sublime-text test.sh
+ 1522  mkdir spark_proj/spark-twitter-collection/tmp
+ 1523  cd spark_proj/spark-twitter-collection/tmp
+ 1524  pwd
+ 1525  cd ..
+ 1526  ls -la
+ 1527  cd tmp
+ 1528  ls
+ 1529  ls -l
+ 1530  cd ..
+ 1531  sublime-text TwitterUtils.scala
+ 1532  cp credentials.txt.template credentials.txt
+ 1533  ls
+ 1534  sublime-text credentials.txt
+ 1535  cd tmp
+ 1536  ls -ls
+ 1537  ls -l
+ 1538  cd /tmp
+ 1539  ls
+ 1540  cd tweets_out
+ 1541  ls -la
+ 1542  cd 2014
+ 1543  ls
+ 1544  cd 04
+ 1545  ls
+ 1546  cd 07
+ 1547  ls
+ 1548  cd 15
+ 1549  ls
+ 1550  cd 38
+ 1551  ls
+ 1552  cat part-00000.deflate
+ 1553  less part-00000.deflate
+ 1554  cd ~/spark_proj/spark-twitter-collection/
+ 1555  sublime-text build.sbt
+ 1556  sbt/sbt run
+ 1557  ./variables.sh 
+ 1558  sbt/sbt run
+ 1559  sublime-text TwitterCollector.scala 
+ 1560  sbt/sbt run
+ 1561  sublime-text build.sbt
+ 1562  sbt/sbt run
+ 1563  cd spark_proj/spark-twitter-collection/
+ 1564  ./variables.sh 
+ 1565  ls
+ 1566  cd spark_proj/
+ 1567  ls
+ 1568  git clone https://github.com/pwendell/spark-twitter-collection.git
+ 1569  cd spark-twitter-collection/
+ 1570  ls
+ 1571  less README.txt 
+ 1572  sublime-text variables.sh
+ 1573  chmod +x variables.sh 
+ 1574  ./variables.sh
+ 1575  echo $AWS_SECRET_ACCESS_KEY
+ 1576  sublime-text variables.sh
+ 1577  chmod +x variables.sh 
+ 1578  ./variables.sh
+ 1579  sublime-text variables.sh
+ 1580  ./variables.sh
+ 1581  which scala
+ 1582  scala --version
+ 1583  scala -version
+ 1584  ipcs
+ 1585  man ipcs
+ 1586  ipcs -m -p
+ 1587  ps
+ 1588  man ps
+ 1589  history | grep scala
+ 1590  sublime-text TwitterCollector.scala
+ 1591  cd spark_proj/spark-twitter-collection/
+ 1592  sbt/sbt run
+ 1593  cd /tmp/tweets_out/
+ 1594  ls
+ 1595  cd 2014/04/07/17
+ 1596  ls
+ 1597  cd 24
+ 1598  ls
+ 1599  hexdump -C part-00000.deflate 
+ 1600  less
+ 1601  cd ~/spark_proj/spark-twitter-collection
+ 1602  less variables.sh 
+ 1603  export OUTPUT_BATCH_INTERVAL=3600
+ 1604  export OUTPUT_DIR=/home/sufian/spark_proj/spark-twitter-collection/tmp
+ 1605  echo $OUTPUT_BATCH_INTERVAL
+ 1606  echo $OUTPUT_BATCH_INTERVAL
+ 1607  export OUTPUT_DIR=
+ 1608  sbt/sbt run
+ 1609  cd .sqldeveloper
+ 1610  ls
+ 1611  less tp3.sql
+ 1612  echo $PATH
+ 1613  man echo
+ 1614  man nano
+ 1615  man shell
+ 1616  help shell
+ 1617  shell help
+ 1618  sudo apt-get shell
+ 1619  man man
+ 1620  man false
+ 1621  man bash
+ 1622  man cat
+ 1623  man uniq
+ 1624  uniq
+ 1625  man uniq
+ 1626  cvt -f 7 -d : /etc/passwd > allSh.txt
+ 1627  ls
+ 1628  less allSh.txt
+ 1629  cat allSh.txt 
+ 1630  cat /etc/passwd
+ 1631  man cvt
+ 1632  man tr
+ 1633  man uniq
+ 1634  man sort
+ 1635  man grep
+ 1636  man wget
+ 1637  history
+ 1638  cd /tmp
+ 1639  ls
+ 1640  cd /tmp/tweets_out/
+ 1641  cd ~/spark_proj/spark-twitter-collection/
+ 1642  sbt/sbt run
+ 1643  history
+ 1644  Leafpad
+ 1645  leafpad
+ 1646  history
+ 1647  man history
+ 1648  man git
+ 1649  git diff
+ 1650  git help
+ 1651  git status
+ 1652  cd spark_proj/spark-twitter-collection/
+ 1653  git status
+ 1654  git diff TwitterCollector.scala TwitterCollector_origin.scala
+ 1655  sbt/sbt run
+ 1656  less /tmp/tweets_out/2014/05/02/15/17/part-00000.deflate 
+ 1657  man less
+ 1658  man hexdump
+ 1659  hexdump -b /tmp/tweets_out/2014/05/02/15/17/part-00000.deflate 
+ 1660  hexdump  /tmp/tweets_out/2014/05/02/15/17/part-00000.deflate 
+ 1661  man xxb
+ 1662  man xxd
+ 1663  man hadoop
+ 1664  hexdump hadoop -fs /tmp/tweets_out/2014/05/02/15/17/part-00000.deflate | perl -MCompress::Zlib -e 'undef $/; print uncompress(<>)'
+ 1665  hadoop -fs /tmp/tweets_out/2014/05/02/15/17/part-00000.deflate | perl -MCompress::Zlib -e 'undef $/; print uncompress(<>)'
+ 1666  ./bin/spark-class org.apache.spark.deploy.worker.Worker spark://feihua-V5-171:7077
+ 1667  cd spark_proj/spark-twitter-collection/
+ 1668  git diff TwitterCollector.scala TwitterCollector_origin.scala
+ 1669  git status
+ 1670  git checkout
+ 1671  git status
+ 1672  sbt/sbt run
+ 1673  ./bin/spark-class org.apache.spark.deploy.worker.Worker spark://http://localhost:8080
+ 1674  history | grep spark
+ 1675  cd /usr/local/spark
+ 1676  ./sbin/start-master.sh
+ 1677  ./bin/spark-class org.apache.spark.deploy.worker.Worker spark://sufian-ThinkPad-X100e:7077
+ 1678  ./sbin/start-master.sh
+ 1679  sudo netstat -lnp
+ 1680  man netstat
+ 1681  man nmap
+ 1682  nmap
+ 1683  sudo netstat -lnp
+ 1684  netstat -lnp
+ 1685  sudo netstat -lnp
+ 1686  ifconfig
+ 1687  fuser 7077
+ 1688  fuser 7077/tcp
+ 1689  ps
+ 1690  kill 8151
+ 1691  sudo netstat -lnp
+ 1692  cd /usr/local/spark
+ 1693  ./sbin/start-master.sh
+ 1694  bin/spark-class org.apache.spark.deploy.worker.Worker spark://localhost:7077
+ 1695  ./sbin/start-master.sh
+ 1696  kill 8960
+ 1697  ipcs
+ 1698  netstat
+ 1699  sudo netstat -lnp
+ 1700  cd /usr/local/spark
+ 1701  ./sbin/start-master.sh
+ 1702  bin/spark-class org.apache.spark.deploy.worker.Worker spark://sufian-ThinkPad-X100e:7077
+ 1703  fuser 58479
+ 1704  fuser 58479/tcp
+ 1705  sudo kill 2384
+ 1706  man curl
+ 1707  mail -s "bonjour le monde" sufianj415@gmail.com
+ 1708  sudo apt-get install mailutils
+ 1709  sudo apt-get install postfix mailutils libsasl2-2 ca-certificates libsasl2-modules
+ 1710  history | grep git
+ 1711  history | grep 14*
+ 1712  cd sufianTest1
+ 1713  ls
+ 1714  cd ..
+ 1715  cd sjiang2014/
+ 1716  git status
+ 1717  ls
+ 1718  cd isepse2014/
+ 1719  ls
+ 1720  git status
+ 1721  git help
+ 1722  git update
+ 1723  git checkout
+ 1724  ls
+ 1725  cd ~
+ 1726  cd sjiang2014/
+ 1727  git clone git@github.com:kiago/isepse2014.git
+ 1728  cd ..
+ 1729  file:///home/sufian/sjiang2014/isepse2014
+ 1730  git clone git@github.com:kiago/isepse2014.git
+ 1731  cd isep2014
+ 1732  cd isepse2014/
+ 1733  mkdir Jiang.Shufan
+ 1734  cd Jiang.Shufan
+ 1735  touch notes.txt
+ 1736  git status
+ 1737  cd ..
+ 1738  git status
+ 1739  cd Jiang.Shufan/
+ 1740  ls
+ 1741  cd..
+ 1742  cd ..
+ 1743  git add Jiang.Shufan
+ 1744  git commit -m "Mon dossier a ete suprime :/"
+ 1745  rm Jiang.Shufan/
+ 1746  rm -r Jiang.Shufan/
+ 1747  ls
+ 1748  mkdir shufan.jiang
+ 1749  cd shufan.jiang/
+ 1750  touch note.txt
+ 1751  ls
+ 1752  cd ..
+ 1753  git add Jiang.Shufan
+ 1754  cd ..
+ 1755  rm -r isepse2014/
+ 1756  git clone git@github.com:kiago/isepse2014.git
+ 1757  cd isepse2014/
+ 1758  mkdir shufan.jiang
+ 1759  cd shufan.jiang/
+ 1760  touch notes.txt
+ 1761  cd..
+ 1762  cd ..
+ 1763  git add shufan.jiang/
+ 1764  git commit -m "mon dossier a ete supprime :/"
+ 1765  git push
+ 1766  git pull
+ 1767  git push
+ 1768  git push -u origin master
+ 1769  history | grep git
+ 1770  history | grep 14
+ 1771  history | grep 15
+ 1772  git history
+ 1773  cd ..
+ 1774  cd /usr/local/spark/
+ 1775  sbt/sbt run
+ 1776  cd eclipse_workspace/
+ 1777  hexdump -C part-00000.txt
+ 1778  cd inflate/
+ 1779  hexdump -C part-00000.txt
+ 1780  pwd
+ 1781  cd spark_proj/spark-twitter-collection/
+ 1782  history | grep sbt
+ 1783  sbt/sbt run
+ 1784  cd ~/eclipse_workspace/
+ 1785  cd inflate/
+ 1786  ls
+ 1787  cd src
+ 1788  ls
+ 1789  javac inflaterTest.java 
+ 1790  ls
+ 1791  java inflaterTest.class
+ 1792  man java
+ 1793  man javac
+ 1794  java help
+ 1795  java --help
+ 1796  java inflaterTest.java
+ 1797  ls
+ 1798  java inflaterTest.class
+ 1799  javac inflaterTest.java 
+ 1800  java inflaterTest
+ 1801  ls
+ 1802  cd spark_proj/
+ 1803  ls
+ 1804  cs spark-twitter-collection/
+ 1805  cd spark-twitter-collection/
+ 1806  sbt/sbt run
+ 1807  man sbt
+ 1808  man scalac
+ 1809  ls
+ 1810  javac inflaterTest.java 
+ 1811  java inflaterTest part-00000.deflate
+ 1812  javac inflaterTest.java 
+ 1813  java inflaterTest part-00000.deflate
+ 1814  man sbt
+ 1815  sbt
+ 1816  cd ~
+ 1817  LS
+ 1818  ls
+ 1819  cd spark_proj/
+ 1820  ls
+ 1821  cd sbt
+ 1822  export MESOS_NATIVE_LIBRARY=/usr/local/lib/libmesos.so
+ 1823  export SPARK_JAVA_OPTS="-XX:+UseConcMarkSweepGC -Dspark.cleaner.delay=100"
+ 1824  export SPARK_MEM=2000m
+ 1825  java -Dspark.cleaner.delay=100 -Xmx2000m -jar $(dirname $0)/sbt-launch-*.jar "$@"
+ 1826  sbt run
+ 1827  cd ..
+ 1828  sbt/sbt run
+ 1829  cd spark_proj/spark-twitter-collection/
+ 1830  .variables.sh
+ 1831  ./variables.sh
+ 1832  echo "OUTPUT_BATCH_INTERVAL = "$OUTPUT_BATCH_INTERVAL
+ 1833  ./variables.sh
+ 1834  echo "OUTPUT_BATCH_INTERVAL = "$OUTPUT_BATCH_INTERVAL
+ 1835  ./variables.sh
+ 1836  echo $OUTPUT_DIR
+ 1837  man export
+ 1838  bash variables.sh
+ 1839  sh variables.sh 
+ 1840  set
+ 1841  man set
+ 1842  set
+ 1843  set help
+ 1844  help
+ 1845  export help
+ 1846  help export
+ 1847  help kill
+ 1848  man kill
+ 1849  help export
+ 1850  echo $JAVA_HOME
+ 1851  echo $PATH
+ 1852  export -p
+ 1853  help export
+ 1854  exit
+ 1855  cd 2408_osa/
+ 1856  ./ ex1205.sh 
+ 1857  ./ex1205.sh 
+ 1858  sudo chmod +x ex1205.sh 
+ 1859  ./ex1205.sh 
+ 1860  man seq
+ 1861  ./ex1205.sh
+ 1862  man getconf
+ 1863  cd ~/isepse2014/
+ 1864  ls
+ 1865  cd shufan.jiang/
+ 1866  ls
+ 1867  git add ex2015.sh
+ 1868  git add ex1205.sh
+ 1869  git commit -m "exercise 12 mai 2014"
+ 1870  git push
+ 1871  cd ~
+ 1872  ls
+ 1873  cd sj
+ 1874  cd sjiang2014/
+ 1875  ls
+ 1876  git clone git@github.com:sufianj/isepse2014.git
+ 1877  rm -r isepse2014/
+ 1878  sudo rm -r -f isepse2014
+ 1879  git clone git@github.com:sufianj/isepse2014.git
+ 1880  git add ex1205.sh
+ 1881  cd isepse2014/
+ 1882  cd Shufan.JIANG/
+ 1883  git add ex1205.sh
+ 1884  git commit -m "exercise 12 mai 2014"
+ 1885  git push
+ 1886  git checkout
+ 1887  git status
+ 1888  git commit -a variables.sh
+ 1889  git help commit
+ 1890  git commit -a
+ 1891  git push
+ 1892  history > history.txt
+ 1893  ls
+ 1894  less history
+ 1895  less history.txt
+ 1896  man history
+ 1897  history | grep git
+ 1898  git statut
+ 1899  git status
+ 1900  git add history.txt variables.sh
+ 1901  git commit -m "+history up to 12/05/2014 + exercise: variables"
+ 1902  git push
+ 1903  cd /var/log
+ 1904  ls
+ 1905  cd apache2
+ 1906  ls
+ 1907  stderr
+ 1908  less error.log
+ 1909  cd ~/sjiang2014/isepse2014/Shufan.JIANG/
+ 1910  ls
+ 1911  man sed
+ 1912  sed -e '1d' history.txt 
+ 1913  sed -e '1d; 2d; 3d' history.txt 
+ 1914  $ sed -i "s/^ *[0-9]* //g" history.txt
+ 1915  less history
+ 1916  less history.txt
+ 1917  histroy > history_avec_numeros_des_lignes.txt
+ 1918  history > history_avec_numeros_des_lignes.txt

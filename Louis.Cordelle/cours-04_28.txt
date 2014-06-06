@@ -1,0 +1,4 @@
+echo -> affiche le contneu d'une variable
+man -> afficher le manuel d'une fonction
+sort -> trier une liste
+uniq -> supprimer les doublons

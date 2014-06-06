@@ -1,0 +1,30 @@
+Question sur le Bash Script{
+	- in what cases do we have to add a ";" ? {
+		the ";" is needed only when you want to add multiple statements in one line
+		Ex : for i in a b c; do echo $i; done
+	}
+
+	- can we debug bash script ? {
+		stdin -> process reads info from you in this file
+		stderr -> file where the errors are written in
+		stdout -> process writes normal info in this file
+	}
+
+	- can we create an interaction with the user in bash (like the scanner in Java) ?{
+		The read command allow the user to interact with the script
+	}
+
+	- What's the difference between bash and shell ? {
+		Shell is a program which interprets commands and languages. Bash is a kind of Shell.
+	}
+
+}
+
+
+Useful commands {
+	- ctrl-A : go at the beginning of the line 
+	- ctrl-E : go at the end of the line
+	- ctrl-L : clean terminal
+	- ctrl-C : terminate the command
+	- 
+}

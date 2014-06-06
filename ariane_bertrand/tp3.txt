@@ -1,0 +1,46 @@
+Projet 3: Linux dictionary
+
+a user is looking for the definition of a word:
+- the dictionary finds it for him
+- gives difrent meanings (from difrent dictionaries)
+- if the word doesn't exist (misspelt) offer other words
+
+Ex of off line dictionaries:
+-gnome-dictionary
+-stardict
+-Goldendict
+
+If we use an online english dictionary
+online = cURL
+Ex of online dictionaries:
+- http://dictionary.cambridge.org/
+- http://www.oxforddictionaries.com/
+- http://dictionary.reference.com/
+- http://www.collinsdictionary.com/dictionary/english
+
+Members:
+- Eva BENOIT
+- Ariane BERTRAND
+- Guillaume FORMEY DE SAINT LOUVENT
+- Ang LI
+
+--------------------------------------------------------------------------------------------------------------------------
+diapo:
+1 page
+qui je suis, ce que je veux faire
+2 page
+comment je vais le faire
+
+--------------------------------------------------------------------------------------------------------------------------
+Debut du projet:
+Etapes:
+Ang - off line dictionary
+we now want to see how the on line dictionary works
+#!/bin/bash
+read -p 'word you want defined' word
+(on met hello)
+echo "you chose $word"
+curl www.oxforddictionaries.com/english/$word
+Next: parsing the definition
+
+--------------------------------------------------------------------------------------------------------------------------

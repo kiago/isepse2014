@@ -1,0 +1,72 @@
+comment definir une variable?
+
+definir la variable message:
+message='Bonjour'
+afficher la variable:
+echo $message
+-------------------------------------------------------
+comment renommer une variable?
+
+-------------------------------------------------------
+comment definir le type d'une variable?
+
+les variables n'ont pas de type
+-------------------------------------------------------
+comment eviter problemes lies aux caracteres speciaux?
+
+-------------------------------------------------------
+comment faire une boucle?
+
+la boucle while:
+while [test]
+do
+	[action]
+done
+la boucle for:
+for variable in 'valeur1' 'valeur2' 'valeur3'
+do
+        [action]
+done
+-------------------------------------------------------
+comment ecrire une condition?
+
+condition if:
+if [test]
+then [action]
+elif [autre test]
+then [autre action]
+else [encore autre action]
+fi
+condition case:
+case $variableAtester in
+	$valeurPossible)
+		[action]
+		;;
+	$autreValeurPossible)
+		[autre action]
+		;;
+esac
+-------------------------------------------------------
+quelles sont les conditions possibles? 
+
+conditions possibles sur nombres:
+-eq les nombres sont egaux
+-ne les nombres sont differents
+-lt premier nombre inferieur au second
+-gt premier nombre superieur au second
+-ge premier nombre inferieur ou egal au second
+conditions possibles sur fichiers:
+-e $fichier si fichier existe
+-d $fichier si fichier est un repertoire
+-f $fichier si le fichier existe
+-L si le fichier est un raccourci
+-r $fichier si le fichier est lisible
+-w $fichier si le fichier est modifiable
+-x $fichier si le fichier est executable
+-nt premier fichier plus recent que second
+-ot premier fichier plus vieux que second
+autre:
+[test]&&[autre test] : et
+[test]||[autre test] : ou
+[! test]: inverse du test
+-------------------------------------------------------
