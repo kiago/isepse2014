@@ -1,32 +1,37 @@
-Local :
-- git clone
-- git add *
-- git commit
-- git status
-- git log
+Git Commands :
+--------------
+	Local :
+	- git clone
+	- git add *
+	- git commit
+	- git status
+	- git log
 
 
-Autre :
-- git push
-- git pull
+	Autre :
+	- git push
+	- git pull
 
 
-grep : look for a string in some path
-—> grep « toto » path
+Linux commands :
+-------------------
+	grep : search for a string in a specific file
+	—> grep « toto » path
 
-find : find where what (recursive)
-—> find .[here] -name « .git »
+	find : find where what (recursive)
+	—> find .[here] -name « .git »
 
-~ : home
+	~ : home
 
-less: less file, allows to see the file in the console
+	less: less file, allows to see the file in the console
 
-man: man cmd, allows to see how the command works
+	man: man cmd, allows to see how the command works
 
-mkdir: mkdir name_directory, create a directory
+	mkdir: mkdir name_directory, create a directory
 
-----------------------
-----------------------
+	chmod : changes the permissions for a file 
+
+
 28/04/2014
 ----------------------
 ----------------------
@@ -65,8 +70,7 @@ append >>
 Exercise: on retrieves all the words of the site and they are classified by the number of occurrences and the first 10 results are displayed ( head)
 → curl www.gutenberg.org/cache/epub/45495/pg45495.txt | tr- s -c [: alpha:] '\ n' | tr "AZ" "az" | sort | uniq- c | sort- n -r | head
 
-----------------------
-----------------------
+
 26/05/2014 :
 ----------------------
 ----------------------
