@@ -1,0 +1,8 @@
+---------------------------------
+Subtitles Projects - Instructions
+---------------------------------
+
+The script can contain parameters :
+	--> -h or --help : Runs the help function
+	--> The name of a language in english (example : english, french, italian, etc...)
+
