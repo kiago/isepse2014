@@ -9,3 +9,5 @@ The script can contain parameters :
 The script asks for a path that contains series video files.
 
 If no parameter is entered, the program will download subtitles in french, otherwise the program will download subtitles in the chosen language.
+
+If the path to the video files contains spaces in folders names, the download of the subtitles will fail.
