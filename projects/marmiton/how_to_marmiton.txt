@@ -1,0 +1,25 @@
+instructions on how to test the script marmiton.sh
+
+- open your terminal
+
+- go to the project repository (marmiton)
+
+- type in chmod +x marmiton.sh to make the script executable
+
+- type in ./marmiton.sh to launch it
+--> You'll see this error : rm: impossible de supprimer «/tmp/raw»: Aucun fichier ou dossier de ce type
+This is normal because you don't have (yet) this temp file. It'll be used to store the retreived html content. 
+
+- Once it's launch, it will ask you 2 questions : 
+
+	- first the recipe you're looking for, such as the word 'baguette'
+--> If the recipe researched doesn't correspond to any result, the script asks you to try again. You can type in a couple of words at the same time. The script manages special characters and blanks.
+
+	- second how you want to sort the results by (title, votes, type, preparation time, cooking time or the number for which the recipe is done) : you'll have to enter the number corresponding to your choice, from 1 to 6.  
+--> You can try to type in letters, complete words or numbers which don't correspond, it won't work and the script will ask you to try again. 
+
+- Depending on your choices, you'll have a different set of results. For example : the first six pages corresponding to baguette sorted by the number of votes. 
+
+- You can continue to use the script as you wish (it relaunches by itself). If you want to stop it, you just have to press CTRL + C.
+
+

@@ -131,7 +131,71 @@ esac
 
 -> 'read' permet d'utiliser l'élément entré par l'utilisateur après 'echo' et le met dans une variable 'nombre'.
 
+--------------------------------
 
+9) Comment utiliser une boucle while? 
 
+On peut écrire une boucle while de telle façon : 
+while [ condition ]
+do
+   command1
+   command2
+   command3
+done
 
+La manière d'écrire la condition peut varier, ainsi on peut utiliser des parenthèses ou crochets et des doubles parenthèses/crochets.
+Une autre manière d'écrire la boucle : 
+while (( condition )); do   #lecture sur une ligne
+   command1
+   command2
+   command3
+done
 
+ex : 
+
+# Utilisation de l'opérateur -o (n'est plus recommandé).
+# Les guillemets sont fortement recommandés pour se protéger des variables vides ou non définies.
+while [ "$stats" -gt 300 -o "$stats" -eq 0 ]
+
+# Deux test joints dans une liste avec ||, sans crochets globaux.
+while [ "$stats" -gt 300 ] || [ "$stats" -eq 0 ]
+
+# Deux expressions conditionnelles jointes dans une liste avec ||, avec double crochets.
+while [[ $stats -gt 300 ]] || [[ $stats -eq 0 ]]
+
+# Une expression conditionnelle avec l'opérateur ||, avec double crochets globaux.
+while [[ $stats -gt 300 || $stats -eq 0 ]]
+
+# Deux expressions arithmétiques jointes dans une liste avec l'opérateur ||, avec double parenthèses.
+# Le signe $ est optionnel car une string peut être interprétée seulement comme une variable.
+while (( stats > 300 )) || (( stats == 0 ))
+
+# Une expression arithmétique avec l'opérateur ||, avec double parenthèses globales.
+# $ optional, as a string can only be interpreted as a variable
+while (( stats > 300 || stats == 0 ))
+
+Autre ex : 
+
+count=1
+while [ $count -le 9 ]
+do
+    echo "$count"
+    sleep 1
+done
+
+--------------------------------
+
+10) Comment gérer les caractères spéciaux? 
+
+On peut gérer les caractères spéciaux de plusieurs manières : en les enlevant, en les remplaçant ou en les convertissant.
+Ainsi on peut utiliser les commandes sed, tr et iconv par exemple.
+
+tr permet de transformer ou de supprimer des caractères, mais il faut pour cela préciser clairement ceux que l'on veut modifier.
+Dans le cas du projet, iconv correspondrait mieux car il n'est pas nécessaire de préciser quoique ce soit.
+iconv convertit d'un encodage à un autre un texte.
+
+Ex :
+
+Si on veut convertir un fichier d'ISO-8859-1 à UTF-8 et sauvegarder dans un fichier :
+
+$ iconv -f ISO-8859-1 -t UTF-8 < input.txt > output.txt
