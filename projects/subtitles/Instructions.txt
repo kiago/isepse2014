@@ -6,3 +6,6 @@ The script can contain parameters :
 	--> -h or --help : Runs the help function
 	--> The name of a language in english (example : english, french, italian, etc...)
 
+The script asks for a path that contains series video files.
+
+If no parameter is entered, the program will download subtitles in french, otherwise the program will download subtitles in the chosen language.
