@@ -1,11 +1,28 @@
 #!/bin/bash
 
+while true; do
+
 rm /tmp/raw
 touch /tmp/raw
 
 #asking for the recipe
 echo "What recipe are you searching for? :"
 read recipe
+
+#Managing the special characters such as '^', taking utf8 characters and translating them into ascii. 
+recipe=$(iconv -f utf8 -t ascii//TRANSLIT <<< "$recipe")
+#Managing the possible blanks between words, replacing them by '-' (used on marmiton.org)
+recipe=${recipe// /-}
+
+while [[ $(curl -s http://www.marmiton.org/recettes/recherche.aspx?aqt=$recipe | grep "Aucun résultat") ]]; do
+# $() executes the command curl and retrieves the results
+	echo "No results found. Please try again.";
+	read recipe;
+	recipe=$(iconv -f utf8 -t ascii//TRANSLIT <<< "$recipe")
+	recipe=${recipe// /-}
+
+done
+
 
 #retrieving the HTML content from the six first pages and putting it into a temp file
 for i in {0..50..10}
@@ -54,3 +71,4 @@ case $num in
 esac
 
 # the result : extracted data from the HTML page, sorted by the column chosen.
+done
