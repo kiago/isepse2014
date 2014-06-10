@@ -32,8 +32,32 @@ $ uniq -c history_sorted.txt  > history_sorted_uniqc.txt
 
 #step 4: sort them by the value of the prefix number
 $ sort -rn history_sorted_uniqc.txt > history_sorted_uniqc_sortrn.txt
+
 #Voila,it seems that the commands most used are ls and cd XD
 #However, as many commands takes differernt arguments, such as man, help, git add, tar, mkdir, apt-get, 
 #javac, gcc, sublime-text, chmod/chown... this result is not so persuadable :(
 
- 
+#Q2-B
+#Why I can only see the 987th line to the 1986th line of history??
+#in ~/.bashrc
+# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
+HISTSIZE=10000
+HISTFILESIZE=20000
+  
+
+#Q3(bash script in ex1205.sh)
+#is there a limit to the number of arguments?
+show_args $(seq 1 20); 
+#the answer is?
+getconf ARG_MAX
+# XD # well, sadly it works :/
+show_args $(seq 1 2097253);  
+
+#Q4
+#What do chmod 777 mean?
+
+#ans:
+#user	group 	other 
+#rwx	rwx		rwx
+
+
