@@ -1,0 +1,13 @@
+#how to recover the title bar after shut down the system without closing chromium?
+#test 1: erase the cache and the restart the system
+$ rm .cache/sessions/*
+#result 1: it didn't work 
+
+#a sencond hit
+$ sudo metacity --replace
+#result 2: nothing happens
+
+#a third try...
+$ xfwm4
+#result: finally the bar is loaded ^ ^ this cmd starts the bar~
+
