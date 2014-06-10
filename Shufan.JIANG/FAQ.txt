@@ -1,3 +1,4 @@
+#Q1
 #how to recover the title bar after shut down the system without closing chromium?
 #test 1: erase the cache and the restart the system
 $ rm .cache/sessions/*
@@ -11,3 +12,28 @@ $ sudo metacity --replace
 $ xfwm4
 #result: finally the bar is loaded ^ ^ this cmd starts the bar~
 
+#Q2 
+#how find out the most used commands?
+#solution:
+#To see the mid-term output of each step, I save them as .txt documents.
+#But as the last output is the next input, we could use a pipe (|).
+
+#step 1: get the history 
+$ history > history.txt 
+
+#step 2: remove the line numbers
+$ sed -i "s/^ *[0-9]* //g" history.txt 
+
+#step 3.1: try to sort... 
+$ sort history.txt  > history_sorted.txt
+#ooooops, this only sort them by their initial letters...
+#step 3.2: prefix lines by the number of occurrences
+$ uniq -c history_sorted.txt  > history_sorted_uniqc.txt
+
+#step 4: sort them by the value of the prefix number
+$ sort -rn history_sorted_uniqc.txt > history_sorted_uniqc_sortrn.txt
+#Voila,it seems that the commands most used are ls and cd XD
+#However, as many commands takes differernt arguments, such as man, help, git add, tar, mkdir, apt-get, 
+#javac, gcc, sublime-text, chmod/chown... this result is not so persuadable :(
+
+ 
