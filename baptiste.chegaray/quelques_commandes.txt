@@ -1,0 +1,17 @@
+Téléchargement d'un fichier à partir d'une url
+wget  -O /home/baptman/Desktop/ "https://vaadin.com/download/book-of-vaadin/vaadin-7/pdf/book-of-vaadin.pdf"
+
+affichage d'un fichier caché (le .gitignore pour un projet de site internet)
+On se place dans le dossier
+cd NetBeansProjects/babyboard_repo_clean/
+On utilise la commande cat pour afficher le contenu du fichier
+cat .gitignore
+
+Commande ls: ls -l permet de lister les attributs des fichiers
+baptman@baptman-Aspire-4820TG:~/NetBeansProjects/babyboard_repo_clean$ ls -l
+total 128
+-rw-rw-r-- 1 baptman baptman 112971 juin   2 22:34 logo.png
+-rw-rw-r-- 1 baptman baptman  10308 juin   2 22:34 pom.xml
+drwxrwxr-x 3 baptman baptman   4096 juin   2 22:34 src
+
+
