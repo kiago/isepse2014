@@ -95,4 +95,22 @@ Et pour rappel :
 
 	$ cd $OPENSHIFT_DATA_DIR
 	$ vim displayFileConf.sh
-	...
+	
+	#!/bin/bash
+
+	# script qui liste tous les fichiers ".conf"
+	pathArchDir=$OPENSHIFT_DATA_DIR/arch
+	# création d'un sous-repertoire "arch"
+	if [ ! -e $pathArchDir ] && [ ! -d $pathArchDir ]
+	then
+	        echo "Création du dossier arch"
+	        mkdir $pathArchDir
+	else
+	        echo "Le dossier arch est déjà créé"
+	fi
+	# on liste les fichiers ".conf" qu'on écrit dans le dossier arch dans filesConf et les erreurs dans logFiles.txt
+	echo "Programme en cours..."
+	find / -name "*.conf" -type f > $pathArchDir/filesConf.txt 2> $pathArchDir/logFiles.txt
+	chmod 444 $pathArchDir/filesConf.txt
+	chmod 444 $pathArchDir/logFiles.txt
+	echo "Programme terminé !"
