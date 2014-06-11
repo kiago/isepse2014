@@ -1,4 +1,6 @@
 					PROJET ALLOCINE
 
 
-Objectif : récupérer les 10 films qui sont aux box offices
+Objectif : récupérer les 10 films qui sont aux box offices et les envoyer par mail.
+           effectuer une recherche par mot sur les synopsis de plusieurs films et renvoyer        celui qui présente le plus de concordance.
+
