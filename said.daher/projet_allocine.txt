@@ -4,3 +4,8 @@
 Objectif : récupérer les 10 films qui sont aux box offices et les envoyer par mail.
            effectuer une recherche par mot sur les synopsis de plusieurs films et renvoyer        celui qui présente le plus de concordance.
 
+différente commande utilisé : 
+-curl (pour récupérer le contenu de l’url dans film)
+-grep (pour effectuer la recherche dans les synopsis)
+-sed (pour pouvoir récupérer uniquement le synopsis afin de faire la recherche)
+
