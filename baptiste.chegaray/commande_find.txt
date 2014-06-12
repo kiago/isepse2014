@@ -1,0 +1,56 @@
+find:
+
+Son point fort : la recherche systématique.
+find est un besogneux qui arpente vos dossiers infatigablement. Il a accès à la totalité de l'arborescence mais il vous est vivement conseillé de la circonscrire si l'on veut obtenir un résultat dans un délai correct. L'interface le permet de façon simple pour un débutant avec notamment l'inclusion des signets de Nautilus et une fonction "autre" destinée à sélectionner le répertoire que vous lui désignez. Voir find
+
+
+documentation:
+
+    Équivalent MS-DOS/MS Windows : find
+    Signification : rechercher
+    Permet de chercher des fichiers et éventuellement d'exécuter des commandes sur ceux-ci ; la recherche est récursive c'est-à-dire qu'elle concerne le répertoire de départ et toute sa descendance (sous-répertoires ainsi que toute leur descendance …)
+    Options les plus fréquentes :
+        -name : Recherche d'un fichier par son nom
+        -iname : Même chose que -name mais insensible à la casse
+        -type : Recherche de fichier d'un certain type
+        -atime : Recherche par date de dernier accès
+        -mtime : Recherche par date de dernière modification
+        -link : Recherche du nombre de liens au fichier
+        -user : Recherche de fichiers appartenant à l'utilisateur donné
+        -group : Recherche de fichiers appartenant au groupe donné
+    Actions les plus fréquentes :
+        -exec : Exécute la commande donnée aux fichiers trouvés
+        -ok : Même chose que -exec mais demande une confirmation
+        -ls : exécute la commande ls à chaque fichier trouvé
+    Opérateurs les plus fréquents :
+        -a : Opérateur ET
+        -o : Opérateur OU
+        ! ou -not : Opérateur NOT
+    Exemples d'utilisation :
+
+simple:
+
+Placez-vous dans le répertoire à partir duquel la recherche récursive doit être effectuée et faites :
+
+    find monfichier*
+    Recherche un fichier commençant par "monfichier"
+    find -name *monfichier*.ogg
+    Recherche un fichier contenant "monfichier" et ayant pour extention ".ogg"
+
+avancé:
+
+    find /home/ -name monfichier
+    Recherche le fichier monfichier dans toute la descendance de /home/
+    find . -name "*.c"
+    Recherche tous les fichiers ayant une extension .c
+    find . -mtime -5
+    Recherche les fichiers du répertoire courant qui ont été modifiés entre maintenant et il y a 5 jours
+    find /home/ -mtime -1 \! -type d
+    Recherche uniquement les fichiers (! -type d signifie n'était pas un répertoire) ayant été modifiés ces dernières 24h
+    find . ! -user root
+    Affiche tous les fichiers n'appartenant pas à l'utilisateur root
+    find . \( -name '*.wmv' -o -name '*.wma' \) -exec rm {} \;
+    Recherche et supprime tous les fichiers WMA et WMV trouvés
+    find . \( -type f -exec sudo chmod 664 "{}" \; \) , \( -type d -exec sudo chmod 775 "{}" \; \)
+    Modifie récursivement les droits en 664 sur les fichiers et en 775 sur les répertoires en une seule instruction
+
