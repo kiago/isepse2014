@@ -1,34 +1,61 @@
-Local :
-- git clone
-- git add *
-- git commit
-- git status
-- git log
+Git Commands :
+--------------
+	Local :
+	- git clone
+	- git add *
+	- git commit
+	- git status
+	- git log
 
 
-Autre :
-- git push
-- git pull
+	Autre :
+	- git push
+	- git pull
 
 
-grep : look for a string in some path
-—> grep « toto » path
+Linux commands :
+-------------------
+	Cut : cut out selected portions of Each line of a file
 
-find : find where what (recursive)
-—> find .[here] -name « .git »
+	Nano, vim : text editors
+	
+	Cd ~ : go home
+	
+	Ctrl + c : end command
 
-~ : home
+	grep : search for a string in a specific file
+	—> grep "string" file.txt
+	---------------------------------------------
 
-less: less file, allows to see the file in the console
+	find : find where what (recursive)
+	—> find .[here] -name « .git »
+	---------------------------------------------
 
-man: man cmd, allows to see how the command works
+	less: less file, allows to see the file in the console
+	---------------------------------------------
 
-mkdir: mkdir name_directory, create a directory
+	man: man cmd, allows to see how the command works
+	---------------------------------------------
+
+	mkdir: mkdir name_directory, create a directory
+	---------------------------------------------
+
+	chmod : changes the permissions for a file
+	---------------------------------------------
+
+	To create a bash script, we need to put this line at the beginning of the script :
+	#!/bin/bash (shebang. it tells the shell what program to interpret the script with, when executed. here it is interpretated in bash)
+	---------------------------------------------
+
+	To rename or move a file : mv
+	--> mv "file1.txt" to "file2.txt"
 
 
+
+----------------------
 28/04/2014
+----------------------
 
-- Compiled Language (JAVA)
 - Interpretated language → REPL environnement (Read Eval Print Loop) (Reading which is entered, evaluation , printing and loop)
 
 Absolute name: path to open a file from the root
@@ -40,14 +67,6 @@ Access the contents of a variable: $ variable
 Show variable : echo $ variable
 
 BASH interpreter mainly strings
-
-Basic commands :
-- Man: manual
-- Cut : cut out selected portions of Each line of a file
-- Nano: text editor
-- Cd ~ : go home
-- Ctrl + d : end command
-
 
 Exercise: Find the list of shells used on the machine
 → Order: Cut -d :-f 7 / etc / passwd
@@ -62,6 +81,10 @@ append >>
 Exercise: on retrieves all the words of the site and they are classified by the number of occurrences and the first 10 results are displayed ( head)
 → curl www.gutenberg.org/cache/epub/45495/pg45495.txt | tr- s -c [: alpha:] '\ n' | tr "AZ" "az" | sort | uniq- c | sort- n -r | head
 
+
+----------------------
+26/05/2014 :
+----------------------
 
 list of chars with a special meaning in a regex:
     ^ : finds the start of a line
@@ -89,5 +112,16 @@ list of chars with a special meaning in a regex:
     
     sed -e -r "s/\(abc\)+/g" input.txt
 
-sed  -n : quiet
+sed -n : quiet
 sed -n "//p" : print
+
+
+-----------------------
+Script parameters :
+$0  Contient le nom du script tel qu'il a été invoqué
+$*  L'ensembles des paramètres sous la forme d'un seul argument
+$@  L'ensemble des arguments, un argument par paramètre
+$#  Le nombre de paramètres passés au script
+$?  Le code retour de la dernière commande
+$$  Le PID su shell qui exécute le script
+$!  Le PID du dernier processus lancé en arrière-plan

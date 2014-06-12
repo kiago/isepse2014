@@ -22,11 +22,20 @@ while [test]
 do
 	[action]
 done
+
 la boucle for:
 for variable in 'valeur1' 'valeur2' 'valeur3'
 do
         [action]
 done
+
+la boucle foreach:
+foreach variable (liste de ses valeurs)
+	[action]
+	[autre action]
+	[autre action]
+	...
+end
 -------------------------------------------------------
 comment ecrire une condition?
 
@@ -70,3 +79,21 @@ autre:
 [test]||[autre test] : ou
 [! test]: inverse du test
 -------------------------------------------------------
+Quels sont les different droits:
+
+r: read, droit de lire le fichier
+w: write, droit d'ecrire et de modifier le fichier
+x: execute, droit d'executer le fichier
+
+-------------------------------------------------------
+Comment les changer
+
+la commande chmod permet de modifier les droits d'acces
+0: pas de droit d'acces
+1: droit d'execution seulement
+2: droit de modification seulement
+3: droit d'execution et de modification
+4: droit de lecture seulement
+5: droit d'execution et de lecture
+6: droit de modification et de lecture
+7: droit de tout (execution, modification et lecture)
