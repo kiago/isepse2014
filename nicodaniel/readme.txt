@@ -8,3 +8,4 @@ On peut par la suite lancer le projet de la maniere suivante :
 
 ->>> sh script1.sh
 ->>> saisie du mail sur lequel vous voulez recevoir les actualités (TWEETS)
+->>> ET vous recevrez le tout par mail !! 
