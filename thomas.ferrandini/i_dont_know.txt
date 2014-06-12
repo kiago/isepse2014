@@ -1,6 +1,7 @@
-Quest ce que je ne sais pas faire ?
+What I don't know ?
 
-- Browse a folder and extract the name without extension of each file in it.
+- Browse the files of folder ?
+--> for file in ${folder}; do; done;
 
 - Do we need to put semicolon at the end of lines within a function?
 --> No 
@@ -35,3 +36,21 @@ Quest ce que je ne sais pas faire ?
 	function_name () { 
 		command... 
 	}
+
+
+- How can we get the path ?
+--> echo $PWD
+
+- How can we know if a certain file is already in a folder ?
+--> if [ -e ${file} ]; then ...
+
+- Extract the name of a file without extension ?
+--> If $file is complete path+file name+extension :
+--> name_without_extension = ${file%.*};
+
+- look for multiples extension in a folder ?
+--> for file in $(find . -name "*.avi" -o -name "*.mkv")
+
+- Find the language of the system ?
+
+- change the browser language with cURL ?

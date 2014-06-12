@@ -1,0 +1,23 @@
+Create an empty file {
+	touch fileName
+}
+
+Edit a file {
+	nano fileName
+
+	To save a file, use the ctrl-K command
+}
+
+Navigation {
+	ls : display the content of a folder
+	cd .. : go into the parent folder 
+	cd folderName : go into a specific folder
+	cd folderName/subfolderName : go into a specific subfolder
+}
+
+Move or rename a file {
+	mv fileName newFileName : to rename
+	mv fileName otherFolderName : to move
+}
+
+grep : search a string in a specific file (grep "toto" file.txt)

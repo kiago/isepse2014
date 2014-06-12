@@ -14,7 +14,7 @@ Question 2.peut on faire tourner un script afin de récupérer des données pend
 Réponse: 
 Oui, avec des boucles.
 _________________________
-Question 3.comment faire un pull request via la ligne de commandes (avec le check out)?
+Question 3.comment merge un pull request via la ligne de commandes (avec le check out)?
 Réponse : 
 check out la branche qui demande le pull request
 ensuite faire un pull de sa branche 
