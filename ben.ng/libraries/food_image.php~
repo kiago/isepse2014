@@ -1,0 +1,8 @@
+<?php
+
+class Food_image extends Model {
+
+	public function __construct() {
+		
+	}
+}
