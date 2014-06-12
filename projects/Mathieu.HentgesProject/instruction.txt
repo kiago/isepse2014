@@ -1,0 +1,22 @@
+This is the instruction on how to test the script
+
+-------------------------------REQUIREMENT--------------------------------------
+
+In order to use the second part of the sript (send a mail) you need to configure postfix with your own mail 
+
+This script also require internet connection in oder to take data from LEFIGARO.FR
+
+-------------------------------EXECUTION---------------------------------------
+
+- Open a terminal
+- Go to the repository with RSS.SH
+- Type sh RSS.sh to execute it
+- Follow the leads :
+
+he will ask you to choose a catégorie
+you answer with a number?
+
+Then it ask you if you want to receive it by mail.
+If you say "Y" it will send you a mail with the 10 latest information about the topic previously chosen
+
+When the script is done you will have a new .txt file on your repository with the 10 last information about the topic choosen
