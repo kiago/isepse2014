@@ -11,11 +11,14 @@ différente commande utilisé :
 
 Problèmes rencontrés :
 - configuration du serveur mail.
-- réussir a peser correctement le fichier pour récupérer uniquement les informations nécessaires
+- réussir à parser correctement le fichier html pour récupérer uniquement les informations nécessaires
 - Transformé le résultat en html afficher d’avoir un rendu plus esthétique
 
 Solutions :
--configuration des mail grace a postfix, utilisation de gmail comme serveur mail
+- configuration des mail grace a postfix, utilisation de gmail comme serveur mail
+- combinaison des commandes curl, grep et ses pour recuprer unique le titre et la descriptions du film qui était contenu dans le fichier html de la page de recherche
+- insertion du format html garce a la commande echo (DOCTYPE etc)
+
 
 
 
