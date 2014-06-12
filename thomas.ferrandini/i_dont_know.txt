@@ -52,5 +52,6 @@ What I don't know ?
 --> for file in $(find . -name "*.avi" -o -name "*.mkv")
 
 - Find the language of the system ?
+--> echo $LANG ==> (in UTF-8 : Fr_FR.UTF-8)
 
 - change the browser language with cURL ?
