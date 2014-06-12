@@ -1,27 +1,28 @@
-Ce document est destiné à vous aider à configurer les paramètres de votre fichier easyBackup.
+The aim of this document is to help you configure EasyBackup file.
 
-— Variable « serverDirectory » :
-Inscrire le chemin du dossier FTP à sauvegarder sur le serveur. Ne pas inclure le chemin de base « ~/ ». Exemple : « serverDirectory="www/monSite" »
+- Variable "ServerDirectory" 
+Enter the path to the FTP folder to backup on the server. Do not include the base path "~ /"
+Example : � serverDirectory="www/monSite" �
 
-— Variable « localDirectory » :
-Inscrire le chemin du dossier en local dans lequel vous souhaitez enregistrer les backups.
-Exemple (Mac) : « localDirectory="/Users/juniorisep/Desktop/mesBackups" »
+- Variable "LocalDirectory" 
+Enter the path to the local folder where you want to save the backups.
+Example (Mac) : " localDirectory="/Users/juniorisep/Desktop/mesBackups" "
 
-— Variable « sshAuth » :
-Inscrire l’adresse de connexion ssh au serveur distant de la forme « username@ftp.domaine.ext ».
-Il est nécessaire d’avoir préalablement inscrit sa clé publique dans un fichier « authorized_keys » qui doit se trouver dans un dossier « .ssh » à la racine de votre serveur FTP.
-Exemple : « pseudo@ftp.mondomaine.fr »
+- Variable "sshAuth" 
+Enter the address of ssh connection to the remote server in the form "username@ftp.domaine.ext." 
+It is necessary to have previously registered public key in a file "authorized_keys" to be located in a folder ". ssh" to the root of your FTP server.
 
-— Connexion à la base de données :
-Renseigner les valeurs des 4 variables « user », « password », « host » et « dbname » correspondant à votre base de données. Chez certains prestataires (ex. OVH avec un hébergement mutualisé Pro), la base de données n’est accessible que depuis leurs propres serveurs, c’est à dire qu’il faut renseigner l’adresse du type « mysqlXX-XX.xxx » fournie par OVH (X <=> chiffre, x <=> lettre).
-Exemple : « 
+- Connect to the database: 
+Learn the values of the 4 variables "user", "password", "host" and "dbname" for your database. In some providers (eg OVH shared hosting with Pro), the database is accessible only from their own servers, ie it must inform the address type "mysqlXX-XX.xxx" provided by OVH (X <=> number, x <=> letter.)
+Example : " 
 user="nomUtilisateur" 
 password="motDePasse" 
 host="mysql38-42.pro"
 dbname="nomMaBase"
-»
+"
 
-Une fois ces quelques variables définies, il ne vous reste plus qu’à lancer le script depuis votre console de la façon suivante : « ./easyBackup.sh ».
+Once these few variables defined, it'll just run the script from your console like this :
+ "./easyBackup.sh"
 
-L’équipe easyBackup,
+The team EasyBackup,
 easybackup@dechristen.fr
