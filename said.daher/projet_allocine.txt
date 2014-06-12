@@ -14,5 +14,9 @@ Problèmes rencontrés :
 - réussir a peser correctement le fichier pour récupérer uniquement les informations nécessaires
 - Transformé le résultat en html afficher d’avoir un rendu plus esthétique
 
+Solutions :
+-configuration des mail grace a postfix, utilisation de gmail comme serveur mail
+
+
 
 
