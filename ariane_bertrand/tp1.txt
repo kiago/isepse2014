@@ -19,3 +19,17 @@ globbing trouver quelquechose avec un raccourci
 Ex "*.jpg" cherche toutes les images
 
 mv renomme un document
+
+utilisation git en lignes de commande:
+// on accede au dossier git
+Cd le dossier git
+//pour voir si des choses on ete modifiees
+Git status
+//ajouter des modifications ou nouveaux fichiers
+Git add * (pour tout ajouter)
+Ou git add nomDuFichier
+Git status 
+//commiter les modifications
+Git commit –m écrireUnComment
+//les pusher
+Git push
