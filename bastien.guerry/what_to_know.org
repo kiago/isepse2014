@@ -1,5 +1,9 @@
 #+TITLE: What to know?  Prepare for the exam and the evaluation
 
+*ATTENTION*: contrairement à ce que je supposais, vous n'aurez pas
+droit à un ordinateur et à Internet demain matin.  Faites passer le
+mot autour de vous.
+
 * Git
 
 You need to be comfortable with a basic Git collaborative workflow
