@@ -1,0 +1,69 @@
+#!/bin/bash
+max=90
+
+>result		#empty content
+
+for i in $(seq 0 10 $max)
+do
+curl "http://www.yelp.com/search?cflt=restaurants&find_desc=paris&find_loc=Paris&ns=1&start=$i&sortby=rating" > $i.html
+
+echo $i >> result	#save the id
+cat $i.html |	 	#save restaurant name
+ sed -n 's/ <img alt="\(.*width="90\)/\1/p' |	 	#trim the left part
+ sed -n 's/\(.*\)" class=.*/\1/p' >> result		#trim the right part	
+
+cat $i.html |		#save the rating
+ sed -n 's/ <img alt="\(.*width="84\)/\1/p' |		#trim the left part
+ sed -n 's/\(.*\) \(étoiles\|star\).*/\1/p' >> result	#trim the right part
+
+cat $i.html |		#save the neighborhood
+ grep "neighborhood-str-list" -A 1 |			#the neighborhood after 1 line of neighborhood-str-list
+ sed -n "s/\([\w]*\)<\/span>/\1/p" >> result		#regex only match the neighborhood
+
+cat $i.html |		#save the address
+ grep "<address>" -A 1 |				#the address after 1 line of <address> tag
+ sed -n "s/\([\w ]*<br>\)\|\(<br>[\w ]*\)/\1/p" >>result #regex only match the address
+
+cat $i.html |		#save the page of food image
+ grep "  <a href=\"/biz/" |				#get the line
+ sed -n "s/.*\/biz\/\(\w*\)/\1/p" |			#trim the left part
+ sed -n "s/\(\w*\)\#.*/\1/p" |				#trim the right part
+ while read line					#read each restaurant
+ do
+ 
+  echo "||" >> result					#delimiter
+  
+  curl "http://www.yelp.com/biz/$line" > biz_$line
+  
+  cat biz_$line |	#save longitude
+   grep "place:location:longitude" |			#get the line
+   sed -n "s/.*content=\"//p" |				#trim the left part
+   sed -n "s/\".*//p" >> result				#trim the right part
+
+  cat biz_$line |	#save latitude
+   grep "place:location:latitude" |			#get the line
+   sed -n "s/.*content=\"//p" |				#trim the left part
+   sed -n "s/\".*//p" >> result				#trim the right part
+   
+  curl "http://www.yelp.com/biz_photos/$line" > biz_photos_$line
+  
+  cat biz_photos_$line |		#save the cation
+   grep "ms.jpg" |			#grep the line
+   sed -n "s/.*alt=\"//p" |		#trim the left part
+   sed -n "s/\".*//p" >> result		#trim the right part
+   
+  cat biz_photos_$line |		#save the first 100 image link
+   grep "ms.jpg" |			#grep the line
+   sed -n "s/.*src=\"//p" |		#trim the left part
+   sed -n "s/ms.jpg\".*/l.jpg/p" >> result	#trim the right part, and change the link to get large image
+   
+
+  
+  rm biz_$line
+  rm biz_photos_$line
+ done
+
+echo "%%" >> result					#delimiter
+
+ rm $i.html
+done
