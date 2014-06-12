@@ -1,0 +1,9 @@
+<?php
+
+class DB {
+	
+	public function query($sql) {
+		
+	}
+}
+
