@@ -1,35 +1,16 @@
 #!/bin/bash
 
-#curl -s http://www.opensubtitles.org/fr/search2/sublanguageid-fre/moviename-bates.motel.s01e02 | sed -n '/<a href=\"/fr/subtitleserve/sub/.*/,/<\/a>/p' > test.txt
+# episode season + episode : episode=${file##*.};
+# season number : season=$(echo "$episode" | cut -c2-3);
+# episode number : ep=$(echo "$episode" | cut -c5-6);
+# --> This decomposition only works if the name of the file is like that : seriesName.S{ep}E{season}.extension
+# --> We needed this decomposition with this type of URL : http://www.opensubtitles.org/fr/search/sublanguageid-${lang}/season-${season}/episode-${ep}/moviename-${file}
+# --> But now we found an URL that allows us to put the entire name of the file without extracting episode or season number
 
-#curl -s http://www.opensubtitles.org/fr/search/imdbid-3361956/sublanguageid-fre/moviename-bates%20motel | sed -n '/<a href=\"\/fr\/subtitleserve\/sub\/5580050\".*/,/<\/a>/p' > test.txt
-
-#curl -s http://www.opensubtitles.org/fr/search/imdbid-3361956/sublanguageid-fre/moviename-bates%20motel | sed -n '/<a class=\"bnone".*/,/<\/a>/p' > test.txt
-
-#download link
-#curl -o test.zip http://dl.opensubtitles.org/fr/download/sub/5089217
-
-# episode season + episode
-# episode=${file##*.};
-# echo $episode
-
-# #season number
-# season=$(echo "$episode" | cut -c2-3);
-# echo $season;
-
-# #episode number
-# ep=$(echo "$episode" | cut -c5-6);
-# echo $ep;
-
-# #episode=${file}
-# #echo “filename: ${file%.*}”
-# #echo “extension: ${file##*.}”
-
-##This url requires to extract season number and episode 
-# #page=$(curl -s "http://www.opensubtitles.org/fr/search/sublanguageid-${lang}/season-${season}/episode-${ep}/moviename-${file}");
+# download link example (.srt file) : http://dl.opensubtitles.org/fr/download/sub/5089217
 
 function help_function {
-	echo -e "This application download all subtitles for the videos in a folder"
+	echo -e "This application download all subtitles for the series videos in a folder"
 	echo -e "Utilisation : ./subtitle.sh [language] \n"
 }
 
@@ -96,9 +77,8 @@ function download_subtitles {
 lang="fre"
 
 # verify if script has a parameter
-# $# : Le nombre de paramètres passés au script
-# $@ : L'ensemble des arguments, un argument par paramètre
-# $1 : Le premier argument
+# $# : Number of parameters typed by the user
+# $1 : The first argument (we only allow one)
 if [[ $# != 0 ]] ; then
 	# We show the help if required
 	if [[ $# == 1 ]] ; then 
